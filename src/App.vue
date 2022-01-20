@@ -21,7 +21,7 @@ export default {
   },
   data() {
     return {
-      msg: "Hello World!",
+      msg: "ホームページ更新中です",
     };
   },
 };
