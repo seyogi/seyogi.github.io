@@ -2,7 +2,7 @@
   <div class="Banner">
     <div class="mainImg">
       <div class="inner">
-        <img src="https://seyogi.github.io/home/image/tyoukaizann.jpeg" />
+        <img src="../../images/tyoukaizann.jpeg" />
       </div>
     </div>
     <!-- /mainImg -->
