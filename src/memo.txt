@@ -1,0 +1,14 @@
+<Banner></Banner>
+
+<div class="container">
+    <Main class="center_container"></Main>
+    <Twitter class="right_container"></Twitter>
+</div>
+
+import Main from "./view/Main";
+import Twitter from "./components/Twitter";
+import Banner from "./components/Banner";
+
+    Banner,
+    Main,
+    Twitter,

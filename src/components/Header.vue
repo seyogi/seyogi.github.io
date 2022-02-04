@@ -1,17 +1,36 @@
 <template>
   <div class="header">
     <div class="inner">
-      <div class="logo">
-        <div class="box">
-          <img src="../../images/icon.png" />
+      <div class="contents">
+        <div class="logo">
+          <router-link to="/" class="logobox">
+            <img src="../../images/icon.png" class="logoimg" />
+            <div class="logotxt">SEYOGI's<br />Labo</div>
+          </router-link>
         </div>
-        <div class="box">
-          <a class="Linktxt" href="">Seyogi's<br />Labo</a>
+        <div class="link">
+          <router-link to="/" class="linkbox">
+            <div class="japanesetxt">トップページ</div>
+            Top
+          </router-link>
+          <router-link to="/Music" class="linkbox">
+            <div class="japanesetxt">音ゲーリザ他</div>
+            GameRecords
+          </router-link>
         </div>
       </div>
     </div>
   </div>
 </template>
+
+<script>
+window.onload = () => {
+  const test = document.getElementsid("test");
+  test.addEventListener("mouseover", function () {
+    document.getElementById("mouse_change3").style.cursor = "not-allowed";
+  });
+};
+</script>
 
 <style scoped>
 /*---------- Header ----------*/
@@ -26,25 +45,43 @@
   border-top: 1px dashed #746a69;
   border-bottom: 1px dashed #746a69;
 }
-.header .logo {
-  overflow: hidden;
-}
-.header .logo .box {
-  float: left;
-}
-.header .logo .Linktxt {
-  color: #c4a8a5;
-  font-size: 40px;
-  vertical-align: top;
-  font-family: Arcaea;
-  text-decoration: none;
-}
-.header .logo img {
-  width: 70px;
-}
 .header .inner {
   width: 940px;
   margin: 0 auto;
   max-width: 100%;
+}
+.header .contents {
+  display: flex;
+}
+.header .contents .logobox {
+  text-decoration: none;
+  display: flex;
+  padding-right: 100px;
+}
+.header .contents .logoimg {
+  width: 70px;
+  height: 70px;
+}
+.header .contents .logotxt {
+  color: #c4a8a5;
+  font-size: 40px;
+  vertical-align: top;
+  font-family: Arcaea;
+}
+.header .contents .link {
+  height: 70px;
+  display: flex;
+  gap: 6px 5px;
+}
+.header .contents .linkbox {
+  min-width: 70px;
+  text-decoration: none;
+  padding: 18px 5px;
+  background: #c4a8a5;
+  text-align: center;
+  font-size: 10px;
+}
+.linkbox .japanesetxt {
+  font-size: 15px;
 }
 </style>
