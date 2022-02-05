@@ -8,15 +8,33 @@
             <div class="logotxt">SEYOGI's<br />Labo</div>
           </router-link>
         </div>
-        <div class="link">
-          <router-link to="/" class="linkbox">
-            <div class="japanesetxt">トップページ</div>
-            Top
-          </router-link>
-          <router-link to="/Music" class="linkbox">
-            <div class="japanesetxt">音ゲーリザ他</div>
-            GameRecords
-          </router-link>
+        <div class="pc">
+          <div class="link">
+            <router-link to="/" class="linkbox">
+              <div class="japanesetxt">トップページ</div>
+              Top
+            </router-link>
+            <router-link to="/Music" class="linkbox">
+              <div class="japanesetxt">音ゲーリザ他</div>
+              GameRecords
+            </router-link>
+          </div>
+        </div>
+        <div class="sm">
+          <slide right noOverlay width="200">
+            <span>            
+            <router-link to="/" class="linkbox">
+              <div class="japanesetxt">トップページ</div>
+              Top
+            </router-link>
+            </span>
+            <span>
+              <router-link to="/Music" class="linkbox">
+                <div class="japanesetxt">音ゲーリザ他</div>
+                GameRecords
+              </router-link>
+            </span>
+          </slide>
         </div>
       </div>
     </div>
@@ -52,11 +70,14 @@ window.onload = () => {
 }
 .header .contents {
   display: flex;
+  padding-right: 30px;
+}
+.header .contents .logo {
+  padding-right: 100px;
 }
 .header .contents .logobox {
   text-decoration: none;
   display: flex;
-  padding-right: 100px;
 }
 .header .contents .logoimg {
   width: 70px;
@@ -68,20 +89,43 @@ window.onload = () => {
   vertical-align: top;
   font-family: Arcaea;
 }
-.header .contents .link {
-  height: 70px;
-  display: flex;
-  gap: 6px 5px;
+@media screen and (min-width: 600px) {
+  .sm {
+    display: none;
+  }
+  #hamburger {
+    display: none;
+  }
+  .header .contents .link {
+    height: 70px;
+    display: flex;
+    gap: 6px 5px;
+  }
+  .header .contents .linkbox {
+    min-width: 70px;
+    text-decoration: none;
+    padding: 18px 5px;
+    background: #c4a8a5;
+    text-align: center;
+    font-size: 10px;
+  }
+  .linkbox .japanesetxt {
+    font-size: 15px;
+  }
 }
-.header .contents .linkbox {
-  min-width: 70px;
-  text-decoration: none;
-  padding: 18px 5px;
-  background: #c4a8a5;
-  text-align: center;
-  font-size: 10px;
-}
-.linkbox .japanesetxt {
-  font-size: 15px;
+@media screen and (max-width: 599px) {
+  .pc {
+    display: none;
+  }
+  .linkbox{
+    color: #c4a8a5;
+    font-size: 15px;
+    text-decoration: none;
+    text-align: center;
+    white-space: nowrap;
+  }
+  .linkbox .japanesetxt {
+    font-size: 20px;
+  }
 }
 </style>
