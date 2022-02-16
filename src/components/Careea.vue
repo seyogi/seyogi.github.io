@@ -9,7 +9,7 @@
         <div class="timeline-circle" />
         <div class="timeline-content">
           <div class="timeline-txt">
-            <h3>東京工業大学付属科学技術高等学校 入学</h3>
+            <h3>東京工業大学附属科学技術高等学校 入学</h3>
             <div class="sub-txt">情報・コンピュータサイエンス分野</div>
             マイコン制御部 入部<br />
           </div>
@@ -33,6 +33,14 @@
           <div class="timeline-txt">
             弟燕祭 個人製作音ゲー Lawine 展示<br />
             <div class="sub-li">CHUNITHM LEVEL13+ 全鳥<br /></div>
+          </div>
+        </div>
+      </li>
+      <li>
+        <p class="timeline-date">2020年2月</p>
+        <div class="timeline-content">
+          <div class="timeline-txt">
+            高校生パフォーマンスロボット競技大会 3位入賞<br />
           </div>
         </div>
       </li>
@@ -125,6 +133,8 @@ export default {
 }
 .sub-li {
   display: none;
+  color: #888;
+  font-size: 14px;
 }
 @media screen and (max-width: 639px) {
   .timeline > li {
