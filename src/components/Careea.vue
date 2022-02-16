@@ -21,6 +21,12 @@
           <div class="timeline-txt">CHUNITHM 虹レ到達<br /></div>
         </div>
       </li>
+      <li class="sub-li">
+        <p class="timeline-date">2019年2月</p>
+        <div class="timeline-content">
+          <div class="timeline-txt">オンゲキ 虹レ到達<br /></div>
+        </div>
+      </li>
       <li>
         <p class="timeline-date">2019年10月</p>
         <div class="timeline-content">
@@ -34,6 +40,12 @@
         <p class="timeline-date">2020年5月</p>
         <div class="timeline-content">
           <div class="timeline-txt">Arcaea 全譜面PM<br /></div>
+        </div>
+      </li>
+      <li class="sub-li">
+        <p class="timeline-date">2020年6月</p>
+        <div class="timeline-content">
+          <div class="timeline-txt">Dynamix WAVETEST CLASS11 Prime<br /></div>
         </div>
       </li>
       <li class="sub-li">
@@ -78,7 +90,10 @@
       <li class="sub-li">
         <p class="timeline-date">2022年2月</p>
         <div class="timeline-content">
-          <div class="timeline-txt">CHUHITHM LEVEL15 全鳥<br /></div>
+          <div class="timeline-txt">
+          Dynamix WAVETEST CLASS12 High<br />
+          CHUHITHM LEVEL15 全鳥<br />
+          </div>
         </div>
       </li>
     </ul>
