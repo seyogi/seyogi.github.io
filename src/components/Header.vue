@@ -42,12 +42,7 @@
 </template>
 
 <script>
-window.onload = () => {
-  const test = document.getElementsid("test");
-  test.addEventListener("mouseover", function () {
-    document.getElementById("mouse_change3").style.cursor = "not-allowed";
-  });
-};
+
 </script>
 
 <style scoped>
