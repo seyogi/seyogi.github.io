@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import Home from '../views/Home.vue'
-import Music from '../views/Music.vue'
+import Rhythm from '../views/Rhythm.vue'
 
 Vue.use(Router)
 
@@ -14,9 +14,9 @@ export default new Router({
       component: Home
     },
     {
-      path: '/Music',
-      name: 'music',
-      component: Music
+      path: '/Rhythm',
+      name: 'Rhythm',
+      component: Rhythm
     }
   ]
 })

@@ -7,7 +7,7 @@
       <br>
       <h2>About Me</h2>
       <div class="introduction_box"> 
-        <img class="icon" src="../../images/tairituSD.png" />
+        <img class="icon" src="/img/tairituSD.png" />
         <br>
         HN >Seyogi<br>
         Jobs >Students of TCU Intelligent Systems B2<br>

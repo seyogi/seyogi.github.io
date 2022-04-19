@@ -2,7 +2,7 @@
   <div class="Banner">
     <div class="mainImg">
       <div class="inner">
-        <img src="../../images/tyoukaizann.jpeg" />
+        <img src="/img/tyoukaizann.jpeg" />
       </div>
     </div>
     <!-- /mainImg -->

@@ -4,7 +4,7 @@
       <div class="contents">
         <div class="logo">
           <router-link to="/" class="logobox">
-            <img src="../../images/icon.png" class="logoimg" />
+            <img src="/img/icon.png" class="logoimg" />
             <div class="logotxt">SEYOGI's<br />Labo</div>
           </router-link>
         </div>
@@ -14,7 +14,7 @@
               <div class="japanesetxt">トップページ</div>
               Top
             </router-link>
-            <router-link to="/Music" class="linkbox">
+            <router-link to="/Rhythm" class="linkbox">
               <div class="japanesetxt">音ゲーリザ他</div>
               GameRecords
             </router-link>
