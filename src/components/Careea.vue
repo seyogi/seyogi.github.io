@@ -11,7 +11,7 @@
           <div class="timeline-txt">
             <h3>東京工業大学附属科学技術高等学校 入学</h3>
             <div class="sub-txt">情報・コンピュータサイエンス分野</div>
-            マイコン制御部 入部<br />
+            マイコン制御部(MCC) 入部<br />
           </div>
         </div>
       </li>

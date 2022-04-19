@@ -5,15 +5,12 @@
       <br />
       準備中<br />
       <br />
-      とりあえず最近の上手かったリザルトだけ貼っておきます<br />
+      いろんな音ゲーの備忘録ブログ的な感じで運用していきたい(願望)<br />
       <br />
-      <img src="../../images/Result/Arcaea01.jpeg" alt="Arcaea01" width="340" height="255"/>
-      <img src="../../images/Result/Beatmania02.jpg" alt="Beatmania01" width="340" height="255"/><br />
-      <img src="../../images/Result/UNI01.jpg" alt="CHUNITHM01" width="340" height="255"/>
-      <img src="../../images/Result/DDR01.jpg" alt="DDR01" width="340" height="255"/><br />
-      <img src="../../images/Result/GEKI01.jpg" alt="O.N.G.E.K.I.01" width="300" height="400"/>
-      <img src="../../images/Result/SDVX01.jpeg" alt="SDVX01" width="300" height="400"/><br />
       <br />
+      <div v-for="game in games" :key="game.title">
+        <div class="detail_hexagon" :style="game.styles"></div>
+      </div>
       <br />
       <br />
       <br />
@@ -28,8 +25,39 @@
   </div>
 </template>
 
+<script>
+export default {
+  data() {
+    return {
+      games: [
+        {
+          title: "オンゲキ",
+          img_URL: '../../images/Result/ongeki_rogo.jpg',
+          styles: {
+            'background-image': `url(../../images/Result/ongeki_rogo.jpg)`,
+          },
+        },
+      ],
+
+    };
+  },
+};
+</script>
+
 <style scoped>
 .main_box {
   margin-left: 10px;
+}
+.detail_hexagon {
+  display: block;
+  width: 200px;
+  height: 173px;
+  clip-path: polygon(25% 0, 75% 0, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+  -webkit-clip-path: polygon(25% 0, 75% 0, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+  position: relative;
+  overflow: hidden;
+  background-size: contain;
+  background-position: center;
+  /*background-Image: url(../../images/Result/ongeki_rogo.jpg);*/
 }
 </style>
