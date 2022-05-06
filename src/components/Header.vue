@@ -29,7 +29,7 @@
             </router-link>
             </span>
             <span>
-              <router-link to="/Music" class="linkbox">
+              <router-link to="/Rhythm" class="linkbox">
                 <div class="japanesetxt">音ゲーリザ他</div>
                 GameRecords
               </router-link>

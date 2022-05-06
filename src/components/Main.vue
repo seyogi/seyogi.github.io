@@ -24,7 +24,7 @@
 </template>
 
 <script setup>
-import Careea from "./Careea";
+import Careea from "./Mainparts/Careea";
 
 export default {
   components: {

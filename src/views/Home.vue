@@ -11,7 +11,7 @@
 <script setup>
 import Main from "../components/Main";
 import Twitter from "../components/Twitter";
-import Banner from "../components/Banner";
+import Banner from "../components/Mainparts/Banner";
 
 export default {
   components: {

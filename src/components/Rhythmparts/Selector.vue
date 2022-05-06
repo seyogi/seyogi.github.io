@@ -3,7 +3,7 @@
     <div class="main_box">
       <div style="display: flex">
         <div v-for="game in games" :key="game.index">
-          <div class="detail_hexagon" :style="position(game)"></div>
+          <div @click="incrementByEmit(game.title)" class="detail_hexagon" :style="position(game)"></div>
         </div>
       </div>
     </div>
@@ -17,7 +17,7 @@ export default {
       games: [
         {
           index: 0,
-          title: "オンゲキ",
+          title: "Ongeki",
           image: `url(/img/Rhythm/logo/ongeki_logo.png)`,
           color: "pink",
         },
@@ -35,12 +35,18 @@ export default {
         },
         {
           index: 3,
-          title: "ARCAEA",
+          title: "Arcaea",
           image: `url(/img/Rhythm/logo/arcaea_logo.png)`,
           color: "#1f1e33",
         },
       ],
+      title:"none",
     };
+  },
+  methods: {
+    incrementByEmit(title) {
+      this.$emit('changeMethod', (this.title = title));
+    }
   },
   computed: {
     position: function () {
@@ -61,6 +67,7 @@ export default {
 
 <style scoped>
 .main_box {
+  overflow: auto;
   height: 280px;
   position: relative;
   margin-left: 10px;
