@@ -17,11 +17,6 @@
       <br />
       <br />
       <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
     </div>
   </div>
 </template>
@@ -30,12 +25,16 @@
 import Selector from "./Rhythmparts/Selector";
 import Ongeki from "./Rhythmparts/Ongeki";
 import CHUNITHM from "./Rhythmparts/CHUNITHM";
+import SDVX from "./Rhythmparts/SDVX";
+import Arcaea from "./Rhythmparts/Arcaea";
 
 export default {
   components: {
     Selector,
     Ongeki,
     CHUNITHM,
+    SDVX,
+    Arcaea,
   },
   data() {
     return {
