@@ -20,7 +20,7 @@
             <img class="img" src="/img/product/lawine/TeiennsaiPlay.png" />
           </p>
           <p v-else-if="active == '3'">
-            <img class="img" src="/img/product/robots/KBTKING.jpg" />
+            <img class="img" src="/img/product/robots/KBTKING.png" />
           </p>
           <p v-else-if="active == '4'">
             <img class="img" src="/img/product/robots/magichand.png" />
