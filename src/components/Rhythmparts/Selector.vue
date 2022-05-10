@@ -3,7 +3,11 @@
     <div class="main_box">
       <div style="display: flex">
         <div v-for="game in games" :key="game.index">
-          <div @click="incrementByEmit(game.title)" class="detail_hexagon" :style="position(game)"></div>
+          <div
+            @click="incrementByEmit(game.title)"
+            class="detail_hexagon"
+            :style="position(game)"
+          ></div>
         </div>
       </div>
     </div>
@@ -40,23 +44,23 @@ export default {
           color: "#1f1e33",
         },
       ],
-      title:"none",
+      title: "none",
     };
   },
   methods: {
     incrementByEmit(title) {
-      this.$emit('changeMethod', (this.title = title));
-    }
+      this.$emit("changeMethod", (this.title = title));
+    },
   },
   computed: {
     position: function () {
       return function (data) {
         const num = 80;
         var a = {
-          "top":num*(data.index%2)+"px",
-          "left":Math.sqrt(3)*num*data.index+"px",
+          top: num * (data.index % 2) + "px",
+          left: Math.sqrt(3) * num * data.index + "px",
           "background-image": data.image,
-          "background-color":data.color,
+          "background-color": data.color,
         };
         return a;
       };
@@ -72,6 +76,14 @@ export default {
   position: relative;
   margin-left: 10px;
 }
+.main_box::-webkit-scrollbar {
+  height: 10px;
+  background: #eee;
+}
+.main_box::-webkit-scrollbar-thumb {
+  background: #ff8095;
+  border-radius: 5px;
+}
 .detail_hexagon {
   padding: 10px;
   cursor: pointer;
@@ -82,5 +94,10 @@ export default {
   position: absolute;
   background-size: contain;
   background-position: center;
+}
+.detail_hexagon:hover {
+  opacity: 0.5;
+  color: white;
+  transition : 300ms;
 }
 </style>

@@ -10,7 +10,7 @@
       <br />
       <Selector @changeMethod="updatetitle"></Selector>
       <br />
-      <h2>{{ title }}</h2>
+      <h2>{{ names[title] }}</h2>
       <component :is="title"></component>
       <br />
       <br />
@@ -39,6 +39,12 @@ export default {
   data() {
     return {
       title: "Ongeki",
+      names:{
+        Ongeki:"オンゲキ",
+        CHUNITHM:"CHUNITHM",
+        SDVX:"SOUND VOLTEX",
+        Arcaea:"Arcaea",
+      },
     };
   },
   methods: {

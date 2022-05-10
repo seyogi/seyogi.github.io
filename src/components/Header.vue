@@ -14,6 +14,10 @@
               <div class="japanesetxt">トップページ</div>
               Top
             </router-link>
+            <router-link to="/Product" class="linkbox">
+              <div class="japanesetxt">製作ログ</div>
+              ProductLog
+            </router-link>
             <router-link to="/Rhythm" class="linkbox">
               <div class="japanesetxt">音ゲーリザ他</div>
               GameRecords
@@ -22,11 +26,17 @@
         </div>
         <div class="sm">
           <slide right noOverlay width="200">
-            <span>            
-            <router-link to="/" class="linkbox">
-              <div class="japanesetxt">トップページ</div>
-              Top
-            </router-link>
+            <span>
+              <router-link to="/" class="linkbox">
+                <div class="japanesetxt">トップページ</div>
+                Top
+              </router-link>
+            </span>
+            <span>
+              <router-link to="/Product" class="linkbox">
+                <div class="japanesetxt">製作ログ</div>
+                ProductLog
+              </router-link>
             </span>
             <span>
               <router-link to="/Rhythm" class="linkbox">
@@ -41,9 +51,7 @@
   </div>
 </template>
 
-<script>
-
-</script>
+<script></script>
 
 <style scoped>
 /*---------- Header ----------*/
@@ -84,7 +92,7 @@
   vertical-align: top;
   font-family: Arcaea;
 }
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 700px) {
   .sm {
     display: none;
   }
@@ -97,7 +105,7 @@
     gap: 6px 5px;
   }
   .header .contents .linkbox {
-    min-width: 70px;
+    min-width: 90px;
     text-decoration: none;
     padding: 18px 5px;
     background: #c4a8a5;
@@ -108,16 +116,17 @@
     font-size: 15px;
   }
 }
-@media screen and (max-width: 599px) {
+@media screen and (max-width: 699px) {
   .pc {
     display: none;
   }
-  .linkbox{
+  .linkbox {
+    min-width:130px;
     color: #c4a8a5;
     font-size: 15px;
     text-decoration: none;
-    text-align: center;
     white-space: nowrap;
+    text-align: center;
   }
   .linkbox .japanesetxt {
     font-size: 20px;
