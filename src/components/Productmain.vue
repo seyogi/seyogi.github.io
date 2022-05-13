@@ -14,8 +14,16 @@
         </ul>
         <div class="contentsWrap">
           <p v-if="active == '1'">
-            <img class="img" width="250" src="/img/product/lawine/TeiennsaiPlay.png" />
-            <img class="img" height="250" src="/img/product/lawine/result.png" />
+            <img
+              class="img"
+              src="/img/product/lawine/TeiennsaiPlay.png"
+              style="width: 250px; max-width: 100%"
+            />
+            <img
+              class="img"
+              src="/img/product/lawine/result.png"
+              style="max-height: 250px; max-width: 100%"
+            />
             <br />
             高校時代に文化祭の部活動ブースで展示した
             <font color="#AAA">/*著作権ガン無視*/</font>自作音ゲーです。
@@ -32,8 +40,8 @@
           <p v-else-if="active == '2'">
             <img
               class="img"
-              width="400"
               src="/img/product/robots/KBTKING.png"
+              style="width: 400px; max-width: 100%"
             /><br />↑パフォーマンスロボット"カブトキング"<br /><br />
             所属していた部活動にて、Arduinoでいくつかロボットを作りました。<br />
             画像は指定されたコースをライントレースしながら、パフォーマンスを行うロボットになります。<br />
@@ -42,18 +50,28 @@
           <p v-else-if="active == '3'">
             <img
               class="img"
-              width="200"
+              style="width: 200px; max-width: 100%"
               src="/img/product/flutter/App_notification.jpg"
             /><br />
             高校時代の授業一つ、課題研究にてFlutterで製作した、名前を呼ばれた際に通知するアプリケーションです。<br />
-            <font color="#AAA">出来はいまいちですが、共同開発の良い経験になりました。</font><br />
+            <font color="#AAA"
+              >出来はいまいちですが、共同開発の良い経験になりました。</font
+            ><br />
           </p>
           <p v-else-if="active == '4'">
-            <img class="img" height="200" src="/img/product/robots/magichand.png" />
-            <img class="img" height="200" src="/img/product/robots/magicpost.png" /><br>
-            Hack Dayとは、Yahoo社主催(多分)の24時間で開発を行うという企画です。<br>
-            2018年(高1)、2021(B1)の二回参加し、初回は左の画像のゴツイ手袋みたいなやつ、2回目は右の画像のポストみたいなやつを作りました。<br><br>
-            説明はぜひYouTubeライブのアーカイブをご覧ください(リンク準備中)<br>
+            <img
+              class="img"
+              src="/img/product/robots/magichand.png"
+              style="max-height: 200px; max-width: 100%"
+            />
+            <img
+              class="img"
+              src="/img/product/robots/magicpost.png"
+              style="max-height: 200px; max-width: 100%"
+            /><br />
+            Hack Dayとは、Yahoo社主催(多分)の24時間で開発を行うという企画です。<br />
+            2018年(高1)、2021(B1)の二回参加し、初回は左の画像のゴツイ手袋みたいなやつ、2回目は右の画像のポストみたいなやつを作りました。<br /><br />
+            説明はぜひYouTubeライブのアーカイブをご覧ください(リンク準備中)<br />
           </p>
         </div>
       </div>
@@ -81,6 +99,7 @@ export default {
 <style scoped>
 .main_box {
   margin-left: 10px;
+  width: 100%;
 }
 h2 {
   width: 80%;
