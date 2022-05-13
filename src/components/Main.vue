@@ -105,7 +105,7 @@ export default {
 .introduction_box .links .box:hover .icons {
   opacity: 0.5;
   transition: 300ms;
-  animation: 2s linear infinite rotation1;
+  animation: 1s ease-in-out rotation1;
 }
 @keyframes rotation1 {
   0% {
