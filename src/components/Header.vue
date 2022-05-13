@@ -22,6 +22,10 @@
               <div class="japanesetxt">音ゲーリザ他</div>
               GameRecords
             </router-link>
+            <router-link to="/Game" class="linkbox">
+              <div class="japanesetxt">準備中</div>
+              In Preparation
+            </router-link>
           </div>
         </div>
         <div class="sm">
@@ -42,6 +46,12 @@
               <router-link to="/Rhythm" class="linkbox">
                 <div class="japanesetxt">音ゲーリザ他</div>
                 GameRecords
+              </router-link>
+            </span>
+            <span>
+              <router-link to="/Game" class="linkbox">
+                <div class="japanesetxt">準備中</div>
+                In Preparation
               </router-link>
             </span>
           </slide>
@@ -92,7 +102,7 @@
   vertical-align: top;
   font-family: Arcaea;
 }
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 800px) {
   .sm {
     display: none;
   }
@@ -116,12 +126,12 @@
     font-size: 15px;
   }
 }
-@media screen and (max-width: 699px) {
+@media screen and (max-width: 800px) {
   .pc {
     display: none;
   }
   .linkbox {
-    min-width:130px;
+    min-width: 130px;
     color: #c4a8a5;
     font-size: 15px;
     text-decoration: none;
