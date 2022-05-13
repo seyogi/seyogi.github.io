@@ -1,8 +1,11 @@
 <template>
   <div>
     略歴
-    <button v-on:click="test()">???</button>←エラー出るけど動くよ
-    <hr style="width:80%">
+    <font-awesome-icon
+      icon="fa-solid fa-circle-question"
+      v-on:click="test()"
+    />
+    <hr style="width: 80%" />
     <ul class="timeline">
       <li>
         <p class="timeline-date">2018年4月</p>
@@ -99,8 +102,16 @@
         <p class="timeline-date">2022年2月</p>
         <div class="timeline-content">
           <div class="timeline-txt">
-          Dynamix WAVETEST CLASS12 High<br />
-          CHUHITHM LEVEL15 全鳥<br />
+            Dynamix WAVETEST CLASS12 High<br />
+            CHUHITHM LEVEL15 全鳥<br />
+          </div>
+        </div>
+      </li>
+      <li class="sub-li">
+        <p class="timeline-date">2022年4月</p>
+        <div class="timeline-content">
+          <div class="timeline-txt">
+            CHUHITHM クラス認定 INFINITY 全合格(無限帯)<br />
           </div>
         </div>
       </li>
@@ -109,7 +120,6 @@
 </template>
 
 <script setup>
-
 const elements = document.getElementsByClassName("sub-li");
 
 export default {

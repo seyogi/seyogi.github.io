@@ -2,7 +2,7 @@
   <div class="footer">
     <ul class="footer-list">
       <li><a href="https://seyogi.github.io/">HOME</a> | </li>
-      <li><a href="https://github.com/seyogi" target="_blank" rel="noopener noreferrer">Github</a></li>
+      <li>Contact(準備中)</li>
     </ul>
     Copyright © 2020 Seyogi All Rights Reserved.
   </div>

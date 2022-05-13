@@ -111,7 +111,6 @@ li {
 }
 li:hover {
   opacity: 0.5;
-  color: white;
   transition: 300ms;
 }
 li:last-child {
