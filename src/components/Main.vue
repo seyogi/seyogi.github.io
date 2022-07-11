@@ -2,8 +2,8 @@
   <div>
     <div class="main_box">
       <h3>ここは何？</h3>
-      雑記ページです。<br />
-      サイト更新サボり気味、、、新学期はちゃんと書きます。<br />
+      雑記ページです。※更新頻度激遅<br />
+      <br />
       <br />
       <h2>About Me</h2>
       <div class="introduction_box">

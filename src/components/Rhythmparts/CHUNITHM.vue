@@ -9,7 +9,7 @@
       CLASS EMBLEM : INFINITY -ALL CLEAR-<br>
       <br />
       15全鳥<br />
-      .9未AJ3(エレクリ黒/ぷにゃー/小悪魔)<br />
+      バンキシャAJで燃え尽きてモチベ下がってますがちょろちょろやってます。<br />
       <br />
     </div>
   </div>

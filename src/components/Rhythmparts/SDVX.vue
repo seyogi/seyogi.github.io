@@ -9,6 +9,7 @@
       SKILL ANALYZER : 後光暴龍天<br />
       <br />
       18PUC 0<br />
+      インペリアル到達してからモチベ減ってます。ラクリマSは出したいな～<br />
       <br />
     </div>
   </div>

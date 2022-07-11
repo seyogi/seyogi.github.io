@@ -5,9 +5,9 @@
       <img src="/img/Rhythm/Result/Arcaea01.jpeg" class="img" />
       <img src="/img/Rhythm/Result/Arcaea02.jpeg" class="img" /><br />
       <br />
-      Potential : 12.87<br />
+      Potential : 12.92(MAX)<br />
       <br />
-      全曲全難易度PureMemory<br />
+      ~ver3.12まで全曲全難易度PMでした。4.0頑張ってます！<br />
       最底辺フレーム持ち<br />
       <br />
     </div>

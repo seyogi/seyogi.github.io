@@ -110,11 +110,17 @@
       <li class="sub-li">
         <p class="timeline-date">2022年4月</p>
         <div class="timeline-content">
-          <div class="timeline-txt">
-            CHUHITHM クラス認定 INFINITY 全合格(無限帯)<br />
+          <div class="timeline-txt">CHUHITHM クラス認定 INFINITY 全合格(無限帯)<br />
           </div>
         </div>
       </li>
+      <li class="sub-li">
+        <p class="timeline-date">2022年7月</p>
+        <div class="timeline-content">
+          <div class="timeline-txt">Beatmania IIDX 段位認定 十段 合格<br /></div>
+        </div>
+      </li>
+      
     </ul>
   </div>
 </template>
