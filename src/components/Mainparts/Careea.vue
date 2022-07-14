@@ -21,6 +21,14 @@
           <div class="timeline-txt">CHUNITHM 虹レ到達<br /></div>
         </div>
       </li>
+      <li>
+        <p class="timeline-date">2018年12月</p>
+        <div class="timeline-content">
+          <div class="timeline-txt">
+            Hack Day 2018 参加<br />
+          </div>
+        </div>
+      </li>
       <li class="sub-li">
         <p class="timeline-date">2019年2月</p>
         <div class="timeline-content">
@@ -76,6 +84,14 @@
         <p class="timeline-date">2021年5月</p>
         <div class="timeline-content">
           <div class="timeline-txt">Arcaea 全譜面PM奪還<br /></div>
+        </div>
+      </li>
+      <li>
+        <p class="timeline-date">2021年9月</p>
+        <div class="timeline-content">
+          <div class="timeline-txt">
+            Digital Hack Day 2021 参加<br />
+          </div>
         </div>
       </li>
       <li class="sub-li">

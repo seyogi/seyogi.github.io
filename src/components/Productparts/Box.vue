@@ -71,7 +71,7 @@
           <br />
           説明はぜひYouTubeライブのアーカイブをご覧ください(リンク準備中)<br />
         </p>
-          <p v-else-if="active == '5'">
+        <p v-else-if="active == '5'">
           <img
             class="img"
             src="/img/product/sdpbl/pbl_app01.png"

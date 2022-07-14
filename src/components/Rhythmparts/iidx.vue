@@ -7,8 +7,8 @@
       <br />
       段位認定 : 十段(CastHour)<br />
       <br />
-      BISTROVERから本格的に始めました。皆伝まで頑張りたい<br />
-      12難3<br />
+      BISTROVERから本格的に始めました。目指せ"皆伝"<br />
+      ☆12地力表:<a href="https://sp12.iidx.app/users/7228-1124" target="_blank">URL</a>
       <br />
     </div>
   </div>
