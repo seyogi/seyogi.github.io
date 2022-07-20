@@ -131,7 +131,10 @@
       <li class="sub-li">
         <p class="timeline-date">2022年7月</p>
         <div class="timeline-content">
-          <div class="timeline-txt">Beatmania IIDX 段位認定 十段 合格<br /></div>
+          <div class="timeline-txt">
+            Beatmania IIDX 段位認定 十段 合格<br />
+            Beatmania IIDX 段位認定 中伝 合格<br />
+          </div>
         </div>
       </li>
     </ul>
