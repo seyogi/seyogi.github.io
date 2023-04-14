@@ -8,43 +8,19 @@
             <div class="logotxt">SEYOGI's<br />Lab</div>
           </router-link>
         </div>
-        <div class="pc">
-          <div class="link">
-            <router-link to="/" class="linkbox">
-              <div class="japanesetxt">トップページ</div>
-              Top
-            </router-link>
-            <router-link to="/Product" class="linkbox">
-              <div class="japanesetxt">製作ログ</div>
-              ProductLog
-            </router-link>
-            <router-link to="/Rhythm" class="linkbox">
-              <div class="japanesetxt">音ゲーリザ他</div>
-              GameRecords
-            </router-link>
-          </div>
-        </div>
-        <div class="sm">
-          <slide noOverlay right width="200">
-            <span>
-              <router-link to="/" class="linkbox">
-                <div class="japanesetxt">トップページ</div>
-                Top
-              </router-link>
-            </span>
-            <span>
-              <router-link to="/Product" class="linkbox">
-                <div class="japanesetxt">製作ログ</div>
-                ProductLog
-              </router-link>
-            </span>
-            <span>
-              <router-link to="/Rhythm" class="linkbox">
-                <div class="japanesetxt">音ゲーリザ他</div>
-                GameRecords
-              </router-link>
-            </span>
-          </slide>
+        <div class="link">
+          <router-link to="/" class="linkbox">
+            <div class="japanesetxt">トップページ</div>
+            Top
+          </router-link>
+          <router-link to="/Product" class="linkbox">
+            <div class="japanesetxt">製作ログ</div>
+            ProductLog
+          </router-link>
+          <router-link to="/Rhythm" class="linkbox">
+            <div class="japanesetxt">音ゲーリザ他</div>
+            GameRecords
+          </router-link>
         </div>
       </div>
     </div>
@@ -52,13 +28,6 @@
 </template>
 
 <script>
-import { Slide } from 'vue3-burger-menu'  
-
-export default {
-    components: {
-        Slide // Register your component
-    }
-}
 </script>
 
 <style scoped>
@@ -79,12 +48,8 @@ export default {
   margin: 0 auto;
   max-width: 100%;
 }
-.header .contents {
-  display: flex;
-  padding-right: 30px;
-}
 .header .contents .logo {
-  padding-right: 100px;
+  padding-right: 50px;
 }
 .header .contents .logobox {
   text-decoration: none;
@@ -100,12 +65,10 @@ export default {
   vertical-align: top;
   font-family: Arcaea;
 }
-@media screen and (min-width: 800px) {
-  .sm {
-    display: none;
-  }
-  #hamburger {
-    display: none;
+@media screen and (min-width: 600px) {
+  .header .contents {
+    display: flex;
+    padding-right: 30px;
   }
   .header .contents .link {
     height: 70px;
@@ -124,23 +87,23 @@ export default {
     font-size: 15px;
   }
 }
-@media screen and (max-width: 800px) {
-  .pc {
-    display: none;
-  }
-  slide{
-    
+@media screen and (max-width: 600px) {
+  .header .contents .link {
+    height: 45px;
+    display: flex;
+    gap: 6px 5px;
   }
   .linkbox {
-    min-width: 130px;
-    color: #c4a8a5;
-    font-size: 15px;
+    min-width: 100px;
+    height: 40px;
+    background-color: #c4a8a5;
+    font-size: 10px;
     text-decoration: none;
     white-space: nowrap;
     text-align: center;
   }
   .linkbox .japanesetxt {
-    font-size: 20px;
+    font-size: 15px;
   }
 }
 </style>
