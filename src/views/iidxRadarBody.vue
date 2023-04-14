@@ -42,7 +42,7 @@
         </tr>
       </thead>
       <tbody>
-        <tr v-for="scoreData in scoreDatas" :key="scoreData.Name">
+        <tr v-for="scoreData in scoreDatas" :key="scoreData.index">
           <td>{{ scoreData.Score }}</td>
           <td>{{ scoreData.Name }}</td>
           <td>{{ scoreData.diff }}</td>
@@ -112,6 +112,7 @@ export default {
         };
         this.send_file(formData, config).then((response) => {
           this.scoreDatas = response.data.message;
+          console.log(this.scoreDatas);
         });
       } else if (this.csvText != "") {
         formData.append("text", this.csvText);
@@ -121,6 +122,7 @@ export default {
           },
         };
         this.send_text(formData, config).then((response) => {
+          this.scoreDatas = [{Score:0}];
           this.scoreDatas = response.data.message;
         });
       }
