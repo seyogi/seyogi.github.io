@@ -112,6 +112,7 @@ export default {
 
 <style scoped>
 .main_box {
+  min-width: 600px;
   padding-left: 30px;
 }
 .timeline {
