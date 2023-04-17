@@ -46,6 +46,9 @@
             <td>{{ scoreData.Score }}</td>
             <td>{{ scoreData.diff }}</td>
             <td>{{ scoreData.Name }}</td>
+            <td>{{ scoreData.PerScore }}</td>
+            <td>{{ scoreData.MAXScore }}</td>
+            <td>{{ (Math.round((scoreData.MAXScore - scoreData.Score) * 100)) / 100 }}</td>
           </tr>
         </tbody>
       </table>
@@ -68,7 +71,8 @@ export default {
   components: {},
   data() {
     return {
-      headers: ["レーダー値", "難易度", "曲名"],
+      //'PerScore':per_score,'MAXScore':rader_max
+      headers: ["レーダー値", "難易度", "曲名", "スコア(%)", "理論値", "伸びしろ"],
       selectedTheme: "NOTES",
       optionThemes: [
         { id: 0, name: "NOTES" },
