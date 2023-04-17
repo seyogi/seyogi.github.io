@@ -1,6 +1,5 @@
 <template>
   <div class="center_container">
-    <br />
     ※同一曲について複数譜面タイプ（B/N/H/A/L）をプレーしている場合、それらの中の最大値のみが対象として適用されます
     <br />
     <textarea
@@ -12,43 +11,47 @@
     />
     <br />
     <input type="file" id="csvFile" name="avatar" accept=".csv" @change="selectedFile" />
-    <br />
-    <br />
-    <select v-model="selectedTheme">
-      <option disabled value="">Theme一覧</option>
-      <option
-        v-for="Theme in optionThemes"
-        v-bind:value="Theme.name"
-        v-bind:key="Theme.id"
-      >
-        {{ Theme.name }}
-      </option>
-    </select>
-    <br /><br />
-    表示曲数
-    <input v-model="numInput" size="20" />
-    <br />
-    {{ errmsg }}
+    <br /><br />{{ this.errmsg }}
     <br />
     <input type="button" id="sendButton" value="Go" @click="click()" />
     <br />
     <br />
-    <table align="center">
-      <thead>
-        <tr>
-          <th v-for="(header, index) in headers" v-bind:key="index">
-            {{ header }}
-          </th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr v-for="scoreData in scoreDatas" :key="scoreData.index">
-          <td>{{ scoreData.Score }}</td>
-          <td>{{ scoreData.Name }}</td>
-          <td>{{ scoreData.diff }}</td>
-        </tr>
-      </tbody>
-    </table>
+    <div id="vis">
+      表示曲数
+      <input type="number" v-model="numInput" size="5" />&nbsp;&nbsp;&nbsp;
+      <select v-model="selectedTheme">
+        <option disabled value="">Theme一覧</option>
+        <option
+          v-for="Theme in optionThemes"
+          v-bind:value="Theme.name"
+          v-bind:key="Theme.id"
+        >
+          {{ Theme.name }}
+        </option>
+      </select>
+      <br /><br />
+      <table align="center">
+        <thead>
+          <tr>
+            <th v-for="(header, index) in headers" v-bind:key="index">
+              {{ header }}
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr
+            v-for="scoreData in scoreDatas[selectedTheme].slice(0, this.numInput)"
+            :key="scoreData.index"
+          >
+            <td>{{ scoreData.Score }}</td>
+            <td>{{ scoreData.diff }}</td>
+            <td>{{ scoreData.Name }}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <br />
+    <br />
     <br />
     <br />
     <br />
@@ -65,24 +68,28 @@ export default {
   components: {},
   data() {
     return {
-      headers: ["レーダー値", "曲名", "難易度"],
-      selectedTheme: "",
+      headers: ["レーダー値", "難易度", "曲名"],
+      selectedTheme: "NOTES",
       optionThemes: [
         { id: 0, name: "NOTES" },
         { id: 1, name: "PEAK" },
         { id: 2, name: "SCRATCH" },
-        { id: 3, name: "SOF-LAN" },
+        { id: 3, name: "SOF_LAN" },
         { id: 4, name: "CHARGE" },
         { id: 5, name: "CHORD" },
       ],
       numInput: "10",
       errmsg: "",
-      scoreDatas: "",
+      scoreDatas: {
+        NOTES: [],
+      },
       uploadFile: null,
       csvText: "",
     };
   },
-  mounted() {},
+  mounted() {
+    document.getElementById("vis").style.display = "none";
+  },
   methods: {
     selectedFile: function (e) {
       e.preventDefault();
@@ -94,14 +101,7 @@ export default {
       this.csvText = csvTextArea.value;
     },
     click() {
-      if (this.selectedTheme == "") {
-        this.errmsg = "Themeを選択してください";
-      } else if (this.numInput < 1) {
-        this.errmsg = " 表示曲数は1以上にしてください";
-      } else {
-        this.errmsg = "";
-      }
-
+      this.errmsg = "";
       var formData = new FormData();
       if (this.uploadFile) {
         formData.append("file", this.uploadFile);
@@ -112,7 +112,7 @@ export default {
         };
         this.send_file(formData, config).then((response) => {
           this.scoreDatas = response.data.message;
-          console.log(this.scoreDatas);
+          document.getElementById("vis").style.display = "block";
         });
       } else if (this.csvText != "") {
         formData.append("text", this.csvText);
@@ -122,25 +122,18 @@ export default {
           },
         };
         this.send_text(formData, config).then((response) => {
-          this.scoreDatas = [{Score:0}];
           this.scoreDatas = response.data.message;
+          document.getElementById("vis").style.display = "block";
         });
+      } else {
+        this.errmsg = "ファイルまたはテキストを入力してください";
       }
     },
     send_file(file, config) {
-      console.log(file, config);
-      return axios.post(
-        "iidx/uploadfile/?Theme=" + this.selectedTheme + "&displayNum=" + this.numInput,
-        file,
-        config
-      );
+      return axios.post("iidx/uploadfile/", file, config);
     },
     send_text(text, config) {
-      return axios.post(
-        "iidx/uploadtext/?Theme=" + this.selectedTheme + "&displayNum=" + this.numInput,
-        text,
-        config
-      );
+      return axios.post("iidx/uploadtext/?displayNum=" + this.numInput, text, config);
     },
   },
 };
