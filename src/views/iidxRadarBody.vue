@@ -44,9 +44,8 @@
             :key="scoreData.index"
           >
             <td>{{ scoreData.Score }}</td>
-            <td>{{ scoreData.diff }}</td>
-            <td>{{ scoreData.Name }}</td>
-            <td>{{ scoreData.PerScore }}</td>
+            <td>{{ scoreData.Name }}&nbsp;({{ rename[scoreData.diff] }})</td>
+            <td>{{ scoreData.PerScore }}&nbsp;({{ test(scoreData.PerScore) }})</td>
             <td>{{ scoreData.MAXScore }}</td>
             <td>{{ (Math.round((scoreData.MAXScore - scoreData.Score) * 100)) / 100 }}</td>
           </tr>
@@ -72,7 +71,7 @@ export default {
   data() {
     return {
       //'PerScore':per_score,'MAXScore':rader_max
-      headers: ["レーダー値", "難易度", "曲名", "スコア(%)", "理論値", "伸びしろ"],
+      headers: ["レーダー値", "曲名", "スコア(%)", "理論値", "差分"],
       selectedTheme: "NOTES",
       optionThemes: [
         { id: 0, name: "NOTES" },
@@ -82,6 +81,11 @@ export default {
         { id: 4, name: "CHARGE" },
         { id: 5, name: "CHORD" },
       ],
+      rename: {
+        sph: "H",
+        spa: "A",
+        spl: "L",
+      },
       numInput: "10",
       errmsg: "",
       scoreDatas: {
@@ -95,6 +99,21 @@ export default {
     document.getElementById("vis").style.display = "none";
   },
   methods: {
+    RANK: function (num) {
+      num*=0.01;
+      if(num>8/9)
+        return "AAA";
+      else if(num>7/9)
+        return "AA";
+      else if(num>6/9)
+        return "A";
+      else if(num>5/9)
+        return "B";
+      else if(num>4/9)
+        return "C";
+      else
+        return "D";
+    },
     selectedFile: function (e) {
       e.preventDefault();
       let files = e.target.files;
