@@ -159,7 +159,6 @@ export default {
 
 <style scoped>
 .main_box {
-  min-width: 600px;
   padding-left: 30px;
 }
 .timeline {
@@ -174,8 +173,7 @@ export default {
     align-items: center;
   }
   .carousel__slide img {
-    max-height: 350px;
-    max-width: 100%;
+    max-width: 80%;
   }
   .timeline > li {
     margin-bottom: 30px;

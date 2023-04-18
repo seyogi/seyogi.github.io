@@ -51,7 +51,6 @@ export default {
 }
 .carousel__slide img {
   max-height: 80%;
-  max-height: 300px;
   max-width: 80%;
   padding-right:30px;
 }

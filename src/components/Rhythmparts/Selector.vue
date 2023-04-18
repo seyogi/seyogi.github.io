@@ -103,8 +103,8 @@ window.addEventListener("resize", resizeWindow);
   .detail {
     padding: 10px;
     cursor: pointer;
-    width: 70px;
-    height: 70px;
+    width: 50px;
+    height: 50px;
     clip-path: circle(55%);
     background-size: contain;
     background-position: center;
