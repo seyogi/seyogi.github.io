@@ -45,13 +45,21 @@
           >
             <td>{{ scoreData.Score }}</td>
             <td>{{ scoreData.Name }}&nbsp;({{ rename[scoreData.diff] }})</td>
-            <td>{{ scoreData.PerScore }}&nbsp;({{ test(scoreData.PerScore) }})</td>
+            <td>{{ scoreData.PerScore }}&nbsp;({{ RANK(scoreData.PerScore) }})</td>
             <td>{{ scoreData.MAXScore }}</td>
-            <td>{{ (Math.round((scoreData.MAXScore - scoreData.Score) * 100)) / 100 }}</td>
+            <td>{{ Math.round((scoreData.MAXScore - scoreData.Score) * 100) / 100 }}</td>
           </tr>
         </tbody>
       </table>
     </div>
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
     <br />
     <br />
     <br />
@@ -100,19 +108,13 @@ export default {
   },
   methods: {
     RANK: function (num) {
-      num*=0.01;
-      if(num>8/9)
-        return "AAA";
-      else if(num>7/9)
-        return "AA";
-      else if(num>6/9)
-        return "A";
-      else if(num>5/9)
-        return "B";
-      else if(num>4/9)
-        return "C";
-      else
-        return "D";
+      num *= 0.01;
+      if (num > 8 / 9) return "AAA";
+      else if (num > 7 / 9) return "AA";
+      else if (num > 6 / 9) return "A";
+      else if (num > 5 / 9) return "B";
+      else if (num > 4 / 9) return "C";
+      else return "D";
     },
     selectedFile: function (e) {
       e.preventDefault();
