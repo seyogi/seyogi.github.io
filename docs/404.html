@@ -5,17 +5,12 @@
     <meta charset="utf-8">
     <title>Single Page Apps for GitHub Pages</title>
     <script type="text/javascript">
-    var pathSegmentsToKeep = 0;
-
-        var l = window.location;
+    let secmentCount = 1; // [2018/2/2 Added]: 変数が抜けていると指摘がありましたので，追加しました．
+        let l = window.location;
+        let port = l.port ? ':' + l.port : ''
         l.replace(
-            l.protocol + '//' + l.hostname + (l.port ? ':' + l.port : '') +
-            l.pathname.split('/').slice(0, 1 + pathSegmentsToKeep).join('/') + '/?/' +
-            l.pathname.slice(1).split('/').slice(pathSegmentsToKeep).join('/').replace(/&/g, '~and~') +
-            (l.search ? '&' + l.search.slice(1).replace(/&/g, '~and~') : '') +
-            l.hash
-        );
-
+            `${l.protocol}//${l.hostname}${port}/?p=${l.pathname.split('/').slice(0, 1 + segmentCount).join('/')}`
+        )
     </script>
 </head>
 
