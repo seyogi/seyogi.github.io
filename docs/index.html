@@ -10,22 +10,6 @@
     <script defer="defer" src="js/chunk-vendors.ec3e23a2.js"></script>
     <script defer="defer" src="js/app.e75783f8.js"></script>
     <link href="css/app.c6c59b58.css" rel="stylesheet">
-
-    <script type="text/javascript">
-        (function (l) {
-            if (l.search) {
-                var q = {};
-                l.search.slice(1).split('&').forEach(function (v) { // ?p=/fooの分解
-                    var a = v.split('='); // 'p=/foo' となっているはずなので=で分割
-                    q[a[0]] = a[1]; // {p: '/foo'} 形式に修正
-                });
-                if (q.p !== undefined) {
-                    window.history.replaceState(null, null, l.pathname.slice(0, -1) + (q.p || '')); // https://hoge.com/fooへ遷移
-                }
-            }
-        }(window.location))
-    </script>
-
 </head>
 
 <body><noscript><strong>We're sorry but home doesn't work properly without JavaScript enabled. Please enable it to
