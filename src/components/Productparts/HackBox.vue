@@ -23,17 +23,17 @@ export default {
         {
           competition: "JPHACKS 2022",
           title: "Qsahaiel",
-          imgurl: "/img/product/robots/Qsahaiel2.png",
+          imgurl: "/img/product/hack/Qsahaiel2.png",
         },
         {
           competition: "Hack Day 2018",
           title: "Sound hand",
-          imgurl: "/img/product/robots/soundhand.png",
+          imgurl: "/img/product/hack/soundhand.png",
         },
         {
           competition: "Digital Hack Day 2021",
           title: "A.I.POST",
-          imgurl: "/img/product/robots/magicpost.png",
+          imgurl: "/img/product/hack/magicpost.png",
         },
       ],
     };
@@ -43,8 +43,8 @@ export default {
 
 <style scoped>
 .carousel__slide {
-  height: 350px;
-  width: 80%;
+  max-height: 350px;
+  width: 70%;
   display: flex;
   justify-content: center;
   align-items: center;

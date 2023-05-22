@@ -155,7 +155,7 @@ export default {
 
 <style scoped>
 .main_box {
-  padding-left: 30px;
+  padding: 30px;
 }
 .timeline {
   list-style: none;

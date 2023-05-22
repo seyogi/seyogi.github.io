@@ -104,6 +104,9 @@ export default {
         {
           imgurl: "/img/Rhythm/Result/DDR02.jpg",
         },
+        {
+          imgurl: "/img/Rhythm/Result/DDR03.jpg",
+        },
       ],
     };
   },
@@ -112,7 +115,7 @@ export default {
 
 <style scoped>
 .main_box {
-  padding-left: 30px;
+  padding: 30px;
 }
 .timeline {
   list-style: none;

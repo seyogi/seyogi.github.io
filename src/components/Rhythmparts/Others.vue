@@ -2,16 +2,19 @@
   <div>
     <div class="main_box">
       <br />
-      <h3>Arcaea</h3>
+      <h3>オンゲキ</h3>
       <br />
       <div class="sub_box">
-        <img src="/img/Rhythm/Result/Arcaea01.jpeg" class="img" />
+        <img src="/img/Rhythm/Result/GEKI01.jpg" class="img" />
         <div class="side_box">
-          Potential : 13.00<br />
-          ID : 424 326 576<br />
+          Max Rating : 17.00<br />
           <br />
-          ~ver3.12まで全曲全難易度PMでした。<br />
-          半世紀後に全PM復帰予定です。<br />
+          無印から細々やってます。<br />
+          <a
+                  href="https://twitter.com/syg_74/status/1652928889893842946"
+                  target="_blank"
+                  >(2023/5/1)</a
+                >RATING MASTER
           <br />
         </div>
       </div>
@@ -27,14 +30,16 @@
           <br />
         </div>
       </div>
-        <h3>オンゲキ</h3>
+      <h3>Arcaea</h3>
       <br />
       <div class="sub_box">
-        <img src="/img/Rhythm/Result/GEKI01.jpg" class="img" />
+        <img src="/img/Rhythm/Result/Arcaea01.jpeg" class="img" />
         <div class="side_box">
-          Max Rating : 16.75<br />
+          Potential : 13.00<br />
+          ID : 424 326 576<br />
           <br />
-          SUMMER辺りまでは全力でやってました。今ではたまにやるくらいです。<br />
+          ~ver3.12まで全曲全難易度PMでした。<br />
+          半世紀後に全PM復帰予定です。<br />
           <br />
         </div>
       </div>
@@ -66,7 +71,7 @@ h3 {
   }
 }
 @media screen and (max-width: 639px) {
-  img{
+  img {
     padding-left: 20px;
   }
 }

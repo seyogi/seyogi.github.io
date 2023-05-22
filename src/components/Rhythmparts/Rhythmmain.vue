@@ -65,14 +65,12 @@ export default {
 <style scoped>
 .main_box {
   margin-left: 10px;
+  width: 100%;
 }
-@media screen and (min-width: 1080px) {
-  .sub_box {
-    display: flex;
-  }
-  .sub_box .selector_box {
-    position: relative;
-  }
+.sub_box {
+}
+.sub_box .selector_box {
+  position: relative;
 }
 h2 {
   width: 82%;

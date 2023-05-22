@@ -12,7 +12,7 @@
         </template> </carousel
       ><br />
       <br />
-      VOLFORCE : 20.279(IMPERIAL1)<br />
+      VOLFORCE : 20.281(IMPERIAL1)<br />
       SKILL ANALYZER : 後光暴龍天<br />
       SDVX ID:SV-3690-6541<br />
       <br />
@@ -115,7 +115,7 @@ export default {
 
 <style scoped>
 .main_box {
-  padding-left: 30px;
+  padding: 30px;
 }
 .timeline {
   list-style: none;

@@ -151,6 +151,9 @@ export default {
         {
           imgurl: "/img/Rhythm/Result/Beatmania01.jpg",
         },
+        {
+          imgurl: "/img/Rhythm/Result/Beatmania03.jpg",
+        },
       ],
     };
   },
@@ -159,7 +162,7 @@ export default {
 
 <style scoped>
 .main_box {
-  padding-left: 30px;
+  padding: 30px;
 }
 .timeline {
   list-style: none;

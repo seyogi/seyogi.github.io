@@ -7,11 +7,6 @@
           class="detail_hexagon"
           :style="position(game)"
         ></div>
-        <div
-          @click="incrementByEmit(game.title)"
-          class="detail"
-          :style="position2(game)"
-        ></div>
       </div>
     </div>
   </div>
@@ -64,21 +59,13 @@ export default {
   computed: {
     position: function () {
       return function (data) {
-        const num = 80;
+        const num = 40;
         var a = {
-          top: num * data.index + "px",
-          left: Math.sqrt(3) * num * (data.index % 2) + "px",
+          top: num * (data.index % 2) + "px",
+          left: Math.sqrt(3) * num * (data.index) + "px",
           "background-image": data.image,
           "background-color": data.color,
         };
-        return a;
-      };
-    },
-    position2: function () {
-      return function (data) {
-        var a = { 
-          "background-image": data.image, 
-          "background-color": data.color };
         return a;
       };
     },
@@ -95,21 +82,20 @@ window.addEventListener("resize", resizeWindow);
   .main_box {
     height: 150px;
     margin-left: 10px;
-    display: flex;
+    display: relative;
   }
   .detail_hexagon {
-    display: none;
-  }
-  .detail {
-    padding: 10px;
+    padding: 5px;
     cursor: pointer;
-    width: 50px;
-    height: 50px;
-    clip-path: circle(55%);
+    width: 80px;
+    height: 69px;
+    clip-path: polygon(25% 0, 75% 0, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+    -webkit-clip-path: polygon(25% 0, 75% 0, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+    position: absolute;
     background-size: contain;
     background-position: center;
   }
-  .detail:hover {
+  .detail_hexagon:hover {
     opacity: 0.5;
     transition: 300ms;
   }
@@ -117,19 +103,15 @@ window.addEventListener("resize", resizeWindow);
 /* for Desktop */
 @media screen and (min-width: 1080px) {
   .main_box {
-    padding-left: 340px;
-    overflow: auto;
-    height: 500px;
+    height: 150px;
     margin-left: 10px;
-  }
-  .detail {
-    display: none;
+    display: relative;
   }
   .detail_hexagon {
-    padding: 10px;
+    padding: 5px;
     cursor: pointer;
-    width: 160px;
-    height: 138px;
+    width: 80px;
+    height: 69px;
     clip-path: polygon(25% 0, 75% 0, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
     -webkit-clip-path: polygon(25% 0, 75% 0, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
     position: absolute;
