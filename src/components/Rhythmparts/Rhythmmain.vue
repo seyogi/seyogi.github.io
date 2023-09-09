@@ -73,7 +73,7 @@ export default {
   position: relative;
 }
 h2 {
-  width: 82%;
+  width: 80%;
   padding: 1rem 2rem;
   color: #fff;
   background: #644;

@@ -18,6 +18,6 @@ export default {
 .center_container {
   margin-left: auto;
   margin-right: auto;
-  max-width: 1080px;
+  max-width: 940px;
 }
 </style>

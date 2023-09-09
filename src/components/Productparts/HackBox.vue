@@ -3,8 +3,6 @@
     <carousel :items-to-show="1" :wrap-around="true">
       <slide v-for="content in contents" :key="content">
         <img class="img" :src="content.imgurl" />
-        {{ content.competition }}<br />
-        {{ content.title }}
       </slide>
       <template #addons>
         <navigation />
@@ -26,14 +24,14 @@ export default {
           imgurl: "/img/product/hack/Qsahaiel2.png",
         },
         {
-          competition: "Hack Day 2018",
-          title: "Sound hand",
-          imgurl: "/img/product/hack/soundhand.png",
-        },
-        {
           competition: "Digital Hack Day 2021",
           title: "A.I.POST",
           imgurl: "/img/product/hack/magicpost.png",
+        },
+        {
+          competition: "Hack Day 2018",
+          title: "Sound hand",
+          imgurl: "/img/product/hack/soundhand.png",
         },
       ],
     };
@@ -43,17 +41,17 @@ export default {
 
 <style scoped>
 .box {
-  width: 85%;
+  width: 90%;
 }
 .carousel__slide {
-  max-height: 350px;
+  max-height: 450px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 .carousel__slide img {
-  max-height: 80%;
+  max-height: 100%;
   max-width: 80%;
-  padding-right: 30px;
+  padding-top: 30px;
 }
 </style>
