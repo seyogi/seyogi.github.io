@@ -91,6 +91,7 @@ export default {
 <style scoped>
 .main_box {
   margin-left: 10px;
+  width: 98%;
 }
 .introduction_box {
   display: flex;

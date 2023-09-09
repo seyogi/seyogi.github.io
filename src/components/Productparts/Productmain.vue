@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="main_box">
-      <br />編集中<br />
+      <br />
       <br />
       <h2>ハッカソン</h2>
       <HackBox></HackBox>
@@ -39,7 +39,7 @@ export default {
 <style scoped>
 .main_box {
   margin-left: 10px;
-  width: 100%;
+  width: 98%;
 }
 h2 {
   width: 80%;

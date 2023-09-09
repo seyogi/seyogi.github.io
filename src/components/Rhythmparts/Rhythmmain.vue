@@ -65,7 +65,7 @@ export default {
 <style scoped>
 .main_box {
   margin-left: 10px;
-  width: 100%;
+  width: 98%;
 }
 .sub_box {
 }
