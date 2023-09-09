@@ -7,14 +7,24 @@
       <div class="sub_box">
         <img src="/img/Rhythm/Result/GEKI01.jpg" class="img" />
         <div class="side_box">
-          Max Rating : 17.00<br />
+          Max Rating : 17.01<br />
           <br />
           無印から細々やってます。<br />
-          <a
-                  href="https://twitter.com/syg_74/status/1652928889893842946"
-                  target="_blank"
-                  >(2023/5/1)</a
-                >RATING MASTER
+          <a href="https://twitter.com/syg_74/status/1652928889893842946" target="_blank"
+            >(2023/5/1)</a
+          >RATING MASTER
+          <br />
+        </div>
+      </div>
+      <h3>太鼓の達人</h3>
+      <br />
+      <div class="sub_box">
+        <img src="/img/Rhythm/Result/Taiko01.jpg" class="img" />
+        <div class="side_box">
+          段位 : 十段(2023)<br />
+          <br />
+          一番最初に触れた音ゲーです。<br />
+          最近やっと十段取れました。<br />
           <br />
         </div>
       </div>
@@ -23,7 +33,7 @@
       <div class="sub_box">
         <img src="/img/Rhythm/Result/popn01.jpg" class="img" />
         <div class="side_box">
-          ポックラ : 94.2~<br />
+          ポックラ : 94.?<br />
           最高 : 49<br />
           <br />
           安定47？48のクリアがちらほらついてきました。<br />

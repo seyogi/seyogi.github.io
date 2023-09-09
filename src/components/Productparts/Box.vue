@@ -40,8 +40,13 @@ export default {
         },
         {
           imgurl: "/img/product/others/pbl_app.png",
-          title: "デスクトップアプリ(名称未定)",
+          title: "時間割アプリ",
           text: "JavaFX",
+        },
+        {
+          imgurl: "/img/product/others/Electron.png",
+          title: "キーキャプチャアプリ",
+          text: "Electron",
         },
       ],
     };

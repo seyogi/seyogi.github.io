@@ -12,11 +12,11 @@
         </template> </carousel
       ><br />
       <br />
-      VOLFORCE : 20.281(IMPERIAL1)<br />
-      SKILL ANALYZER : 後光暴龍天<br />
+      VOLFORCE : 20.759(IMPERIAL1)<br />
+      SKILL ANALYZER : 神暴龍天(銀枠)<br />
       SDVX ID:SV-3690-6541<br />
       <br />
-      18PUC 0<br />
+      18PUC 2<br />
       <br />
       <br />
       <br />
@@ -87,6 +87,22 @@
                   >(Twitter)</a
                 >
                 満足リザルト。もうゴール、していいよね<br />
+              </div>
+            </div>
+          </div>
+        </li>
+         <li>
+          <p class="timeline-date">2023年8月</p>
+          <div class="timeline-content">
+            <div class="timeline-txt">
+              大宇宙ステージ GRV PUC
+              <div class="sub-txt">
+                <a
+                  href="https://twitter.com/syg_74/status/1695804523296747813"
+                  target="_blank"
+                  >(Twitter)</a
+                >
+                19PUC ←つよそう<br />
               </div>
             </div>
           </div>

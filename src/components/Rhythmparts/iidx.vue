@@ -71,42 +71,7 @@
             </div>
           </div>
         </li>
-        <li>
-          <p class="timeline-date">2022年9月</p>
-          <div class="timeline-content">
-            <div class="timeline-txt">
-              LEVEL12 ハード100曲<br />
-              <div class="sub-txt">Valanga</div>
-            </div>
-          </div>
-        </li>
-        <li>
-          <p class="timeline-date">2022年11月</p>
-          <div class="timeline-content">
-            <div class="timeline-txt">
-              LEVEL12 ハード200曲<br />
-              <div class="sub-txt">Visterhv</div>
-            </div>
-          </div>
-        </li>
-        <li>
-          <p class="timeline-date">2022年12月</p>
-          <div class="timeline-content">
-            <div class="timeline-txt">
-              LEVEL12 ハード300曲<br />
-              <div class="sub-txt">Boomy and The Boost</div>
-            </div>
-          </div>
-        </li>
-        <li>
-          <p class="timeline-date">2023年1月</p>
-          <div class="timeline-content">
-            <div class="timeline-txt">
-              LEVEL12 ハード400曲<br />
-              <div class="sub-txt">ピアノ独奏無言歌 "灰燼"</div>
-            </div>
-          </div>
-        </li>
+        
         <li>
           <p class="timeline-date">2023年2月</p>
           <div class="timeline-content">
@@ -119,19 +84,18 @@
                   target="_blank"
                   >(Twitter)</a
                 >
-                小学生の頃に初めてAC音ゲーに触れた日からおよそ10年...遂に！！！
+                小学生の頃に初めてAC音ゲーに触れた日からおよそ10年...遂に！！
               </div>
             </div>
           </div>
         </li>
+
         <li>
-          <p class="timeline-date">2023年3月</p>
+          <p class="timeline-date">2023年9月</p>
           <div class="timeline-content">
             <div class="timeline-txt">
-              LEVEL12 エクハ100曲<br />
-              <div class="sub-txt">
-                SOLID STATE SQUADで決めようと思ったら10回くらい落ちて泣いた
-              </div>
+              LEVEL12 個人差S+ 全白<br />
+              <div class="sub-txt">太鼓の達人やっててよかった</div>
             </div>
           </div>
         </li>
@@ -153,6 +117,8 @@ export default {
         },
         {
           imgurl: "/img/Rhythm/Result/Beatmania03.jpg",
+        },{
+          imgurl: "/img/Rhythm/Result/Beatmania04.jpg",
         },
       ],
     };

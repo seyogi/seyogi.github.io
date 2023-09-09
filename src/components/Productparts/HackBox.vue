@@ -1,22 +1,22 @@
 <template>
-  <carousel :items-to-show="1" :wrap-around="true">
-    <slide v-for="content in contents" :key="content">
-      <img class="img" :src="content.imgurl" />
-      {{ content.competition }}<br />
-      {{ content.title }}
-    </slide>
-    <template #addons>
-      <navigation />
-      <pagination />
-    </template>
-  </carousel>
+  <div class="box">
+    <carousel :items-to-show="1" :wrap-around="true">
+      <slide v-for="content in contents" :key="content">
+        <img class="img" :src="content.imgurl" />
+        {{ content.competition }}<br />
+        {{ content.title }}
+      </slide>
+      <template #addons>
+        <navigation />
+        <pagination />
+      </template>
+    </carousel>
+  </div>
 </template>
 
 <script>
-
 export default {
-  components: {
-  },
+  components: {},
   data() {
     return {
       contents: [
@@ -42,9 +42,11 @@ export default {
 </script>
 
 <style scoped>
+.box {
+  width: 85%;
+}
 .carousel__slide {
   max-height: 350px;
-  width: 70%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -52,6 +54,6 @@ export default {
 .carousel__slide img {
   max-height: 80%;
   max-width: 80%;
-  padding-right:30px;
+  padding-right: 30px;
 }
 </style>
