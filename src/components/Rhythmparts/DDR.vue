@@ -2,15 +2,18 @@
   <div>
     <div class="main_box">
       <br />
-      <carousel :items-to-show="1" :wrap-around="true">
-        <slide v-for="content in contents" :key="content">
-          <img class="img" :src="content.imgurl" />
-        </slide>
-        <template #addons>
-          <navigation />
-          <pagination />
-        </template> </carousel
-      ><br />
+      <div class="carousel_box">
+        <carousel :items-to-show="1" :wrap-around="true">
+          <slide v-for="content in contents" :key="content">
+            <img class="img" :src="content.imgurl" />
+          </slide>
+          <template #addons>
+            <navigation />
+            <pagination />
+          </template>
+        </carousel>
+      </div>
+      <br />
       <br />
       段位認定 : SP十段(A3)<br />
       最高 : SP足19 / DP足18 <br />
@@ -149,6 +152,9 @@ export default {
 }
 /* for Desktop */
 @media screen and (min-width: 700px) {
+  .carousel_box {
+    width: 85%;
+  }
   .carousel__slide {
     max-height: 350px;
     width: 90%;

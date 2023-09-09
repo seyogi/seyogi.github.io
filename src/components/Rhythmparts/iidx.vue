@@ -2,15 +2,17 @@
   <div>
     <div class="main_box">
       <br />
-      <carousel :items-to-show="1" :wrap-around="true">
-        <slide v-for="content in contents" :key="content">
-          <img class="img" :src="content.imgurl" />
-        </slide>
-        <template #addons>
-          <navigation />
-          <pagination />
-        </template>
-      </carousel>
+      <div class="carousel_box">
+        <carousel :items-to-show="1" :wrap-around="true">
+          <slide v-for="content in contents" :key="content">
+            <img class="img" :src="content.imgurl" />
+          </slide>
+          <template #addons>
+            <navigation />
+            <pagination />
+          </template>
+        </carousel>
+      </div>
       <br />
       <br />
       段位認定 : SP皆伝(RESIDENT)<br />
@@ -71,7 +73,7 @@
             </div>
           </div>
         </li>
-        
+
         <li>
           <p class="timeline-date">2023年2月</p>
           <div class="timeline-content">
@@ -117,7 +119,8 @@ export default {
         },
         {
           imgurl: "/img/Rhythm/Result/Beatmania03.jpg",
-        },{
+        },
+        {
           imgurl: "/img/Rhythm/Result/Beatmania04.jpg",
         },
       ],
@@ -161,6 +164,9 @@ export default {
 }
 /* for Desktop */
 @media screen and (min-width: 700px) {
+  .carousel_box {
+    width: 85%;
+  }
   .carousel__slide {
     height: 350px;
     width: 90%;

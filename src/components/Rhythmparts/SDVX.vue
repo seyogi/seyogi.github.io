@@ -2,15 +2,18 @@
   <div>
     <div class="main_box">
       <br />
-      <carousel :items-to-show="1" :wrap-around="true">
-        <slide v-for="content in contents" :key="content">
-          <img class="img" :src="content.imgurl" />
-        </slide>
-        <template #addons>
-          <navigation />
-          <pagination />
-        </template> </carousel
-      ><br />
+      <dir class="carousel_box">
+        <carousel :items-to-show="1" :wrap-around="true">
+          <slide v-for="content in contents" :key="content">
+            <img class="img" :src="content.imgurl" />
+          </slide>
+          <template #addons>
+            <navigation />
+            <pagination />
+          </template>
+        </carousel>
+      </dir>
+      <br />
       <br />
       VOLFORCE : 20.759(IMPERIAL1)<br />
       SKILL ANALYZER : 神暴龍天(銀枠)<br />
@@ -91,7 +94,7 @@
             </div>
           </div>
         </li>
-         <li>
+        <li>
           <p class="timeline-date">2023年8月</p>
           <div class="timeline-content">
             <div class="timeline-txt">
@@ -165,6 +168,9 @@ export default {
 }
 /* for Desktop */
 @media screen and (min-width: 700px) {
+  .carousel_box {
+    width: 85%;
+  }
   .carousel__slide {
     height: 500px;
     width: 90%;
