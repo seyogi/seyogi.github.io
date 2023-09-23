@@ -1,5 +1,6 @@
 <template>
   <div class="center_container">
+    <br />
     ※同一曲について複数譜面タイプ（B/N/H/A/L）をプレーしている場合、それらの中の最大値のみが対象として適用されます
     <br />
     <textarea
