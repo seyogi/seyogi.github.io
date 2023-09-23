@@ -15,11 +15,11 @@
       </dir>
       <br />
       <br />
-      VOLFORCE : 20.759(IMPERIAL1)<br />
-      SKILL ANALYZER : 神暴龍天(銀枠)<br />
+      VOLFORCE : 20.928(IMPERIAL1)<br />
+      SKILL ANALYZER : 後光暴龍天 \ 神暴龍天<br />
       SDVX ID:SV-3690-6541<br />
       <br />
-      18PUC 2<br />
+      寺が落ち着いたのでモチベ大復活。インぺ2目指してます。<br />
       <br />
       <br />
       <br />
