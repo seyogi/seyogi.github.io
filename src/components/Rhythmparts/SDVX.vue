@@ -15,7 +15,7 @@
       </dir>
       <br />
       <br />
-      VOLFORCE : 20.928(IMPERIAL1)<br />
+      VOLFORCE : 20.990(IMPERIAL1)<br />
       SKILL ANALYZER : 後光暴龍天 \ 神暴龍天<br />
       SDVX ID:SV-3690-6541<br />
       <br />
