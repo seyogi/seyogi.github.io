@@ -133,6 +133,22 @@
             </div>
           </div>
         </li>
+         <li>
+          <p class="timeline-date">2023年9月</p>
+          <div class="timeline-content">
+            <div class="timeline-txt">
+              天下統一<br />
+              <div class="sub-txt">
+                <a
+                  href="https://twitter.com/syg_74/status/1704086685825519748"
+                  target="_blank"
+                  >(Twitter)</a
+                >
+                実はこっそり高校の同期とやってた
+              </div>
+            </div>
+          </div>
+        </li>
       </ul>
     </div>
   </div>

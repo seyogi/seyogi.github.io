@@ -15,11 +15,13 @@
       </dir>
       <br />
       <br />
-      VOLFORCE : 20.990(IMPERIAL1)<br />
-      SKILL ANALYZER : 後光暴龍天 \ 神暴龍天<br />
+      VOLFORCE : 21.000(IMPERIAL II)<br />
+      SKILL ANALYZER : 後光暴龍天 / 神暴龍天<br />
       SDVX ID:SV-3690-6541<br />
       <br />
-      寺が落ち着いたのでモチベ大復活。インぺ2目指してます。<br />
+      寺が落ち着いたのでモチベ大復活。インぺ2まで駆け抜けました。<br />
+      Vaddict:<a href="https://vaddict.b35.jp/user.php?player_id=SV-3690-6541" target="_blank">URL</a
+      ><br />
       <br />
       <br />
       <br />
@@ -89,7 +91,7 @@
                   target="_blank"
                   >(Twitter)</a
                 >
-                満足リザルト。もうゴール、していいよね<br />
+                憧れだったリザルトをこの手に<br />
               </div>
             </div>
           </div>
@@ -106,6 +108,23 @@
                   >(Twitter)</a
                 >
                 19PUC ←つよそう<br />
+              </div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <p class="timeline-date">2023年9月</p>
+          <div class="timeline-content">
+            <div class="timeline-circle" />
+            <div class="timeline-txt">
+              <h3>VOLFORCE IMPERIAL II 到達</h3>
+              <div class="sub-txt">
+                <a
+                  href="https://twitter.com/syg_74/status/1706950083730866272"
+                  target="_blank"
+                  >(Twitter)</a
+                >
+                一ヶ月で0.25上げました<br />
               </div>
             </div>
           </div>

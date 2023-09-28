@@ -4,8 +4,9 @@
       <br />
       <br />
       歴10年以上の音ゲーマーによる自己満ページです。<br />
-      <br />
-      最終更新(2023/9/9)<br />
+      <a href="https://seyogi.hatenablog.com/" target="_blank">ここ</a
+      >で記事書いたりしてます。<br /><br />
+      最終更新(2023/9/28)<br />
       <br />
       <br />
       <div class="sub_box">

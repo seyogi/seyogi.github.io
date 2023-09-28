@@ -25,15 +25,15 @@ export default {
         },
         {
           index: 1,
-          title: "DDR",
-          image: `url(/img/Rhythm/logo/DDR_logo.png)`,
-          color: "#E6E6E6",
-        },
-        {
-          index: 2,
           title: "SDVX",
           image: `url(/img/Rhythm/logo/sdvx_logo.png)`,
           color: "#3d3d99",
+        },
+        {
+          index: 2,
+          title: "DDR",
+          image: `url(/img/Rhythm/logo/DDR_logo.png)`,
+          color: "#E6E6E6",
         },
         {
           index: 3,
