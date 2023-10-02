@@ -15,7 +15,8 @@
       </div>
       <br />
       <br />
-      段位認定 : SP皆伝(RESIDENT)<br />
+      段位認定 : SP極皆伝(RESIDENT)<br />
+      アリーナ : 最高A3<br />
       IIDX ID : 7228-1124<br />
       <br />
       BISTROVERから本格的に始めました。<br />
@@ -96,8 +97,14 @@
           <p class="timeline-date">2023年9月</p>
           <div class="timeline-content">
             <div class="timeline-txt">
-              LEVEL12 個人差S+ 全白<br />
-              <div class="sub-txt">太鼓の達人やっててよかった</div>
+              サムスク†ハード<br />
+              <div class="sub-txt">個人差S+全白。太鼓の達人やっててよかった</div>
+            </div>
+            <div class="timeline-txt">
+              <h3>SP極皆伝 合格</h3>
+              <div class="sub-txt">
+                26→裏30→CS14でした。初皆伝タイトルで極まで行けるとは思ってなかった
+              </div>
             </div>
           </div>
         </li>
