@@ -16,6 +16,17 @@
           <br />
         </div>
       </div>
+       <h3>maimai</h3>
+      <br />
+      <div class="sub_box">
+        <img src="/img/Rhythm/Result/maimai01.jpg" class="img" />
+        <div class="side_box">
+          Max Rating : 15001<br />
+          <br />
+          つい先日虹レになりました。ようやく三機種虹！<br />
+          <br />
+        </div>
+      </div>
       <h3>太鼓の達人</h3>
       <br />
       <div class="sub_box">

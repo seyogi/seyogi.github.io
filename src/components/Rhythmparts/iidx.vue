@@ -97,14 +97,23 @@
           <p class="timeline-date">2023年9月</p>
           <div class="timeline-content">
             <div class="timeline-txt">
-              サムスク†ハード<br />
-              <div class="sub-txt">個人差S+全白。太鼓の達人やっててよかった</div>
+              個人差S+ 全白<br />
+              <div class="sub-txt">最後に残ったのはサムスク。太鼓の達人やっててよかった</div>
             </div>
             <div class="timeline-txt">
               <h3>SP極皆伝 合格</h3>
               <div class="sub-txt">
                 26→裏30→CS14でした。初皆伝タイトルで極まで行けるとは思ってなかった
               </div>
+            </div>
+          </div>
+        </li>
+         <li>
+          <p class="timeline-date">2023年10月</p>
+          <div class="timeline-content">
+            <div class="timeline-txt">
+              地力S 全白<br />
+              <div class="sub-txt">最後に残ったのはConfiserie。皿絡みくるしい</div>
             </div>
           </div>
         </li>
