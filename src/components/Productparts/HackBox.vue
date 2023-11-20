@@ -19,6 +19,11 @@ export default {
     return {
       contents: [
         {
+          competition: "JPHACKS 2023",
+          title: "スマートホームメイド",
+          imgurl: "/img/product/hack/smarthome.png",
+        },
+        {
           competition: "JPHACKS 2022",
           title: "Qsahaiel",
           imgurl: "/img/product/hack/Qsahaiel2.png",

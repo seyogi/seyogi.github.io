@@ -70,6 +70,15 @@
           </div>
         </div>
       </li>
+      <li>
+        <p class="timeline-date">2023年10月</p>
+        <div class="timeline-content">
+          <div class="timeline-txt">
+            JPHACKS 2023 … スポンサー賞 受賞 / Award Day 進出<br />
+            <div class="sub-txt">スマートホームメイド / 高輪ﾊﾞｯﾄﾞｹﾞｰﾄｳｪｲ前ﾊｰﾄﾞｳｪｱ幼稚園</div>
+          </div>
+        </div>
+      </li>
     </ul>
   </div>
 </template>
