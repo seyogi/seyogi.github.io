@@ -5,7 +5,6 @@
       <h2>About Me</h2>
       <br />
       情報系大学生による雑記ページです。<br />
-      Vue2で作ったページを無理やりVue3にアップデートしたので所々崩れてます。<br />
       <br />
       <div class="introduction_box">
         <div class="left">

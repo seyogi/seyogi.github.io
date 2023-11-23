@@ -3,15 +3,14 @@
     <div class="main_box">
       <br />
       <br />
-      歴10年以上の音ゲーマーによる自己満ページです。<br />
-      <a href="https://seyogi.hatenablog.com/" target="_blank">ここ</a
-      >で記事書いたりしてます。<br /><br />
-      レート計算Excelシート<a
+      歴10年以上の音ゲーマーによる自己満ページです。更新中。。。<br /><br />
+      <a href="https://seyogi.hatenablog.com/" target="_blank">はてなブログ</a
+      >で記事書いたりしてます。<br />
+      <a
         href="https://drive.google.com/file/d/1eEWmv2dzkAwZakEuNscZqwOq3Tjr2QXL/view?usp=sharing"
         target="_blank"
-        >配布中</a
-      ><br />
-      <br />最終更新(2023/9/28)<br />
+        >Excelシート</a
+      >配布中<br />
       <br />
       <br />
       <div class="sub_box">
