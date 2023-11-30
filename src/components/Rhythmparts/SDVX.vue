@@ -20,121 +20,46 @@
       SDVX ID:SV-3690-6541<br />
       <br />
       寺が落ち着いたのでモチベ大復活。インぺ2まで駆け抜けました。<br />
-      Vaddict:<a href="https://vaddict.b35.jp/user.php?player_id=SV-3690-6541" target="_blank">URL</a
+      Vaddict:<a
+        href="https://vaddict.b35.jp/user.php?player_id=SV-3690-6541"
+        target="_blank"
+        >URL</a
       ><br />
       <br />
       <br />
       <br />
       <hr style="width: 80%" />
-      <ul class="timeline">
+      <div class="timeline" v-for="content in timeline_contents" :key="content">
         <li>
-          <p class="timeline-date">2020年7月</p>
+          <div class="timeline-line" />
+          <p class="timeline-date" v-if="'date_y' in content">
+            <a v-if="'date_y' in content">{{ content.date_y }}</a>
+            <a class="month" v-if="'date_m' in content">{{ content.date_m }}</a>
+          </p>
+
           <div class="timeline-content">
+            <div class="timeline-circle" v-if="content.circle == true" />
             <div class="timeline-txt">
-              SKILL ANALYZER 剛力羅 合格<br />
-              <div class="sub-txt">累計100クレ</div>
-            </div>
-          </div>
-        </li>
-        <li>
-          <p class="timeline-date">2020年8月</p>
-          <div class="timeline-content">
-            <div class="timeline-txt">
-              SKILL ANALYZER 或帝滅斗 合格<br />
-              <div class="sub-txt">累計200クレ</div>
-            </div>
-          </div>
-        </li>
-        <li>
-          <p class="timeline-date">2021年3月</p>
-          <div class="timeline-content">
-            <div class="timeline-circle" />
-            <div class="timeline-txt">
-              <h3>SKILL ANALYZER 暴龍天 合格</h3>
-              <div class="sub-txt">
-                累計飛んで約700クレ<br />旧筐体とVMの移り変わりの時期で色々ありました。
+              <div v-if="content.bold == true">
+                <h3>{{ content.text }}</h3>
+              </div>
+              <div v-if="content.bold != true">
+                {{ content.text }}
+              </div>
+              <div class="sub-txt" v-if="'sub_text' in content">
+                {{ content.sub_text }}
               </div>
             </div>
           </div>
         </li>
-        <li>
-          <p class="timeline-date">2021年5月</p>
-          <div class="timeline-content">
-            <div class="timeline-txt">VOLFORCE CRIMSON 到達<br /></div>
-          </div>
-        </li>
-        <li>
-          <p class="timeline-date">2021年11月</p>
-          <div class="timeline-content">
-            <div class="timeline-circle" />
-            <div class="timeline-txt">
-              <h3>VOLFORCE IMPERIAL 到達</h3>
-              <div class="sub-txt">
-                <a
-                  href="https://twitter.com/syg_74/status/1464499042738597892"
-                  target="_blank"
-                  >(Twitter)</a
-                >
-                累計約1500クレ ちょうど暴龍天が折り返しでした<br />
-              </div>
-            </div>
-          </div>
-        </li>
-        <li>
-          <p class="timeline-date">2023年3月</p>
-          <div class="timeline-content">
-            <div class="timeline-txt">
-              Lachryma《Re:Queen’M》GRV S
-              <div class="sub-txt">
-                <a
-                  href="https://twitter.com/syg_74/status/1635556285444923392"
-                  target="_blank"
-                  >(Twitter)</a
-                >
-                憧れだったリザルトをこの手に<br />
-              </div>
-            </div>
-          </div>
-        </li>
-        <li>
-          <p class="timeline-date">2023年8月</p>
-          <div class="timeline-content">
-            <div class="timeline-txt">
-              大宇宙ステージ GRV PUC
-              <div class="sub-txt">
-                <a
-                  href="https://twitter.com/syg_74/status/1695804523296747813"
-                  target="_blank"
-                  >(Twitter)</a
-                >
-                19PUC ←つよそう<br />
-              </div>
-            </div>
-          </div>
-        </li>
-        <li>
-          <p class="timeline-date">2023年9月</p>
-          <div class="timeline-content">
-            <div class="timeline-circle" />
-            <div class="timeline-txt">
-              <h3>VOLFORCE IMPERIAL II 到達</h3>
-              <div class="sub-txt">
-                <a
-                  href="https://twitter.com/syg_74/status/1706950083730866272"
-                  target="_blank"
-                  >(Twitter)</a
-                >
-                一ヶ月で0.25上げました<br />
-              </div>
-            </div>
-          </div>
-        </li>
-      </ul>
+      </div>
     </div>
   </div>
 </template>
 
 <script>
+import TimelineContents from "../../assets/SDVXTimelineContents.json";
+
 export default {
   data() {
     return {
@@ -146,6 +71,7 @@ export default {
           imgurl: "/img/Rhythm/Result/SDVX02.jpg",
         },
       ],
+      timeline_contents: TimelineContents,
     };
   },
 };
@@ -160,25 +86,54 @@ export default {
 }
 @media screen and (max-width: 700px) {
   .carousel__slide {
-    max-height: 500px;
-    width: 90%;
+    max-height: 350px;
+    width: 80%;
     display: flex;
     justify-content: center;
     align-items: center;
   }
   .carousel__slide img {
-    max-height: 500px;
-    max-width: 100%;
+    max-width: 80%;
   }
   .timeline > li {
-    margin-bottom: 30px;
+    overflow: hidden;
+    position: relative;
+    margin: 0;
+  }
+  .timeline-line {
+    content: "";
+    width: 3px;
+    height: 100%;
+    background: #888;
+    position: absolute;
+    left: 20px;
+  }
+  .timeline-circle {
+    content: "";
+    width: 12px;
+    height: 12px;
+    background: #833;
+    position: absolute;
+    left: 16px;
+    top: 5px;
+    border-radius: 100%;
+  }
+  .timeline-content {
+    width: 75%;
+    float: left;
+    position: relative;
+    padding-left: 50px;
   }
   .timeline-date {
-    width: 110px;
-    margin: 2px;
+    width: 80px;
+    margin: 4px;
     text-align: center;
     background: #daa;
     border-radius: 10px; /* 角丸半径を50%にする(=円形にする) */
+    margin-left: 40px;
+  }
+  .timeline-date .month {
+    display: none;
   }
   .timeline-txt .sub-txt {
     font-size: 12px;
@@ -191,14 +146,14 @@ export default {
     width: 85%;
   }
   .carousel__slide {
-    height: 500px;
+    height: 350px;
     width: 90%;
     display: flex;
     justify-content: center;
     align-items: center;
   }
   .carousel__slide img {
-    max-height: 500px;
+    max-height: 350px;
     max-width: 100%;
   }
   .timeline > li {
@@ -207,15 +162,19 @@ export default {
     margin: 0;
   }
   .timeline-date {
-    width: 110px;
+    width: 100px;
     float: left;
-    margin-top: 10px;
+    margin-top: 12px;
+    margin-right: 10px;
+    text-align: right;
   }
-  .timeline-content {
-    width: 75%;
-    float: left;
-    border-left: 3px #888 solid;
-    padding-left: 30px;
+  .timeline-line {
+    content: "";
+    width: 3px;
+    height: 100%;
+    background: #888;
+    position: absolute;
+    left: 110px;
   }
   .timeline-circle {
     content: "";
@@ -224,16 +183,23 @@ export default {
     background: #833;
     position: absolute;
     left: 106px;
-    top: 14px;
+    top: 16px;
     border-radius: 100%;
   }
+  .timeline-content {
+    width: 75%;
+    float: left;
+    padding-left: 30px;
+  }
   .timeline-txt {
+    font-size: 18px;
     margin-top: 10px;
     margin-bottom: 10px;
   }
   .timeline-txt .sub-txt {
     font-size: 12px;
-    margin-bottom: 5px;
+    margin-bottom: 15px;
+    color: #444;
   }
 }
 </style>

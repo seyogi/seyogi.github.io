@@ -3,15 +3,15 @@
     <div class="main_box">
       <br />
       <div class="carousel_box">
-      <carousel :items-to-show="1" :wrap-around="true">
-        <slide v-for="content in contents" :key="content">
-          <img class="img" :src="content.imgurl" />
-        </slide>
-        <template #addons>
-          <navigation />
-          <pagination />
-        </template>
-      </carousel>
+        <carousel :items-to-show="1" :wrap-around="true">
+          <slide v-for="content in contents" :key="content">
+            <img class="img" :src="content.imgurl" />
+          </slide>
+          <template #addons>
+            <navigation />
+            <pagination />
+          </template>
+        </carousel>
       </div>
       <br />
       <br />
@@ -25,136 +25,37 @@
       <br />
       <br />
       <hr style="width: 80%" />
-      <ul class="timeline">
+      <div class="timeline" v-for="content in timeline_contents" :key="content">
         <li>
-          <p class="timeline-date">2017年7月</p>
-          <div class="timeline-circle" />
-          <div class="timeline-content">
-            <div class="timeline-txt">
-              Angel Beats! コラボ
-              <div class="sub-txt">
-                今でも大好きな作品とのコラボ！ これを機にCHUNITHMを触り始めました
-              </div>
-            </div>
-          </div>
-        </li>
+          <div class="timeline-line" />
+          <p class="timeline-date" v-if="'date_y' in content">
+            <a v-if="'date_y' in content">{{ content.date_y }}</a>
+            <a class="month" v-if="'date_m' in content">{{ content.date_m }}</a>
+          </p>
 
-        <li>
-          <p class="timeline-date">2018年7月</p>
-          <div class="timeline-circle" />
           <div class="timeline-content">
+            <div class="timeline-circle" v-if="content.circle == true" />
             <div class="timeline-txt">
-              RATING 15.00<br />
-              <div class="sub-txt">
-                俺が虹レだ！ 虹レになった曲はみんな大好きLike the Wind
+              <div v-if="content.bold == true">
+                <h3>{{ content.text }}</h3>
+              </div>
+              <div v-if="content.bold != true">
+                {{ content.text }}
+              </div>
+              <div class="sub-txt" v-if="'sub_text' in content">
+                {{ content.sub_text }}
               </div>
             </div>
           </div>
         </li>
-        <li>
-          <p class="timeline-date">2019年10月</p>
-          <div class="timeline-content">
-            <div class="timeline-txt">
-              LEVEL13+(旧基準) 全鳥<br />
-              <div class="sub-txt">
-                <a
-                  href="https://twitter.com/syg_74/status/1184375810662096896"
-                  target="_blank"
-                  >(Twitter)</a
-                >
-                最後の3つは大鳥居/エンダス/パッソでした<br />
-                当時は鍵盤力がなくて本当につらかった...
-              </div>
-            </div>
-          </div>
-        </li>
-
-        <li>
-          <p class="timeline-date">2022年1月</p>
-          <div class="timeline-content">
-            <div class="timeline-txt">
-              蠍火 AJ<br />
-              <div class="sub-txt">
-                <a
-                  href="https://twitter.com/syg_74/status/1486993019458887681"
-                  target="_blank"
-                  >(Twitter)</a
-                >
-                記念すべき15初AJです！
-              </div>
-            </div>
-          </div>
-        </li>
-        <li>
-          <p class="timeline-date">2022年2月</p>
-          <div class="timeline-content">
-            <div class="timeline-txt">LEVEL15 全鳥<br /></div>
-          </div>
-        </li>
-        <li>
-          <p class="timeline-date">2022年4月</p>
-          <div class="timeline-circle" />
-          <div class="timeline-content">
-            <div class="timeline-txt">
-              <h3>クラス認定 INFINITY 全合格(無限帯)</h3>
-              <div class="sub-txt">俺が無限帯だ！</div>
-            </div>
-          </div>
-        </li>
-        <li>
-          <p class="timeline-date">2022年5月</p>
-          <div class="timeline-content">
-            <div class="timeline-txt">
-              World Vanquisher AJ<br />
-              <div class="sub-txt">
-                <a
-                  href="https://twitter.com/syg_74/status/1526129440975036416"
-                  target="_blank"
-                  >(Twitter)</a
-                >
-                まさかこの曲をAJ出来る日が来るとは思いもしませんでした
-              </div>
-            </div>
-          </div>
-        </li>
-        <li>
-          <p class="timeline-date">2022年10月</p>
-          <div class="timeline-content">
-            <div class="timeline-txt">
-              風唄 AJ<br />
-              <div class="sub-txt">
-                <a
-                  href="https://twitter.com/syg_74/status/1586982674484191232"
-                  target="_blank"
-                  >(Twitter)</a
-                >
-                弐寺で鍛えた鍵盤力で押し切りました
-              </div>
-            </div>
-          </div>
-        </li>
-         <li>
-          <p class="timeline-date">2023年9月</p>
-          <div class="timeline-content">
-            <div class="timeline-txt">
-              天下統一<br />
-              <div class="sub-txt">
-                <a
-                  href="https://twitter.com/syg_74/status/1704086685825519748"
-                  target="_blank"
-                  >(Twitter)</a
-                >
-                実はこっそり高校の同期とやってた
-              </div>
-            </div>
-          </div>
-        </li>
-      </ul>
+      </div>
     </div>
   </div>
 </template>
 
 <script>
+import TimelineContents from '../../assets/CHINITHMTimelineContents.json'
+
 export default {
   data() {
     return {
@@ -166,6 +67,7 @@ export default {
           imgurl: "/img/Rhythm/Result/UNI01.jpg",
         },
       ],
+       timeline_contents: TimelineContents
     };
   },
 };
@@ -181,29 +83,58 @@ export default {
 @media screen and (max-width: 700px) {
   .carousel__slide {
     max-height: 350px;
-    width: 90%;
+    width: 80%;
     display: flex;
     justify-content: center;
     align-items: center;
   }
   .carousel__slide img {
-    max-height: 350px;
-    max-width: 100%;
+    max-width: 80%;
   }
   .timeline > li {
-    margin-bottom: 30px;
+    overflow: hidden;
+    position: relative;
+    margin: 0;
+  }
+  .timeline-line {
+    content: "";
+    width: 3px;
+    height: 100%;
+    background:#888;
+    position: absolute;
+    left: 20px;
+  }
+  .timeline-circle {
+    content: "";
+    width: 12px;
+    height: 12px;
+    background: #833;
+    position: absolute;
+    left: 16px;
+    top: 5px;
+    border-radius: 100%;
+  }
+  .timeline-content {
+    width: 75%;
+    float: left;
+    position: relative;
+    padding-left: 50px;
   }
   .timeline-date {
-    width: 110px;
-    margin: 2px;
+    width: 80px;
+    margin: 4px;
     text-align: center;
     background: #daa;
     border-radius: 10px; /* 角丸半径を50%にする(=円形にする) */
+    margin-left: 40px;
+  }
+  .timeline-date .month{
+    display: none;
   }
   .timeline-txt .sub-txt {
     font-size: 12px;
     margin-bottom: 5px;
-  }
+  }  
 }
 /* for Desktop */
 @media screen and (min-width: 700px) {
@@ -221,21 +152,25 @@ export default {
     max-height: 350px;
     max-width: 100%;
   }
-  .timeline > li {
+ .timeline > li {
     overflow: hidden;
     position: relative;
     margin: 0;
   }
   .timeline-date {
-    width: 110px;
+    width: 100px;
     float: left;
-    margin-top: 10px;
-  }
-  .timeline-content {
-    width: 75%;
-    float: left;
-    border-left: 3px #888 solid;
-    padding-left: 30px;
+    margin-top: 12px;
+    margin-right: 10px;
+    text-align: right;
+  }  
+  .timeline-line {
+    content: "";
+    width: 3px;
+    height: 100%;
+    background:#888;
+    position: absolute;
+    left: 110px;
   }
   .timeline-circle {
     content: "";
@@ -244,16 +179,23 @@ export default {
     background: #833;
     position: absolute;
     left: 106px;
-    top: 14px;
+    top: 16px;
     border-radius: 100%;
   }
+  .timeline-content {
+    width: 75%;
+    float: left;
+    padding-left: 30px;
+  }
   .timeline-txt {
+    font-size: 18px;
     margin-top: 10px;
     margin-bottom: 10px;
   }
   .timeline-txt .sub-txt {
     font-size: 12px;
-    margin-bottom: 5px;
+    margin-bottom: 15px;
+    color: #444;
   }
 }
 </style>

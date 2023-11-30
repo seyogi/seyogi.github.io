@@ -29,100 +29,37 @@
       <br />
 
       <hr style="width: 80%" />
-      <ul class="timeline">
+      <div class="timeline" v-for="content in timeline_contents" :key="content">
         <li>
-          <p class="timeline-date">2021年4月</p>
-          <div class="timeline-circle" />
-          <div class="timeline-content">
-            <div class="timeline-txt">
-              X-record 第一弾
-              <div class="sub-txt">これを機に弐寺を触り始める</div>
-            </div>
-          </div>
-        </li>
-        <li>
-          <p class="timeline-date">2021年11月</p>
-          <div class="timeline-content">
-            <div class="timeline-txt">
-              段位認定 SP七段 合格<br />
-              <div class="sub-txt">そこまで拗らせなかった</div>
-            </div>
-          </div>
-        </li>
-        <li>
-          <p class="timeline-date">2022年1月</p>
-          <div class="timeline-content">
-            <div class="timeline-txt">段位認定 SP九段 合格<br /></div>
-          </div>
-        </li>
-        <li>
-          <p class="timeline-date">2022年6月</p>
-          <div class="timeline-content">
-            <div class="timeline-txt">
-              LEVEL12 初ハード<br />
-              <div class="sub-txt">12初めての白ランプは赤いイカでした</div>
-            </div>
-          </div>
-        </li>
-        <li>
-          <p class="timeline-date">2022年7月</p>
-          <div class="timeline-content">
-            <div class="timeline-txt">
-              段位認定 SP十段 合格<br />
-              <h3>段位認定 SP中伝 合格</h3>
-              <div class="sub-txt">requiem...</div>
-            </div>
-          </div>
-        </li>
+          <div class="timeline-line" />
+          <p class="timeline-date" v-if="'date_y' in content">
+            <a v-if="'date_y' in content">{{ content.date_y }}</a>
+            <a class="month" v-if="'date_m' in content">{{ content.date_m }}</a>
+          </p>
 
-        <li>
-          <p class="timeline-date">2023年2月</p>
           <div class="timeline-content">
-            <div class="timeline-circle" />
+            <div class="timeline-circle" v-if="content.circle == true" />
             <div class="timeline-txt">
-              <h3>段位認定 SP皆伝 合格</h3>
-              <div class="sub-txt">
-                <a
-                  href="https://twitter.com/syg_74/status/1629064608454692865"
-                  target="_blank"
-                  >(Twitter)</a
-                >
-                小学生の頃に初めてAC音ゲーに触れた日からおよそ10年...遂に！！
+              <div v-if="content.bold == true">
+                <h3>{{ content.text }}</h3>
+              </div>
+              <div v-if="content.bold != true">
+                {{ content.text }}
+              </div>
+              <div class="sub-txt" v-if="'sub_text' in content">
+                {{ content.sub_text }}
               </div>
             </div>
           </div>
         </li>
-
-        <li>
-          <p class="timeline-date">2023年9月</p>
-          <div class="timeline-content">
-            <div class="timeline-txt">
-              個人差S+ 全白<br />
-              <div class="sub-txt">最後に残ったのはサムスク。太鼓の達人やっててよかった</div>
-            </div>
-            <div class="timeline-txt">
-              <h3>SP極皆伝 合格</h3>
-              <div class="sub-txt">
-                26→裏30→CS14でした。初皆伝タイトルで極まで行けるとは思ってなかった
-              </div>
-            </div>
-          </div>
-        </li>
-         <li>
-          <p class="timeline-date">2023年10月</p>
-          <div class="timeline-content">
-            <div class="timeline-txt">
-              地力S 全白<br />
-              <div class="sub-txt">最後に残ったのはConfiserie。皿絡みくるしい</div>
-            </div>
-          </div>
-        </li>
-      </ul>
+      </div>
     </div>
   </div>
 </template>
 
 <script>
+import TimelineContents from '../../assets/iidxTimelineContents.json'
+
 export default {
   data() {
     return {
@@ -140,6 +77,7 @@ export default {
           imgurl: "/img/Rhythm/Result/Beatmania04.jpg",
         },
       ],
+      timeline_contents: TimelineContents,
     };
   },
 };
@@ -164,19 +102,49 @@ export default {
     max-width: 80%;
   }
   .timeline > li {
-    margin-bottom: 30px;
+    overflow: hidden;
+    position: relative;
+    margin: 0;
+  }
+  .timeline-line {
+    content: "";
+    width: 3px;
+    height: 100%;
+    background:#888;
+    position: absolute;
+    left: 20px;
+  }
+  .timeline-circle {
+    content: "";
+    width: 12px;
+    height: 12px;
+    background: #833;
+    position: absolute;
+    left: 16px;
+    top: 5px;
+    border-radius: 100%;
+  }
+  .timeline-content {
+    width: 75%;
+    float: left;
+    position: relative;
+    padding-left: 50px;
   }
   .timeline-date {
-    width: 110px;
-    margin: 2px;
+    width: 80px;
+    margin: 4px;
     text-align: center;
     background: #daa;
     border-radius: 10px; /* 角丸半径を50%にする(=円形にする) */
+    margin-left: 40px;
+  }
+  .timeline-date .month{
+    display: none;
   }
   .timeline-txt .sub-txt {
     font-size: 12px;
     margin-bottom: 5px;
-  }
+  }  
 }
 /* for Desktop */
 @media screen and (min-width: 700px) {
@@ -194,21 +162,25 @@ export default {
     max-height: 350px;
     max-width: 100%;
   }
-  .timeline > li {
+ .timeline > li {
     overflow: hidden;
     position: relative;
     margin: 0;
   }
   .timeline-date {
-    width: 110px;
+    width: 100px;
     float: left;
-    margin-top: 10px;
-  }
-  .timeline-content {
-    width: 75%;
-    float: left;
-    border-left: 3px #888 solid;
-    padding-left: 30px;
+    margin-top: 12px;
+    margin-right: 10px;
+    text-align: right;
+  }  
+  .timeline-line {
+    content: "";
+    width: 3px;
+    height: 100%;
+    background:#888;
+    position: absolute;
+    left: 110px;
   }
   .timeline-circle {
     content: "";
@@ -217,16 +189,23 @@ export default {
     background: #833;
     position: absolute;
     left: 106px;
-    top: 14px;
+    top: 16px;
     border-radius: 100%;
   }
+  .timeline-content {
+    width: 75%;
+    float: left;
+    padding-left: 30px;
+  }
   .timeline-txt {
+    font-size: 18px;
     margin-top: 10px;
     margin-bottom: 10px;
   }
   .timeline-txt .sub-txt {
     font-size: 12px;
-    margin-bottom: 5px;
+    margin-bottom: 15px;
+    color: #444;
   }
 }
 </style>
