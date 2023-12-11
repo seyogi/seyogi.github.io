@@ -53,16 +53,17 @@
         </div>
 
         <div class="right">
-          <br />
-          &lt;Name&gt;  Seyogi<br />
-          &lt;Jobs&gt;  Students of TCU Intelligent Systems B3<br />
-          &lt;Hobbys&gt;  RhythmGame, Climbing, Walking<br /><br>
-          &lt;Qualifications&gt; <br>
+          {<br />
+          &#160;&#160;&#160;&#160;"Name" : "Seyogi",<br />
+          &#160;&#160;&#160;&#160;"Job"  : "Students of TCU Intelligent Systems B3",<br />
+          &#160;&#160;&#160;&#160;"Hobby" : ["RhythmGame", "Climbing", "Walking"],<br />
+          &#160;&#160;&#160;&#160;"Qualifications" : {<br>
           <div class="sub">
-          ・普通自動車免許(AT)<br>
-          ・基本情報技術者
+          &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"2022" : "普通自動車免許(AT)",<br>
+          &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"2023" : "基本情報技術者"
           </div>
-          <br />
+          &#160;&#160;&#160;&#160;}<br />
+          }
         </div>
         <br />
       </div>

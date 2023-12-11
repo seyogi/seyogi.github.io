@@ -29,38 +29,19 @@
       <br />
       <br />
       <hr style="width: 80%" />
-      <div class="timeline" v-for="content in timeline_contents" :key="content">
-        <li>
-          <div class="timeline-line" />
-          <p class="timeline-date" v-if="'date_y' in content">
-            <a v-if="'date_y' in content">{{ content.date_y }}</a>
-            <a class="month" v-if="'date_m' in content">{{ content.date_m }}</a>
-          </p>
-
-          <div class="timeline-content">
-            <div class="timeline-circle" v-if="content.circle == true" />
-            <div class="timeline-txt">
-              <div v-if="content.bold == true">
-                <h3>{{ content.text }}</h3>
-              </div>
-              <div v-if="content.bold != true">
-                {{ content.text }}
-              </div>
-              <div class="sub-txt" v-if="'sub_text' in content">
-                {{ content.sub_text }}
-              </div>
-            </div>
-          </div>
-        </li>
-      </div>
+      <Timeline :timeline_contents="timeline_contents"></Timeline>
     </div>
   </div>
 </template>
 
 <script>
 import TimelineContents from "../../assets/SDVXTimelineContents.json";
+import Timeline from "../Timeline";
 
 export default {
+  components: {
+    Timeline,
+  },
   data() {
     return {
       contents: [
