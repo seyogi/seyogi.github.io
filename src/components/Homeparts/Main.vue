@@ -54,15 +54,15 @@
 
         <div class="right">
           {<br />
-          &#160;&#160;&#160;&#160;"Name" : "Seyogi",<br />
-          &#160;&#160;&#160;&#160;"Job"  : "Students of TCU Intelligent Systems B3",<br />
-          &#160;&#160;&#160;&#160;"Hobby" : ["RhythmGame", "Climbing", "Walking"],<br />
-          &#160;&#160;&#160;&#160;"Qualifications" : {<br>
+          &#160;&#160;&#160;&#160;"Name" : Seyogi,<br />
+          &#160;&#160;&#160;&#160;"Job"  : Students of TCU <a class="subtxt">Intelligent Systems </a>B3,<br />
+          &#160;&#160;&#160;&#160;"Hobby" : RhythmGame <a class="subtxt">| Walking | Climbing</a>,<br>
+          &#160;&#160;&#160;&#160;"Qualifications" : [<br>
           <div class="sub">
-          &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"2022" : "普通自動車免許(AT)",<br>
-          &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"2023" : "基本情報技術者"
+          &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;普通自動車免許(AT),<br>
+          &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;基本情報技術者
           </div>
-          &#160;&#160;&#160;&#160;}<br />
+          &#160;&#160;&#160;&#160;]<br />
           }
         </div>
         <br />
@@ -112,6 +112,17 @@ export default {
 }
 .introduction_box .right .sub{
   font-size:15px;
+}
+
+@media screen and (max-width: 600px) {
+  .introduction_box .right .subtxt{
+    display: none;
+  }
+}
+/* for Desktop */
+@media screen and (min-width: 600px) {
+  .introduction_box .right .subtxt{
+  }
 }
 .introduction_box .links {
   
