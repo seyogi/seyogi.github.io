@@ -22,7 +22,6 @@
     "vue-burger-menu": "^2.0.5",
     "vue-router": "^4.1.6",
     "vue-tweet": "^2.0.2",
-    "vue-tweet-embed": "^2.4.0",
     "vue-twitter-timeline": "^1.0.2",
     "vue3-burger-menu": "^1.1.1",
     "vue3-carousel": "^0.3.0"
@@ -34,7 +33,8 @@
     "@vue/cli-plugin-eslint": "~5.0.0",
     "@vue/cli-service": "~5.0.0",
     "eslint": "^7.32.0",
-    "eslint-plugin-vue": "^8.0.3"
+    "eslint-plugin-vue": "^8.0.3",
+    "gh-pages": "^6.1.0"
   },
   "eslintConfig": {
     "root": true,
