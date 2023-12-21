@@ -3,7 +3,8 @@ export let axios;
 export default {
     install(app) {
         // base url
-        app.config.globalProperties.$http.defaults.baseURL = 'https://iidx_radar_api-1-n0620677.deta.app'
+        app.config.globalProperties.$http.defaults.baseURL = "https://iidx_radar_api-1-n0620677.deta.app"
+        //'https://iidx_radar_api-1-n0620677.deta.app'
 
         // request interceptor
         app.config.globalProperties.$http.interceptors.request.use(config => {

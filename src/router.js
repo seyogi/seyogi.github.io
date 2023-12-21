@@ -2,7 +2,7 @@ import { createRouter, createWebHashHistory } from 'vue-router'
 import HomeBody from './views/HomeBody.vue'
 import ProductBody from './views/ProductBody.vue'
 import RhythmBody from './views/RhythmBody.vue'
-import iidx_radar from './views/iidxRadarBody.vue'
+import iidxRadarBody from './views/iidxRadarBody.vue'
 //import newtimeline from './views/newtimelineBody.vue'
 
 const routes = [
@@ -24,7 +24,7 @@ const routes = [
   {
     path: '/iidx_radar',
     name: 'iidx_radar',
-    component: iidx_radar
+    component: iidxRadarBody
   }
 ]
 
