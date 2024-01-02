@@ -2,8 +2,9 @@
   <div>
     <div class="main_box">
       <br />
+      <Careea></Careea>
       <br />
-      <h2>ハッカソン</h2>
+      <h2>HACKATHON</h2>
       <HackBox></HackBox>
       <br />
       <h2>OTHERS</h2>
@@ -14,13 +15,15 @@
 </template>
 
 <script>
+import Careea from "./Careea";
 import Box from "./Box";
 import HackBox from "./HackBox";
 
 export default {
-   components: {
+  components: {
     Box,
     HackBox,
+    Careea,
   },
   data() {
     return {
@@ -38,15 +41,29 @@ export default {
 
 <style scoped>
 .main_box {
-  margin-left: 10px;
-  width: 98%;
+  margin-left: 2%;
+  margin-right: 2%;
+  width: 96%;
 }
-h2 {
+@media screen and (max-width: 700px) {
+  h2 {
   width: 80%;
-  padding: 1rem 2rem;
+  padding: 0.5rem 2rem;
   color: #fff;
-  background: #644;
-  -webkit-box-shadow: 5px 5px 0 #422;
-  box-shadow: 5px 5px 0 #422;
+  background: #866;
+  -webkit-box-shadow: 5px 5px 0 #644;
+  box-shadow: 5px 5px 0 #644;
+}
+}
+/* for Desktop */
+@media screen and (min-width: 700px) {
+  h2 {
+    width: 90%;
+    padding: 0.5rem 2rem;
+    color: #fff;
+    background: #866;
+    -webkit-box-shadow: 5px 5px 0 #644;
+    box-shadow: 5px 5px 0 #644;
+  }
 }
 </style>

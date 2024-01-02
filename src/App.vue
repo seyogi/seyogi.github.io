@@ -5,7 +5,6 @@
       <component :is="Component" :key="$route.path" />
     </transition> 
   </router-view>
-
   <Footer></Footer>
 </template>
 

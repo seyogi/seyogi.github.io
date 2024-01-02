@@ -1,6 +1,6 @@
 <template>
   <div class="center_container">
-    <h3>略歴</h3>
+    <h3>活動略歴</h3>
     <hr style="width: 80%" />
     <Timeline :timeline_contents="timeline_contents"></Timeline>
   </div>
@@ -8,7 +8,7 @@
 
 <script>
 import TimelineContents from '../../assets/CareeaContents.json';
-import Timeline from "../Timeline";
+import Timeline from "./CareeaTimeline";
 const elements = document.getElementsByClassName("sub-li");
 
 export default {

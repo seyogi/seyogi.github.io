@@ -1,8 +1,6 @@
 <template>
   <div class="Banner">
-    <div class="mainImg">
-      <img src="/img/tyoukaizann.jpeg" />
-    </div>
+      <img class="mainImg" src="/img/tyoukaizann.jpeg" />
   </div>
 </template>
 
@@ -10,14 +8,12 @@
 /*---------- Banner ----------*/
 .Banner {
   width: 100%;
-  margin: 0px;
+  margin: auto;
 }
 .mainImg {
-  max-width: 1080px;
-  margin: 0 auto;
-}
-.mainImg img {
-  max-width: 100%;
-  height: auto;
+  width: 100%;
+  max-width: 940px;
+  margin: auto;
+  display: block;
 }
 </style>

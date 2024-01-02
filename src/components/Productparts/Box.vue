@@ -1,15 +1,13 @@
 <template>
   <div>
     <br />
-    <br />
     <div class="container">
-      <div v-for="content in contents" :key="content">
-        <div class="content">
-          <img class="img" :src="content.imgurl" style="width: 250px; max-width: 100%" />
-          <div class="text">
-            {{ content.title }}<br />
-            <a class="sub">{{ content.text }}</a><br />
-          </div>
+      <div class="content" v-for="content in contents" :key="content">
+        <img class="img" :src="content.imgurl" />
+        <div class="text">
+          {{ content.title }}<br />
+          <a class="sub">{{ content.text }}</a
+          ><br />
         </div>
       </div>
     </div>
@@ -23,6 +21,11 @@ export default {
       active: "1",
       contents: [
         {
+          imgurl: "/img/product/others/Electron.png",
+          title: "SDVX Input Overlay",
+          text: "Electron",
+        },
+        {
           imgurl: "/img/product/others/TeiennsaiPlay2.png",
           title: "Lawine",
           text: "Unity,Arduino",
@@ -34,19 +37,9 @@ export default {
           text: "Arduino",
         },
         {
-          imgurl: "/img/product/others/App_notification.jpg",
-          title: "スマホアプリ(名称未定)",
-          text: "Flutter",
-        },
-        {
           imgurl: "/img/product/others/pbl_app.png",
           title: "時間割アプリ",
           text: "JavaFX",
-        },
-        {
-          imgurl: "/img/product/others/Electron.png",
-          title: "キーキャプチャアプリ",
-          text: "Electron",
         },
       ],
     };
@@ -63,17 +56,44 @@ export default {
 .container {
   display: flex;
   flex-wrap: wrap;
+  max-width: 100%;
 }
-.content {
-  margin: 10px;
-  width: 250px;
-  height: 300px;
-  border: 1px solid #007db9;
+@media screen and (max-width: 700px) {
+  .content {
+    width: calc(50% - 12px);
+    margin: 5px;
+    border: 1px solid #007db9;
+  }
+  .content .text {
+    min-height: 50px;
+    padding: 5px 7.5px;
+    font-size: 15px;
+  }
+  .content .text .sub {
+    font-size: 12px;
+  }
+  .content img {
+    max-width: 100%;
+    max-height: 400px;
+  }
 }
-.content .text {
-  padding: 10px;
-
-}.content .text .sub{
-  font-size: 12px;
+/* for Desktop */
+@media screen and (min-width: 700px) {
+  .content {
+    margin: 10px;
+    max-width: 250px;
+    height: 300px;
+    border: 1px solid #007db9;
+  }
+  .content .text {
+    padding: 10px;
+  }
+  .content img {
+    width: 250px;
+    max-width: 100%;
+  }
+  .content .text .sub {
+    font-size: 12px;
+  }
 }
 </style>

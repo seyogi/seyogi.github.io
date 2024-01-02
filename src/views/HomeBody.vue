@@ -21,6 +21,7 @@ export default {
 
 <style scoped>
 .center_container {
+  background-color: #fffae6;
   margin-left: auto;
   margin-right: auto;
   max-width: 940px;

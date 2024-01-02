@@ -2,9 +2,9 @@
   <div class="footer">
     <ul class="footer-list">
       <li><a href="https://seyogi.github.io/">HOME</a> | </li>
-      <li><a href="https://godfield.net/" target="_blank">Contact</a></li>
+      <li><a href="https://textage.cc/score/13/contract.html?1XC00" target="_blank">CONTRACT</a></li>
     </ul>
-    Copyright © 2020 Seyogi All Rights Reserved.
+    ©2020-2024 Seyogi All Rights Reserved.
   </div>
 </template>
 

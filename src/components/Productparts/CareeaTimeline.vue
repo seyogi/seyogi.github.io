@@ -19,6 +19,9 @@
           <div class="sub-txt" v-if="'sub_text' in content">
             {{ content.sub_text }}
           </div>
+          <div class="sub-txt" v-if="'achievements_text' in content">
+            Award:{{ content.achievements_text }}
+          </div>
         </div>
       </div>
     </li>
@@ -87,7 +90,7 @@ export default {
     display: none;
   }
   .timeline-txt{
-    font-size: 15px;
+    font-size: 18px;
     margin-bottom: 15px;
   }
   .timeline-txt .sub-txt {

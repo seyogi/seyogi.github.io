@@ -45,18 +45,40 @@ export default {
 </script>
 
 <style scoped>
-.box {
-  width: 90%;
+@media screen and (max-width: 700px) {
+  .box {
+    margin: 20px 0;
+    width: 100%;
+  }
+  .carousel__slide {
+    max-height: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .carousel__slide img {
+    max-height: 100%;
+    max-width: 85%;
+    padding-top: 30px;
+  }
 }
-.carousel__slide {
-  max-height: 450px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.carousel__slide img {
-  max-height: 100%;
-  max-width: 80%;
-  padding-top: 30px;
+/* for Desktop */
+@media screen and (min-width: 700px) {
+  .box {
+    margin: auto;
+    display: block;
+    width: 90%;
+  }
+  .carousel__slide {
+    max-height: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .carousel__slide img {
+    max-height: 100%;
+    max-width: 80%;
+    padding-top: 30px;
+  }
 }
 </style>

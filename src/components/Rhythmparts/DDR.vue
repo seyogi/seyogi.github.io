@@ -13,17 +13,16 @@
           </template>
         </carousel>
       </div>
-      <br />
-      <br />
-      段位認定 : SP十段(A3)<br />
-      最高 : SP足19 / DP足18 <br />
-      DDR CODE : 61609228<br /><br />
-      19クリア ... 5 / 7(8) <br />
-      <br />
-      <br />
-      <br />
-      <hr style="width: 80%" />
-      <Timeline :timeline_contents="timeline_contents"></Timeline>
+      <div class="text_box">
+        段位認定 : SP十段(A3)<br />
+        最高 : SP足19 / DP足18 <br />
+        DDR CODE : 61609228<br />
+        <br />
+        SP19未クリア ... ラクリマ/ENDYMION/BTF/鳳 <br />
+        <br />
+        <hr style="width: 80%" />
+        <Timeline :timeline_contents="timeline_contents"></Timeline>
+      </div>
     </div>
   </div>
 </template>
@@ -58,31 +57,34 @@ export default {
 
 <style scoped>
 .main_box {
-  padding: 30px;
+}
+.main_box .text_box {
+  padding: 20px;
 }
 .timeline {
   list-style: none;
 }
 @media screen and (max-width: 700px) {
   .carousel__slide {
-    max-height: 350px;
-    width: 80%;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
   }
   .carousel__slide img {
-    max-width: 80%;
+    max-width: 100%;
+    max-height: 350px;
   }
 }
 /* for Desktop */
 @media screen and (min-width: 700px) {
   .carousel_box {
-    width: 85%;
+    margin: auto;
+    display: block;
+    width: 90%;
   }
   .carousel__slide {
-    height: 350px;
-    width: 90%;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
