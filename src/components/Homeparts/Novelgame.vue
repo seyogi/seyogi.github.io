@@ -1,4 +1,6 @@
 <template>
+  スペースが余ったのでプレイ済みのノベルゲーム並べときます
+  <br /><br />
   <div class="break-keep">
     <h3>Now Playing</h3>
     ONE. /
@@ -28,7 +30,8 @@
     天使騒々 /
     PARQUET /
     ノラと皇女と野良猫ハート (1/2) / 
-    この世の果てで恋を唄う少女YU-NO
+    この世の果てで恋を唄う少女YU-NO /
+    沙耶の唄
     <br /><br />
     <h3>Planning to buy</h3>
     anemoi /
