@@ -3,7 +3,7 @@
     <div class="inner">
       <div class="contents">
         <div class="logo">
-          <router-link to="/iidx_radar" class="logobox">
+          <router-link to="/" class="logobox">
             <img src="/img/icon.png" class="logoimg" />
             <div class="logotxt">SEYOGI's<br />Lab</div>
           </router-link>
@@ -21,6 +21,37 @@
             <div class="japanesetxt">音ゲーリザ他</div>
             GameRecords
           </router-link>
+          <router-link to="/iidx_radar" class="linkbox">
+            <div class="japanesetxt">ノーツレーダー</div>
+            NotesRadar
+          </router-link>
+        </div>
+        <button ype="button" class="menu-btn" v-on:click="this.open = !this.open">
+          <font-awesome-icon
+            class="icons"
+            icon="fa fa-bars"
+            size="2x"
+            color="#c4a8a5"
+            aria-hidden="true"
+          />
+        </button>
+        <div class="menu" v-bind:class="{ 'is-active': this.open }">
+          <router-link to="/" class="menu__item" v-on:click="this.open = !this.open">
+            <div class="japanesetxt">トップページ</div>
+            Top
+          </router-link>
+          <router-link to="/Product" class="menu__item" v-on:click="this.open = !this.open">
+            <div class="japanesetxt">製作ログ</div>
+            ProductLog
+          </router-link>
+          <router-link to="/Rhythm" class="menu__item" v-on:click="this.open = !this.open">
+            <div class="japanesetxt">音ゲーリザ他</div>
+            GameRecords
+          </router-link>
+          <router-link to="/iidx_radar" class="menu__item" v-on:click="this.open = !this.open">
+            <div class="japanesetxt">ノーツレーダー</div>
+            NotesRadar
+          </router-link>
         </div>
       </div>
     </div>
@@ -28,6 +59,13 @@
 </template>
 
 <script>
+export default {
+  data() {
+    return {
+      open: false,
+    };
+  },
+};
 </script>
 
 <style scoped>
@@ -65,7 +103,57 @@
   vertical-align: top;
   font-family: Arcaea;
 }
-@media screen and (min-width: 600px) {
+.menu-btn {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 3;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #333;
+  color: #fff;
+}
+.menu{
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  z-index: 1;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: rgba(5, 5, 5, 0.7);
+}
+.menu{
+  transform: translateX(100vw);
+  transition: all .3s linear;
+}
+/* アニメーション後のメニューの状態 */
+.menu.is-active{
+  transform: translateX(0);
+}
+.menu__item{
+  text-decoration: none;
+  position: relative;
+  z-index: 3;
+  width: 100%;
+  height: auto;
+  padding: .5em 1em;
+  text-align: center;
+  font-size: 20px;
+  color: #d4b8b5;
+  box-sizing: border-box;
+}
+.menu__item .japanesetxt{
+  font-size: 25px;
+}
+@media screen and (min-width: 850px) {
   .header .contents {
     display: flex;
     padding-right: 30px;
@@ -76,7 +164,7 @@
     gap: 6px 5px;
   }
   .header .contents .linkbox {
-    min-width: 90px;
+    min-width: 100px;
     text-decoration: none;
     padding: 18px 5px;
     background: #c4a8a5;
@@ -87,23 +175,11 @@
     font-size: 15px;
   }
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 850px) {
   .header .contents .link {
     height: 45px;
-    display: flex;
+    display: none;
     gap: 6px 5px;
-  }
-  .linkbox {
-    min-width: 100px;
-    height: 40px;
-    background-color: #c4a8a5;
-    font-size: 10px;
-    text-decoration: none;
-    white-space: nowrap;
-    text-align: center;
-  }
-  .linkbox .japanesetxt {
-    font-size: 15px;
   }
 }
 </style>

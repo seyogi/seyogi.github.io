@@ -1,7 +1,6 @@
 <template>
   <div>
     <div class="main_box">
-      
       <br />
       情報系大学生による雑記ページです。<br />
       <br />
@@ -68,16 +67,16 @@
             }
           </div>
           <div class="Phone_text">
-          <b>Seyogi</b><br>
-          TCU Intelligent Systems B3<br><br>
-          <h4>- Hobby -</h4>
-          RhythmGame<br>
-          Walking<br>
-          Climbing<br><br>
-          <h4>- Qualifications -</h4>
-          普通自動車免許(AT)<br>
-          基本情報技術者<br>
-          応用情報技術者<br>
+            <b>Seyogi</b><br />
+            TCU Intelligent Systems B3<br /><br />
+            <h4>- Hobby -</h4>
+            RhythmGame<br />
+            Walking<br />
+            Climbing<br /><br />
+            <h4>- Qualifications -</h4>
+            普通自動車免許(AT)<br />
+            基本情報技術者<br />
+            応用情報技術者<br />
           </div>
         </div>
         <br />
@@ -86,13 +85,23 @@
       <br />
       <br />
       <br />
-      <br />
-      <br />
+      スペースが余ったのでプレイ済みのノベルゲーム並べときます
+      <br /><br />
+      <Novelgame/>
+      <br /><br /><br />
     </div>
   </div>
 </template>
 
-<script></script>
+<script>
+import Novelgame from "./Novelgame";
+
+export default {
+  components: {
+    Novelgame,
+  },
+};
+</script>
 
 <style scoped>
 .main_box {
@@ -101,7 +110,7 @@
   width: 92%;
 }
 
-@media screen and (max-width: 700px) { 
+@media screen and (max-width: 700px) {
   .introduction_box {
   }
   .introduction_box .left {
@@ -114,11 +123,11 @@
     width: 120px; /* ※縦横を同値に */
     height: 120px; /* ※縦横を同値に */
   }
-  .Desktop_text{
-    display:none;
+  .Desktop_text {
+    display: none;
   }
-  .Phone_text{
-    display:block;
+  .Phone_text {
+    display: block;
     text-align: center;
   }
 }
@@ -137,22 +146,22 @@
     height: 120px; /* ※縦横を同値に */
   }
   .introduction_box .right {
-    margin: 30px 0 ;
+    margin: 30px 0;
     font-family: "Arial";
     font-size: 17px;
   }
   .introduction_box .right .sub {
     font-size: 15px;
   }
-  .Desktop_text{
-    display:block;
+  .Desktop_text {
+    display: block;
   }
-  .Phone_text{
-    display:none;
+  .Phone_text {
+    display: none;
   }
 }
 .introduction_box .links {
-  justify-content: center; 
+  justify-content: center;
   display: flex;
   padding-left: 10px;
   margin: 0 auto;

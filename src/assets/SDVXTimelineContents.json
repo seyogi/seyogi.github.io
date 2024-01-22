@@ -31,23 +31,17 @@
         "sub_text": "累計約1500クレ ちょうど暴龍天が折り返しでした"
     },
     {
-        "date_y": "2023年",
-        "date_m": " 3月",
-        "text": "Lachryma《Re:Queen’M》GRV S",
-        "sub_text": "憧れだったリザルトをこの手に"
-    },
-    {
-        "date_y": "",
-        "date_m": " 8月",
-        "text": "大宇宙ステージ GRV PUC",
-        "sub_text": "19PUC ←つよそう"
-    },
-    {
         "circle": true,
         "bold": true,
-        "date_y": "",
+        "date_y": "2023年",
         "date_m": " 9月",
         "text": "VOLFORCE IMPERIAL II 到達",
-        "sub_text": "一ヶ月で0.25上げました"
+        "sub_text": "6月頃から本腰入れて狙いはじめて3ヶ月で0.75上げました"
+    },
+    {
+        "date_y": "2024年",
+        "date_m": " 1月",
+        "text": "LEVEL 19 全S",
+        "sub_text": "蠍火二度とやりたくない"
     }
 ]

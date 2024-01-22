@@ -14,7 +14,7 @@
         </carousel>
       </div>
       <div class="text_box">
-        Max Rating : 17.30<br />
+        Max Rating : 17.33<br />
         CLASS EMBLEM : INFINITY -ALL CLEAR-<br />
         フレンドコード : 4069095717545<br />
         <br />
@@ -46,6 +46,9 @@ export default {
         },
         {
           imgurl: "/img/Rhythm/Result/UNI01.jpg",
+        },
+        {
+          imgurl: "/img/Rhythm/Result/UNI03.jpg",
         },
       ],
       timeline_contents: TimelineContents,

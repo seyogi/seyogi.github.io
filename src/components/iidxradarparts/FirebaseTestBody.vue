@@ -1,6 +1,8 @@
 <template>
   <div class="main_box">
-    <div v-show="!isSignIn" id="box">
+    <br />
+    <br />
+    <div v-show="!isSignIn && !isUserNotSigned" id="box">
       <div class="container">
         <p>ID(メールアドレス)</p>
         <input type="email" v-model="inputValueId" />
@@ -20,6 +22,8 @@
       <div class="buttonbox">
         <button class="btn_standard" type="submit" v-on:click="signUp">SignUp</button>
         <button class="btn_standard" type="submit" v-on:click="signIn">SignIn</button>
+        <br />
+        <button class="btn_standard" type="submit" v-on:click="notSigned">ログインせずに使用する</button>
       </div>
       <div class="loading_animation_container">
         <div class="loading_animation" v-if="this.isLoading">
@@ -47,6 +51,9 @@
         </div>
       </div>
     </div>
+    <div v-show="isUserNotSigned">
+      <iidxListUserNotSigned ref="iidxListUserNotSigned"></iidxListUserNotSigned>
+    </div>
     <br />
     <br />
     <br />
@@ -68,6 +75,7 @@
 import iidxListSet from "./iidxListSet.vue";
 import iidxListShow from "./iidxListShow.vue";
 import LoadingAnimationComponent from "./LoadingAnimationComponent.vue";
+import iidxListUserNotSigned from "./iidxListUserNotSigned.vue";
 // Firebase関連のインポート
 import {
   signInWithEmailAndPassword,
@@ -86,12 +94,14 @@ export default {
     iidxListSet,
     iidxListShow,
     LoadingAnimationComponent,
+    iidxListUserNotSigned,
   },
   data() {
     return {
       // ローディングアニメーション
       isLoading: false,
       isSignIn: false,
+      isUserNotSigned: false,
       // エラーメッセージ
       errorMessage: "",
       // 入力欄
@@ -200,6 +210,9 @@ export default {
           this.isLoading = false;
         });
     },
+    notSigned() {
+      this.isUserNotSigned = true;
+    },
     async logOut() {
       var result = confirm("サインアウトしますか？");
       if (result) {
@@ -252,12 +265,22 @@ export default {
     calc_radarScore(diff, userData, radarData) {
       var maxScore = radarData[diff]["ノート数"] * 2;
       delete radarData["ノート数"];
+      var MaxValue = {};
       Object.entries(radarData[diff]).forEach(([key, value]) => {
-        radarData[diff][key] =
+        var temp =
           Math.floor(value * (userData[diff] / maxScore) * Math.pow(10, 2)) /
           Math.pow(10, 2);
+        MaxValue[key] = Math.floor((temp - value) * Math.pow(10, 2)) / Math.pow(10, 2);
+        radarData[diff][key] = temp;
       });
-      return radarData[diff];
+      return {
+        radarScore: radarData[diff],
+        rawScore: userData[diff],
+        MAXScore: maxScore,
+        ScorePer:
+          Math.floor((userData[diff] / maxScore) * Math.pow(10, 4)) / Math.pow(10, 2),
+        MaxradarScore: MaxValue,
+      };
     },
 
     receive_radarData() {
@@ -284,10 +307,16 @@ export default {
                   temp_RadarData
                 );
               }
+              var temp_diffNums = {
+                HYPER: temp_userData[key]["HYPER_dif_num"],
+                ANOTHER: temp_userData[key]["ANOTHER_dif_num"],
+                LEGGENDARIA: temp_userData[key]["LEGGENDARIA_dif_num"],
+              };
               temp_returnData.push({
                 TITLE: temp_userData[key]["TITLE"],
                 artist: temp_userData[key]["artist"],
-                radarScore: temp_diffScores,
+                Scores: temp_diffScores,
+                diffNum: temp_diffNums,
               });
             }
           }
@@ -301,6 +330,39 @@ export default {
       });
     },
 
+    receive_temp_userData(data) {
+      var temp_userData = data;
+      var temp_returnData = [];
+      for (let key in temp_userData) {
+        var temp_RadarData = this.iidxRadarScore[temp_userData[key]["TITLE"]];
+        if (temp_RadarData != undefined) {
+          //曲名があるか
+          var temp_diffScores = {};
+          for (let diff in temp_RadarData) {
+            temp_diffScores[diff] = this.calc_radarScore(
+              diff,
+              temp_userData[key],
+              temp_RadarData
+            );
+          }
+          var temp_diffNums = {
+            HYPER: temp_userData[key]["HYPER_dif_num"],
+            ANOTHER: temp_userData[key]["ANOTHER_dif_num"],
+            LEGGENDARIA: temp_userData[key]["LEGGENDARIA_dif_num"],
+          };
+          temp_returnData.push({
+            TITLE: temp_userData[key]["TITLE"],
+            artist: temp_userData[key]["artist"],
+            Scores: temp_diffScores,
+            diffNum: temp_diffNums,
+          });
+        }
+      }
+      this.isLoading = false;
+      this.scoreData = temp_returnData;
+      this.$refs.iidxListUserNotSigned.sortBy("NOTES");
+    },
+
     selectTab: function (num) {
       this.show = num;
       if (num == 1) this.receive_userData(this.user.uid);
@@ -311,8 +373,9 @@ export default {
 
 <style scoped>
 .main_box {
-  margin-left: 10px;
-  width: 98%;
+  margin-left: 2%;
+  margin-right: 2%;
+  width: 96%;
 }
 .container {
   display: flex;

@@ -1,80 +1,124 @@
 <template>
   <div class="main_box">
-    <br />
-    <input type="button" id="aaa" value="RELOAD" @click="sortBy(selectedTheme)" />
-    <br />
-    <div id="vis">
-      表示曲数
-      <input type="number" v-model="numInput" size="5" />&nbsp;&nbsp;&nbsp;
-      <select @change="sortBy(selectedTheme)" v-model="selectedTheme">
-        <option disabled value="">Theme一覧</option>
-        <option
-          v-for="Theme in optionThemes"
-          v-bind:value="Theme.name"
-          v-bind:key="Theme.id"
-        >
-          {{ Theme.name }}
-        </option>
-      </select>
-      <input
-        type="checkbox"
-        id="checkbox"
-        v-model="checked"
-        @click="invisSameTitleData()"
+    <div class="set_box">
+      <br />
+      ※同一曲について複数譜面タイプ（B/N/H/A/L）をプレーしている場合、それらの中の最大値のみが対象として適用されます
+      <br />
+      <textarea
+        id="csvTextArea"
+        name="csv_text"
+        rows="10"
+        cols="33"
+        @change="changeTextArea"
       />
-      <label for="checkbox">同名曲の異なる難易度を含む</label>
+      <br />
+      <input
+        type="file"
+        id="csvFile"
+        name="avatar"
+        accept=".csv"
+        @change="selectedFile"
+      />
+      <br /><br />{{ this.errmsg }}
+      <br />
+      <input type="button" id="sendButton" value="Go" @click="click()" />
       <br /><br />
-      Av:{{ this.SumData[selectedTheme] }}
-      <br /><br />
-      <div
-        v-for="scoreData in this.ShowData.slice(0, this.numInput)"
-        :key="scoreData.index"
-      >
-        <div class="scoreData_container">
-          <div class="score">
-            <div
-              class="maintxt"
-              :style="colorDataScore(scoreData.Scores.radarScore[selectedTheme])"
-            >
-              {{ scoreData.Scores["radarScore"][selectedTheme] }}
-              <a class="subtxt"
-                >({{ scoreData.Scores["MaxradarScore"][selectedTheme] }})</a
+      <div class="loading_animation_container">
+        <div class="loading_animation" v-if="this.isLoading">
+          <LoadingAnimationComponent></LoadingAnimationComponent>
+        </div>
+      </div>
+      <br />
+    </div>
+    <div class="show_box">
+      <br />
+      <input type="button" id="aaa" value="RELOAD" @click="sortBy(selectedTheme)" />
+      <br />
+      <div id="vis">
+        表示曲数
+        <input type="number" v-model="numInput" size="5" />&nbsp;&nbsp;&nbsp;
+        <select @change="sortBy(selectedTheme)" v-model="selectedTheme">
+          <option disabled value="">Theme一覧</option>
+          <option
+            v-for="Theme in optionThemes"
+            v-bind:value="Theme.name"
+            v-bind:key="Theme.id"
+          >
+            {{ Theme.name }}
+          </option>
+        </select>
+        <input
+          type="checkbox"
+          id="checkbox"
+          v-model="checked"
+          @click="invisSameTitleData()"
+        />
+        <label for="checkbox">同名曲の異なる難易度を含む</label>
+        <br /><br />
+        Av:{{ this.SumData[selectedTheme] }} <br /><br />
+        <div
+          v-for="scoreData in this.ShowData.slice(0, this.numInput)"
+          :key="scoreData.index"
+        >
+          <div class="scoreData_container">
+            <div class="score">
+              <div
+                class="maintxt"
+                :style="colorDataScore(scoreData.Scores.radarScore[selectedTheme])"
               >
+                {{ scoreData.Scores["radarScore"][selectedTheme] }}
+                <a class="subtxt"
+                  >({{ scoreData.Scores["MaxradarScore"][selectedTheme] }})</a
+                >
+              </div>
+              <div class="subtxt">
+                {{ scoreData.Scores["rawScore"] }}/{{ scoreData.Scores["MAXScore"] }} ({{
+                  scoreData.Scores["ScorePer"]
+                }}%)<br />
+              </div>
             </div>
-            <div class="subtxt">
-              {{ scoreData.Scores["rawScore"] }}/{{ scoreData.Scores["MAXScore"] }} ({{
-                scoreData.Scores["ScorePer"]
-              }}%)<br />
+            <div class="diff" :style="colorDataDiff(scoreData.diff)">
+              {{ scoreData.diffNum }}
+              <div class="sub">{{ scoreData.diff }}</div>
+            </div>
+            <div class="songData">
+              {{ scoreData.TITLE }}
+              <div class="sub">{{ scoreData.artist }}</div>
             </div>
           </div>
-          <div class="diff" :style="colorDataDiff(scoreData.diff)">
-            {{ scoreData.diffNum }}
-            <div class="sub">{{ scoreData.diff }}</div>
-          </div>
-          <div class="songData">
-            {{ scoreData.TITLE }}
-            <div class="sub">{{ scoreData.artist }}</div>
+        </div>
+        <br />
+        <div class="loading_animation_container">
+          <div class="loading_animation" v-if="this.$parent.isLoading">
+            <LoadingAnimationComponent></LoadingAnimationComponent>
           </div>
         </div>
       </div>
       <br />
-      <div class="loading_animation_container">
-        <div class="loading_animation" v-if="this.$parent.isLoading">
-          <LoadingAnimationComponent></LoadingAnimationComponent>
-        </div>
-      </div>
     </div>
-    <br />
   </div>
 </template>
 
 <script>
+import { axios } from "../../axios/index";
 import LoadingAnimationComponent from "./LoadingAnimationComponent.vue";
 
 export default {
-  components: { LoadingAnimationComponent },
+  components: {
+    LoadingAnimationComponent,
+  },
   data() {
     return {
+      // ローディングアニメーション
+      isLoading: false,
+      errmsg: "",
+      uploadFile: null,
+      csvText: "",
+      config: {
+        headers: {
+          "content-type": "multipart/form-data",
+        },
+      },
       selectedTheme: "NOTES",
       SumData: {
         NOTES: 0,
@@ -99,15 +143,50 @@ export default {
       },
       numInput: "10",
       checked: false,
-      config: {
-        headers: {
-          "content-type": "multipart/form-data",
-        },
-      },
       ShowData: [],
+      temp_scoreData:{},
     };
   },
   methods: {
+    selectedFile: function (e) {
+      e.preventDefault();
+      let files = e.target.files;
+      this.uploadFile = files[0];
+    },
+    changeTextArea: function () {
+      let csvTextArea = document.getElementById("csvTextArea");
+      this.csvText = csvTextArea.value;
+    },
+    click() {
+      this.errmsg = "";
+      var formData = new FormData();
+      if (this.uploadFile) {
+        this.isLoading = true;
+        formData.append("file", this.uploadFile);
+        this.send_file(formData).then((response) => {
+          this.set_userData(response.data.message);
+        });
+      } else if (this.csvText != "") {
+        this.isLoading = true;
+        formData.append("text", this.csvText);
+        this.send_text(formData).then((response) => {
+          this.set_userData(response.data.message);
+        });
+      } else {
+        this.errmsg = "ファイルまたはテキストを入力してください";
+      }
+    },
+    send_file(file) {
+      return axios.post("iidx/uploadfile/", file, this.config);
+    },
+    send_text(text) {
+      return axios.post("iidx/uploadtext/", text, this.config);
+    },
+    set_userData(data) {
+      this.isLoading = false;
+      this.$parent.receive_temp_userData(data);
+      console.log(data);
+    },
     RANK: function (num) {
       num *= 0.01;
       if (num > 8 / 9) return "AAA";
@@ -233,6 +312,7 @@ export default {
   },
 };
 </script>
+
 
 <style scoped>
 .main_box {

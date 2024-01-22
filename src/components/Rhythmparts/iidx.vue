@@ -45,10 +45,10 @@ export default {
     return {
       contents: [
         {
-          imgurl: "/img/Rhythm/Result/Beatmania02.jpg",
+          imgurl: "/img/Rhythm/Result/Beatmania01.jpg",
         },
         {
-          imgurl: "/img/Rhythm/Result/Beatmania01.jpg",
+          imgurl: "/img/Rhythm/Result/Beatmania02.jpg",
         },
         {
           imgurl: "/img/Rhythm/Result/Beatmania03.jpg",
