@@ -21,7 +21,7 @@
       <div class="sub_box">
         <img src="/img/Rhythm/Result/maimai01.jpg" class="img" />
         <div class="side_box">
-          Max Rating : 15001<br />
+          Max Rating : 15033<br />
           <br />
           つい先日虹レになりました。ようやく三機種虹！<br />
           <br />
