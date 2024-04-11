@@ -3,6 +3,8 @@
     <div class="main_box">
       <br />
       情報系大学生による雑記ページです。<br />
+      <a href="https://seyogi.hatenablog.com/" target="_blank">はてなブログ</a
+      >で記事書いたりしてます。<br />
       <br />
       <h2>About Me</h2>
       <div class="introduction_box">

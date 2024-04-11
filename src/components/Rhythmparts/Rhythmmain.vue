@@ -4,9 +4,8 @@
       <br />
       <br />
       歴10年以上の音ゲーマーによる自己満ページです。更新中。。。<br /><br />
-      <a href="https://seyogi.hatenablog.com/" target="_blank">はてなブログ</a
-      >で記事書いたりしてます。<br />
-      <a
+      
+      いろいろ計算する<a
         href="https://drive.google.com/file/d/1eEWmv2dzkAwZakEuNscZqwOq3Tjr2QXL/view?usp=sharing"
         target="_blank"
         >Excelシート</a

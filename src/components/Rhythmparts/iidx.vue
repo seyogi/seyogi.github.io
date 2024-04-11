@@ -14,12 +14,12 @@
         </carousel>
       </div>
       <div class="text_box">
-        段位認定 : SP極皆伝(RESIDENT)<br />
-        アリーナ : 最高A3<br />
+        段位認定 : SP極皆伝(RESIDENT~)<br />
+        アリーナ最高ランク : スコアA3 / ミスカンA1<br />
         IIDX ID : 7228-1124<br />
         <br />
         BISTROVERから本格的に始めました。<br />
-        2024/2/20 未難1(黒🦑)<br />
+        2024/3/18 未難1(黒🦑)<br />
         <br />
         ☆12参考表:<a href="https://sp12.iidx.app/users/7228-1124" target="_blank">URL</a
         ><br />
