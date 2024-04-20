@@ -1,13 +1,13 @@
 <template>
-  <div><FirebaseTestBody class="center_container"></FirebaseTestBody></div>
+  <div><IIDXRaderBody class="center_container"></IIDXRaderBody></div>
 </template>
 
 <script>
-import FirebaseTestBody from "../components/iidxradarparts/FirebaseTestBody";
+import IIDXRaderBody from "../components/iidxradarparts/IIDXRaderBody";
 
 export default {
   components: {
-    FirebaseTestBody,
+    IIDXRaderBody,
   },
 };
 </script>

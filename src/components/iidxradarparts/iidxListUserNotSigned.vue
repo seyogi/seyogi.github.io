@@ -185,7 +185,7 @@ export default {
     set_userData(data) {
       this.isLoading = false;
       this.$parent.receive_temp_userData(data);
-      console.log(data);
+      this.sortBy(this.selectedTheme) 
     },
     RANK: function (num) {
       num *= 0.01;
