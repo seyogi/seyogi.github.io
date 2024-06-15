@@ -23,31 +23,34 @@
             </a>
           </div>
         </div>
-
         <div class="right">
           <div class="Desktop_text">
-            <b>Seyogi</b><br />
-            TCU Intelligent Systems B3<br /><br />
-            <h4>- Hobby -</h4>
-            RhythmGame / Walking / Climbing<br /><br />
-            <h4>- Qualifications -</h4>
-            <a class="sub">
-              普通自動車免許(AT)<br />
-              基本情報技術者<br />
-              応用情報技術者<br />
-            </a>
+            <div class="name">SEYOGI</div>
+            TCU Intelligent Systems B4<br /><br />
+            <h4>- Interests</h4>
+            <pre class="eng">&#009;Artificial Neural Networks</pre>
+            <pre class="eng">&#009;Neuroscience</pre>
+            <pre class="eng">&#009;Brain Computer Interface</pre>
+            <br />
+            <h4>- Qualifications</h4>
+            <pre>&#009;基本情報技術者</pre>
+            <pre>&#009;応用情報技術者</pre><br />
           </div>
           <div class="Phone_text">
-            <b>Seyogi</b><br />
-            TCU Intelligent Systems B3<br /><br />
-            <h4>- Hobby -</h4>
+            <div class="name">SEYOGI</div><br />
+            TCU Intelligent Systems B4<br /><br />
+            <h3>- Interests - </h3>
+            <p>Neuroscience</p>
+            <p>Artificial Neural Networks</p>
+            <p>Brain Computer Interface</p>
+            <br />
+            <h3>- Qualifications -</h3>
+            基本情報技術者<br />
+            応用情報技術者<br /><br />
+            <h3>- Hobby -</h3>
             RhythmGame<br />
             Walking<br />
-            Climbing<br /><br />
-            <h4>- Qualifications -</h4>
-            普通自動車免許(AT)<br />
-            基本情報技術者<br />
-            応用情報技術者<br />
+            Climbing<br />
           </div>
         </div>
         <br />
@@ -77,7 +80,10 @@ export default {
 }
 
 @media screen and (max-width: 700px) {
-  .introduction_box {}
+
+  .introduction_box .right{
+    margin-top: 0px;
+  }
 
   .introduction_box .left {
     margin: 30px auto;
@@ -92,6 +98,11 @@ export default {
     /* ※縦横を同値に */
     height: 120px;
     /* ※縦横を同値に */
+  }
+  .introduction_box .name {
+    font-weight: bold;
+    font-family: "Arial";
+    font-size: 36px;
   }
 
   .Desktop_text {
@@ -109,7 +120,7 @@ export default {
   .introduction_box {
     display: flex;
     justify-content: center;
-  align-items: center;
+    align-items: center;
   }
 
   .introduction_box .left {
@@ -124,23 +135,33 @@ export default {
     /* ※縦横を同値に */
     height: 120px;
     /* ※縦横を同値に */
-  }
-
-  .introduction_box .right {
-    margin: 30px 30px;
-    font-family: "Arial";
-    font-size: 17px;
-  }
-
-  .introduction_box .right .sub {
-    font-size: 15px;
-  }
+  }  
 
   .Desktop_text {
     display: block;
-    text-align: center;
+    text-align: left;
   }
-
+  .introduction_box .name {
+    font-weight: bold;
+    font-family: "Arial";
+    font-size: 28px;
+    margin-bottom: 5px;
+  }
+  .introduction_box .right {
+    display: block;
+    margin: 30px 30px 0px 30px;
+    font-family: "Arial";
+    font-size: 17px;
+  } 
+  .introduction_box .right pre{
+    font-family: "Arial";
+    font-size: 15px;
+  }
+  .introduction_box .right .eng {
+    font-size: 16px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+  }
   .Phone_text {
     display: none;
   }

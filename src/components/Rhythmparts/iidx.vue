@@ -23,6 +23,8 @@
         <br />
         ☆12参考表:<a href="https://sp12.iidx.app/users/7228-1124" target="_blank">URL</a
         ><br />
+        CPI:<a href="https://cpi.makecir.com/users/view/5825" target="_blank">URL</a
+        ><br />
         <br />
         <br />
         <br />

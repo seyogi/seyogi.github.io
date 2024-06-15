@@ -3540,6 +3540,15 @@
             "PEAK": 71.41,
             "NOTES": 88.31,
             "CHARGE": 0.0
+        },
+        "LEGGENDARIA": {
+            "SCRATCH": 169.17,
+            "SOF-LAN": 0.0,
+            "\u30ce\u30fc\u30c8\u6570": 2334.0,
+            "CHORD": 198.84,
+            "PEAK": 135.51,
+            "NOTES": 182.28,
+            "CHARGE": 0.0
         }
     },
     "\u30b7\u30e0\u30eb\u30b0\u306e\u76ee\u9192\u3081": {
@@ -11310,6 +11319,15 @@
             "PEAK": 57.14,
             "NOTES": 74.28,
             "CHARGE": 0.0
+        },
+        "LEGGENDARIA": {
+            "SCRATCH": 0,
+            "SOF-LAN": 0.0,
+            "\u30ce\u30fc\u30c8\u6570": 1983.0,
+            "CHORD": 170.10,
+            "PEAK": 0,
+            "NOTES": 0,
+            "CHARGE": 0.0
         }
     },
     "Souhait bleu": {
@@ -16937,6 +16955,15 @@
             "SCRATCH": 0.0,
             "SOF-LAN": 0.0,
             "\u30ce\u30fc\u30c8\u6570": 674.0,
+            "CHORD": 0.0,
+            "PEAK": 0.0,
+            "NOTES": 0.0,
+            "CHARGE": 0.0
+        },
+        "LEGGENDARIA": {
+            "SCRATCH": 180.33,
+            "SOF-LAN": 0.0,
+            "\u30ce\u30fc\u30c8\u6570": 1551.0,
             "CHORD": 0.0,
             "PEAK": 0.0,
             "NOTES": 0.0,
@@ -32956,7 +32983,7 @@
         "HYPER": {
             "SCRATCH": 0.0,
             "SOF-LAN": 0.0,
-            "\u30ce\u30fc\u30c8\u6570": 10000.0,
+            "\u30ce\u30fc\u30c8\u6570": 1332.0,
             "CHORD": 0.0,
             "PEAK": 0.0,
             "NOTES": 0.0,
@@ -32967,7 +32994,7 @@
             "SOF-LAN": 0.0,
             "\u30ce\u30fc\u30c8\u6570": 2216.0,
             "CHORD": 154.0,
-            "PEAK": 200.01,
+            "PEAK": 200.00,
             "NOTES": 168.8,
             "CHARGE": 173.94
         }
@@ -33014,6 +33041,17 @@
             "PEAK": 0.0,
             "NOTES": 0.0,
             "CHARGE": 0.0
+        }
+    },
+    "Deep Sea Mystery": {
+        "ANOTHER": {
+            "SCRATCH": 0,
+            "SOF-LAN": 0,
+            "\u30ce\u30fc\u30c8\u6570": 997.0,
+            "CHORD": 0,
+            "PEAK": 0,
+            "NOTES": 0,
+            "CHARGE": 176.76
         }
     },
     "\u30b5\u30e8\u30ca\u30e9\u30fb\u30d8\u30f4\u30f3-Celtic Chip Dance Mix-": {
@@ -33080,6 +33118,28 @@
             "PEAK": 167.86,
             "NOTES": 154.14,
             "CHARGE": 54.52
+        }
+    },
+    "Monkey Business": {
+        "ANOTHER": {
+            "SCRATCH": 0,
+            "SOF-LAN": 177.04,
+            "\u30ce\u30fc\u30c8\u6570": 1324.0,
+            "CHORD": 0,
+            "PEAK": 0,
+            "NOTES": 0,
+            "CHARGE": 0
+        }
+    },
+    "PARANOIA survivor MAX": {
+        "ANOTHER": {
+            "SCRATCH": 0,
+            "SOF-LAN": 178.52,
+            "\u30ce\u30fc\u30c8\u6570": 1092.0,
+            "CHORD": 0,
+            "PEAK": 0,
+            "NOTES": 0,
+            "CHARGE": 0
         }
     },
     "\u604b\u611b\uff1d\u7cbe\u5ea6\u00d7\u8a8d\u8b58\u529b": {
