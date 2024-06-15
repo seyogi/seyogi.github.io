@@ -16,7 +16,7 @@
           <br />
         </div>
       </div>
-       <h3>maimai</h3>
+      <h3>maimai</h3>
       <br />
       <div class="sub_box">
         <img src="/img/Rhythm/Result/maimai01.jpg" class="img" />
@@ -36,6 +36,16 @@
           <br />
           一番最初に触れた音ゲーです。<br />
           最近やっと十段取れました。<br />
+          <br />
+        </div>
+      </div>
+      <h3>jubeat</h3>
+      <br />
+      <div class="sub_box">
+        <img src="/img/Rhythm/Result/jubeat1.jpg" class="img" />
+        <div class="side_box">
+          愛無双エクセしてるんで(ry<br />
+          Qubell辺りからたまーにやってました<br />
           <br />
         </div>
       </div>
