@@ -14,7 +14,7 @@
         </carousel>
       </dir>
       <div class="text_box">
-        VOLFORCE : 21.076(IMPERIAL II)<br />
+        VOLFORCE : 21.087(IMPERIAL II)<br />
         SKILL ANALYZER : 後光暴龍天 / 金枠神暴龍天<br />
         SDVX ID:SV-3690-6541<br />
         <br />
@@ -23,8 +23,6 @@
           target="_blank"
           >URL</a
         ><br />
-        <br />
-        <br />
         <br />
         <hr style="width: 80%" />
         <Timeline :timeline_contents="timeline_contents"></Timeline>

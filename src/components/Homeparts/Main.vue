@@ -26,7 +26,8 @@
         <div class="right">
           <div class="Desktop_text">
             <div class="name">SEYOGI</div>
-            TCU Intelligent Systems B4<br /><br />
+            Tokyo City University<br />
+            Intelligent Systems B4<br /><br />
             <h4>- Interests</h4>
             <pre class="eng">&#009;Artificial Neural Networks</pre>
             <pre class="eng">&#009;Neuroscience</pre>

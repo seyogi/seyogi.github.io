@@ -18,15 +18,13 @@
         アリーナ最高ランク : スコアA3 / ミスカンA1<br />
         IIDX ID : 7228-1124<br />
         <br />
-        BISTROVERから本格的に始めました。<br />
-        2024/3/18 未難1(黒🦑)<br />
-        <br />
         ☆12参考表:<a href="https://sp12.iidx.app/users/7228-1124" target="_blank">URL</a
         ><br />
         CPI:<a href="https://cpi.makecir.com/users/view/5825" target="_blank">URL</a
         ><br />
         <br />
-        <br />
+        BISTROVERから本格的に始めました。<br />
+        2024/3/18 未難1(黒🦑)<br />
         <br />
         <hr style="width: 80%" />
         <Timeline :timeline_contents="timeline_contents"></Timeline>

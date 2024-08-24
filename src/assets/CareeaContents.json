@@ -1,20 +1,6 @@
 [
       {
-            "circle": true,
-            "model": "iidx",
             "date_y": "2018年",
-            "date_m": " 4月",
-            "text": "東京工業大学附属科学技術高等学校 入学",
-            "sub_text": "情報・コンピュータサイエンス分野"
-      },
-      {
-            "model": "sdvx",
-            "date_y": "",
-            "text": "マイコン制御部入部",
-            "sub_text": "Microcomputer Control Club (MCC)"
-      },
-      {
-            "date_y": "",
             "date_m": "12月",
             "text": "Hack Day 2018",
             "sub_text": "Sound Hand / TOBIC"
@@ -22,26 +8,18 @@
       {
             "date_y": "2019年",
             "date_m": "10月",
-            "text": "弟燕祭 音ゲー展示",
+            "text": "弟燕祭（文化祭） 音ゲー展示",
             "sub_text": "Lawine / 個人製作"
       },
       {
             "date_y": "2020年",
             "date_m": " 2月",
-            "text": "パフォーマンスロボット競技大会",
+            "text": "高校生パフォーマンスロボット競技大会",
             "achievements_text": "3位入賞",
             "sub_text": "カブトキング / MCC"
       },
       {
-            "circle": true,
-            "model": "iidx",
             "date_y": "2021年",
-            "date_m": " 4月",
-            "text": "東京都市大学 入学",
-            "sub_text": "知能情報工学科"
-      },
-      {
-            "date_y": "",
             "date_m": " 9月",
             "text": "Digital Hack Day 2021",
             "sub_text": "A.I. Post / ご注文は豆腐職人ですか？"
@@ -59,5 +37,11 @@
             "sub_text": "スマートホームメイド / ﾊｰﾄﾞｳｪｱ幼稚園(略)",
             "achievements_text": "スポンサー賞 受賞 / Award Day 進出",
             "team_name_text": "高輪ﾊﾞｯﾄﾞｹﾞｰﾄｳｪｲ前ﾊｰﾄﾞｳｪｱ幼稚園"
+      },
+      {
+            "date_y": "2024年",
+            "date_m": " 8月",
+            "text": "Open Hack U 2024",
+            "sub_text": "??? / ご注文は豆腐職人ですか？"
       }
 ]

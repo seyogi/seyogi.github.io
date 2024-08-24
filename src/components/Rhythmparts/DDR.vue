@@ -18,7 +18,6 @@
         最高 : SP足19 / DP足18 <br />
         DDR CODE : 61609228<br />
         <br />
-        <br />
         <hr style="width: 80%" />
         <Timeline :timeline_contents="timeline_contents"></Timeline>
       </div>

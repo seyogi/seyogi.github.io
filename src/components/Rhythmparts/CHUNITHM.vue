@@ -14,14 +14,9 @@
         </carousel>
       </div>
       <div class="text_box">
-        Max Rating : 17.33<br />
+        Max Rating : 17.35<br />
         CLASS EMBLEM : INFINITY -ALL CLEAR-<br />
         フレンドコード : 4069095717545<br />
-        <br />
-        最近は全くと言っていい程やってないですが、高校~大学1年の頃はメイン機種でした。<br />
-        <br />
-        <br />
-        <br />
         <br />
         <hr style="width: 80%" />
         <Timeline :timeline_contents="timeline_contents"></Timeline>
