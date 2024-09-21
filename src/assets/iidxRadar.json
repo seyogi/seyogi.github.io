@@ -57,6 +57,15 @@
             "PEAK": 98.56,
             "NOTES": 108.38,
             "CHARGE": 4.19
+        },
+        "LEGGENDARIA": {
+            "SCRATCH": 0,
+            "SOF-LAN": 0.0,
+            "\u30ce\u30fc\u30c8\u6570": 2459.0,
+            "CHORD": 200,
+            "PEAK": 0,
+            "NOTES": 200,
+            "CHARGE": 0
         }
     },
     "PLASMA SOUL NIGHT feat. Nana Takahashi / 709sec.": {
@@ -10232,6 +10241,15 @@
             "PEAK": 84.27,
             "NOTES": 83.96,
             "CHARGE": 0.0
+        },
+        "LEGGENDARIA": {
+            "SCRATCH": 29.90,
+            "SOF-LAN": 0.0,
+            "\u30ce\u30fc\u30c8\u6570": 2014.0,
+            "CHORD": 179.94,
+            "PEAK": 118.42,
+            "NOTES": 158.78,
+            "CHARGE": 0.0
         }
     },
     "BroGamer": {
@@ -13474,6 +13492,15 @@
             "CHORD": 19.02,
             "PEAK": 65.7,
             "NOTES": 77.09,
+            "CHARGE": 0.0
+        },
+        "LEGGENDARIA": {
+            "SCRATCH": 0,
+            "SOF-LAN": 0,
+            "\u30ce\u30fc\u30c8\u6570": 2000.0,
+            "CHORD": 0,
+            "PEAK": 0,
+            "NOTES": 179.35,
             "CHARGE": 0.0
         }
     },
@@ -24280,6 +24307,15 @@
             "PEAK": 69.99,
             "NOTES": 72.32,
             "CHARGE": 3.42
+        },
+        "LEGGENDARIA": {
+            "SCRATCH": 0,
+            "SOF-LAN": 0.0,
+            "\u30ce\u30fc\u30c8\u6570": 1984.0,
+            "CHORD": 0,
+            "PEAK": 0,
+            "NOTES": 167.70,
+            "CHARGE": 0
         }
     },
     "ANAGRAMS I to Y": {
@@ -33160,6 +33196,48 @@
             "PEAK": 95.7,
             "NOTES": 95.9,
             "CHARGE": 28.42
+        }
+    },
+    "\u60d1\u661f\u9244\u9053": {
+        "ANOTHER": {
+            "SCRATCH": 67.46,
+            "SOF-LAN": 182.75,
+            "\u30ce\u30fc\u30c8\u6570": 1633.0,
+            "CHORD": 95.76,
+            "PEAK": 162.50,
+            "NOTES": 126.20,
+            "CHARGE": 81.57
+        },
+        "HYPER": {
+            "SCRATCH": 0,
+            "SOF-LAN": 162.64,
+            "\u30ce\u30fc\u30c8\u6570": 1220.0,
+            "CHORD": 0,
+            "PEAK": 0,
+            "NOTES": 0,
+            "CHARGE": 0
+        }
+    },
+    "Level 5": {
+        "ANOTHER": {
+            "SCRATCH": 200,
+            "SOF-LAN": 0.0,
+            "\u30ce\u30fc\u30c8\u6570": 1937.0,
+            "CHORD": 135.88,
+            "PEAK": 124.93,
+            "NOTES": 147.85,
+            "CHARGE": 31.07
+        }
+    },
+    "CADENZA": {
+        "ANOTHER": {
+            "SCRATCH": 101.01,
+            "SOF-LAN": 0.0,
+            "\u30ce\u30fc\u30c8\u6570": 2357.0,
+            "CHORD": 163.88,
+            "PEAK": 146.05,
+            "NOTES": 174.57,
+            "CHARGE": 0
         }
     }
 }

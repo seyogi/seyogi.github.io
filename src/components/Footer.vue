@@ -1,8 +1,9 @@
 <template>
   <div class="footer">
     <ul class="footer-list">
-      <li><a href="https://seyogi.github.io/">HOME</a> | </li>
-      <li><a href="https://textage.cc/score/13/contract.html?1XC00" target="_blank">CONTRACT</a></li>
+      <li><a href="https://seyogi.github.io/">Home</a> | </li>
+      <li><a href="https://seyogi.hatenablog.com/" target="_blank">Blog</a > | </li>
+      <li><a href="https://textage.cc/score/13/contract.html?1XC00" target="_blank">Contract</a></li>
     </ul>
     ©2020-2024 Seyogi All Rights Reserved.
   </div>

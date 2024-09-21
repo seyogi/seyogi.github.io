@@ -6,8 +6,11 @@
         <img class="img" :src="content.imgurl" />
         <div class="text">
           {{ content.title }}<br />
-          <a class="sub">{{ content.text }}</a
-          ><br />
+          <a class="sub">
+            {{ content.text }}
+            <br/>
+            {{ content.text2 }}
+          </a><br />
         </div>
       </div>
     </div>
@@ -23,23 +26,25 @@ export default {
         {
           imgurl: "/img/product/others/Electron.png",
           title: "SDVX Input Overlay",
-          text: "Electron",
+          text: "名前の通り",
+          text2: "Keywords: Electron",
         },
         {
           imgurl: "/img/product/others/TeiennsaiPlay2.png",
           title: "Lawine",
-          text: "Unity,Arduino",
-          //後日デモ動画<a href="https://www.youtube.com/watch?v=MPh_ZoqeVxU" target="_blank">URL</a>(非公開)
+          text: "文化祭で展示した音楽ゲーム",
+          text2: "Keywords: Unity,Arduino",
         },
         {
           imgurl: "/img/product/others/KBTKING.png",
           title: "カブトキング",
-          text: "Arduino",
+          text: "競技用ロボット",
+          text2: "Keywords: Arduino",
         },
         {
-          imgurl: "/img/product/others/pbl_app.png",
-          title: "時間割アプリ",
-          text: "JavaFX",
+          imgurl: "/img/product/others/scraping.png",
+          title: "scraping_sp12_iidx",
+          text: "12参考表のデータを参照し、CPI向けのcsvファイルを生成するアプリ",
         },
       ],
     };

@@ -19,6 +19,11 @@ export default {
     return {
       contents: [
         {
+          competition: "OPEN HACK U 2024",
+          title: "あおなび",
+          imgurl: "/img/product/hack/Ao_navi.png",
+        },
+        {
           competition: "JPHACKS 2023",
           title: "スマートホームメイド",
           imgurl: "/img/product/hack/smarthome.png",
