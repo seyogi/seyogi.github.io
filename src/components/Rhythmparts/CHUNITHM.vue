@@ -15,7 +15,7 @@
       </div>
       <div class="text_box">
         Max Rating : 17.35<br />
-        CLASS EMBLEM : INFINITY -ALL CLEAR-<br />
+        CLASS EMBLEM : INFINITY -ALL CLEAR- (NEW+)<br />
         フレンドコード : 4069095717545<br />
         <br />
         <hr style="width: 80%" />

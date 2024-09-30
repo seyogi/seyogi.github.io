@@ -56,6 +56,9 @@ export default {
         {
           imgurl: "/img/Rhythm/Result/Beatmania04.jpg",
         },
+        {
+          imgurl: "/img/Rhythm/Result/Beatmania05.jpg",
+        },
       ],
       timeline_contents: TimelineContents,
     };
