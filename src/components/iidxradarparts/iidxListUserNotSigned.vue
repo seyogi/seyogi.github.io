@@ -1,5 +1,12 @@
 <template>
   <div class="main_box">
+    
+    <br />
+    <br />
+    <h1>
+    API停止中(多分)
+    </h1>
+    <br />
     <div class="set_box">
       <br />
       ※同一曲について複数譜面タイプ（B/N/H/A/L）をプレーしている場合、それらの中の最大値のみが対象として適用されます
