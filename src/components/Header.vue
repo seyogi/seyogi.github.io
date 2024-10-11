@@ -107,7 +107,7 @@ export default {
   position: fixed;
   top: 20px;
   right: 20px;
-  z-index: 3;
+  z-index: 5;
   width: 40px;
   height: 40px;
   display: flex;
@@ -118,10 +118,9 @@ export default {
 }
 .menu{
   position: fixed;
-  z-index: 1;
+  z-index: 3;
   top: 0;
   right: 0;
-  z-index: 1;
   width: 100vw;
   height: 100vh;
   display: flex;
@@ -141,7 +140,7 @@ export default {
 .menu__item{
   text-decoration: none;
   position: relative;
-  z-index: 3;
+  z-index: 4;
   width: 100%;
   height: auto;
   padding: .5em 1em;
