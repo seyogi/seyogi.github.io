@@ -1,13 +1,13 @@
 <template>
-  <div><FirebaseTestBody class="center_container"></FirebaseTestBody></div>
+  <div><iidxradar class="center_container"></iidxradar></div>
 </template>
 
 <script>
-import FirebaseTestBody from "../components/iidxradarparts/FirebaseTestBody";
+import iidxradar from "../components/iidxradarparts/App.vue";
 
 export default {
   components: {
-    FirebaseTestBody,
+    iidxradar,
   },
 };
 </script>

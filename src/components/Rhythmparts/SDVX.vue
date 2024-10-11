@@ -15,7 +15,7 @@
       </dir>
       <div class="text_box">
         VOLFORCE : 21.076(IMPERIAL II)<br />
-        SKILL ANALYZER : 後光暴龍天 / 銀枠神暴龍天<br />
+        SKILL ANALYZER : 後光暴龍天 / 金枠神暴龍天<br />
         SDVX ID:SV-3690-6541<br />
         <br />
         寺が落ち着いたのでモチベ大復活。インぺ2まで駆け抜けました。<br />
