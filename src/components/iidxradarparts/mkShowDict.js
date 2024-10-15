@@ -145,6 +145,15 @@ export default {
                 a["RadarScore"]
             );
         });
-        return tmp
+        var avRadarScore = 0
+        var num = 10
+        if(tmp.length < 10){
+            num = tmp.length
+        }
+        for(var j = 0;  j < num;  j++){
+            avRadarScore += Math.floor( (tmp[j]['RadarScore']) * Math.pow(10, 2)) / Math.pow(10, 2)
+        }
+        avRadarScore = Math.floor( (avRadarScore / 10) * Math.pow(10, 2)) / Math.pow(10, 2)
+        return [tmp, avRadarScore]
     }
 }

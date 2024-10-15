@@ -4176,6 +4176,15 @@
             "PEAK": 70.0,
             "NOTES": 72.69,
             "CHARGE": 3.42
+        },
+        "LEGGENDARIA": {
+            "SCRATCH": 0.0,
+            "SOF-LAN": 0.0,
+            "NOTES_NUM": 2123,
+            "CHORD": 0.0,
+            "PEAK": 0.0,
+            "NOTES": 180.12,
+            "CHARGE": 0.0
         }
     },
     "DRUNK MONKY": {
@@ -23988,6 +23997,15 @@
             "CHORD": 42.89,
             "PEAK": 77.14,
             "NOTES": 63.0,
+            "CHARGE": 0.0
+        },
+        "LEGGENDARIA": {
+            "SCRATCH": 183.13,
+            "SOF-LAN": 0.0,
+            "NOTES_NUM": 1396,
+            "CHORD": 0.0,
+            "PEAK": 0.0,
+            "NOTES": 0.0,
             "CHARGE": 0.0
         }
     },

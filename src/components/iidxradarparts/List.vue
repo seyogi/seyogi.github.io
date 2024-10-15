@@ -17,6 +17,17 @@
                 >({{ Math.floor((Data.RadarScore - Data.MAXRadarScore) * Math.pow(10, 2)) / Math.pow(10, 2) }})
               </a>
             </div>
+            <div class="maintxt">
+              <a class="subtxt2">
+                {{ Math.floor(Data.RawScore * Math.pow(10, 2)) / Math.pow(10, 2) }}
+                <a @click="changeShowData()" v-if="vis">
+                  ({{ calcMAXFrom(Data.RawScore,Data.PerScore) }})
+                </a>
+                <a @click="changeShowData()" v-if="!vis">
+                  ({{ (Math.floor((Data.PerScore*100) * Math.pow(10, 2)) / Math.pow(10, 2)) + "%"}})
+                </a>
+              </a>
+            </div>
           </div>
           <div class="diff" :style="colorDataDiff(Data.Diff)">
             {{ Data.Level }}
@@ -37,10 +48,69 @@
     props: ['ShowData'],
     data(){
       return{
+        vis: true,
         numInput: "10",
       }
     },
     methods: {
+      changeShowData(){
+        this.vis = !this.vis
+      },
+      calcMAXFrom(score,per){
+        var MAX = Math.floor((score/per) * Math.pow(10, 0)) 
+        var AAA = Math.floor((score/per * 8/9) * Math.pow(10, 0))  + 1
+        var AA = Math.floor((score/per * 7/9) * Math.pow(10, 0))  + 1
+        var A = Math.floor((score/per * 6/9) * Math.pow(10, 0))  + 1
+        var B = Math.floor((score/per * 5/9) * Math.pow(10, 0))  + 1
+        var C = Math.floor((score/per * 4/9) * Math.pow(10, 0))  + 1
+        var D = Math.floor((score/per * 3/9) * Math.pow(10, 0))  + 1
+        var E = Math.floor((score/per * 2/9) * Math.pow(10, 0))  + 1
+        if(per > 17/18){
+          return "MAX" + (Math.floor((score - MAX) * Math.pow(10, 0))) 
+        }
+        else if(per > 16/18){
+          return "AAA+" + (Math.floor((score - AAA) * Math.pow(10, 0)))
+        }
+        else if(per > 15/18){
+          return "AAA" + (Math.floor((score - AAA) * Math.pow(10, 0)))
+        }
+        else if(per > 14/18){
+          return "AA+" + (Math.floor((score - AA) * Math.pow(10, 0)))
+        }
+        else if(per > 13/18){
+          return "AA" + (Math.floor((score - AA) * Math.pow(10, 0)))
+        }
+        else if(per > 12/18){
+          return "A+" + (Math.floor((score - A) * Math.pow(10, 0)))
+        }
+        else if(per > 11/18){
+          return "A" + (Math.floor((score - A) * Math.pow(10, 0)))
+        }
+        else if(per > 10/18){
+          return "B+" + (Math.floor((score - B) * Math.pow(10, 0)))
+        }
+        else if(per > 9/18){
+          return "B" + (Math.floor((score - B) * Math.pow(10, 0)))
+        }
+        else if(per > 8/18){
+          return "C+" + (Math.floor((score - C) * Math.pow(10, 0)))
+        }
+        else if(per > 7/18){
+          return "C" + (Math.floor((score - C) * Math.pow(10, 0)))
+        }
+        else if(per > 6/18){
+          return "D+" + (Math.floor((score - D) * Math.pow(10, 0)))
+        }
+        else if(per > 5/18){
+          return "D" + (Math.floor((score - D) * Math.pow(10, 0)))
+        }
+        else if(per > 4/18){
+          return "E+" + (Math.floor((score - E) * Math.pow(10, 0)))
+        }
+        else{
+          return "E" + (Math.floor((score - E) * Math.pow(10, 0)))
+        }
+      },
       colorDataDiff(diff) {
         if (diff == "ANOTHER") {
           var a = {
@@ -106,16 +176,30 @@
   margin: auto;
   width: 98%;
 }
-
+.scoreData_container .score{
+  width: 130px;
+  padding-right: 10px;
+}
 .scoreData_container .score .maintxt {
   font-size: 120%;
 }
 
-.scoreData_container .score .subtxt {
+@media screen and (max-width: 850px) {
+  .scoreData_container .score .subtxt {
+    display: none;
+  }
+}
+@media screen and (min-width: 850px) {
+  .scoreData_container .score .subtxt {
+    font-size: 12px;
+  }
+}
+
+.scoreData_container .score .subtxt2 {
   font-size: 12px;
 }
 .scoreData_container .diff {
-  width: 100px;
+  width: 110px;
   text-align: center;
 }
 .scoreData_container .diff .sub {

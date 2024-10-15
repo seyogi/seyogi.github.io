@@ -42,8 +42,9 @@
         @click="visSameTitleData()"
       />
     <label for="checkbox">同名曲の異なる難易度を含む</label>
-
-    <br />
+    <br><br />
+    Top10_Av : {{ this.avRadarScore }}
+    <br /><br />
     <List :ShowData="ShowData"/>
     <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
   </div>
@@ -76,6 +77,7 @@ export default {
       csvText: "",
       IIDXRadarDict:{},
       ShowData:[],
+      avRadarScore:0,
     }
   },
   methods: {
@@ -107,8 +109,7 @@ export default {
       this.mkShowData(this.checked);
     },
     mkShowData(isvis = false){
-      console.log(isvis)
-      this.ShowData = mkShowDict._mkShowData(this.IIDXRadarDict, this.selectedTheme, isvis);
+      [this.ShowData, this.avRadarScore] = mkShowDict._mkShowData(this.IIDXRadarDict, this.selectedTheme, isvis);
     }
   }
 }
