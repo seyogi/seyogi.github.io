@@ -132,23 +132,23 @@
       if (Score >= 180) {
         var a = {
           background:
-            "linear-gradient(transparent 30%, #f59090,#fcd7a1,#fff9b1,#a5d4ad,#a3bce2,#a59aca,#cfa7cd)",
+            "linear-gradient(transparent 50%, #f59090,#fcd7a1,#fff9b1,#a5d4ad,#a3bce2,#a59aca,#cfa7cd)",
         };
       } else if (Score >= 165) {
         a = {
-          background: "linear-gradient(transparent 30%, gold 95%)",
+          background: "linear-gradient(transparent 50%, gold 95%)",
         };
       } else if (Score >= 150) {
         a = {
-          background: "linear-gradient(transparent 30%, silver 95%)",
+          background: "linear-gradient(transparent 50%, silver 95%)",
         };
       } else if (Score >= 120) {
         a = {
-          background: "linear-gradient(transparent 30%, #b87333 95%)",
+          background: "linear-gradient(transparent 50%, #b87333 95%)",
         };
       } else if (Score >= 100) {
         a = {
-          background: "linear-gradient(transparent 30%, darkviolet 95%)",
+          background: "linear-gradient(transparent 50%, darkviolet 95%)",
         };
       } else {
         a = {};
@@ -188,21 +188,31 @@
   .scoreData_container .score .subtxt {
     display: none;
   }
+  
+.scoreData_container .diff {
+  width: 40px;
+  font-weight: bold;
+  text-align: center;
+}
+  .scoreData_container .diff .sub {
+    display: none;
+  }
 }
 @media screen and (min-width: 850px) {
   .scoreData_container .score .subtxt {
     font-size: 12px;
   }
+  .scoreData_container .diff {
+    width: 110px;
+    font-weight: bold;
+    text-align: center;
+  }
+  .scoreData_container .diff .sub {
+    font-size: 12px;
+  }
 }
 
 .scoreData_container .score .subtxt2 {
-  font-size: 12px;
-}
-.scoreData_container .diff {
-  width: 110px;
-  text-align: center;
-}
-.scoreData_container .diff .sub {
   font-size: 12px;
 }
 .scoreData_container .songData {
