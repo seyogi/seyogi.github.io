@@ -81,7 +81,7 @@ export default {
   max-width: 100%;
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 600px) {
   .content {
     width: calc(50% - 12px);
     margin: 5px;
@@ -112,7 +112,7 @@ export default {
 }
 
 /* for Desktop */
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 600px) {
   .content {
     margin: 10px;
     max-width: 250px;

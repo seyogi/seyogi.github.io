@@ -5,25 +5,25 @@
         <div class="logo">
           <router-link to="/" class="logobox">
             <img src="/img/icon.png" class="logoimg" />
-            <div class="logotxt">SEYOGI's<br />Lab</div>
+            <div class="logotxt">SEYOGI's Lab</div>
           </router-link>
         </div>
         <div class="link">
           <router-link to="/" class="linkbox">
-            <div class="japanesetxt">トップページ</div>
-            Top
+            <div class="japanesetxt">Top</div>
+            
           </router-link>
           <router-link to="/Product" class="linkbox">
-            <div class="japanesetxt">製作ログ</div>
-            ProductLog
+            <div class="japanesetxt">ProductLog</div>
+            
           </router-link>
           <router-link to="/Rhythm" class="linkbox">
-            <div class="japanesetxt">音ゲーリザ他</div>
-            GameRecords
+            <div class="japanesetxt">GameRecords</div>
+            
           </router-link>
           <router-link to="/iidx_radar" class="linkbox">
-            <div class="japanesetxt">ノーツレーダー</div>
-            NotesRadar
+            <div class="japanesetxt">NotesRadar</div>
+            
           </router-link>
         </div>
         <button ype="button" class="menu-btn" v-on:click="this.open = !this.open">
@@ -94,8 +94,10 @@ export default {
   display: flex;
 }
 .header .contents .logoimg {
-  width: 70px;
-  height: 70px;
+  padding-right: 5px;
+  padding-left: 5px;
+  width: 30px;
+  height: 30px;
 }
 .header .contents .logotxt {
   color: #c4a8a5;
@@ -105,8 +107,8 @@ export default {
 }
 .menu-btn {
   position: fixed;
-  top: 20px;
-  right: 20px;
+  top: 5px;
+  right: 10px;
   z-index: 5;
   width: 40px;
   height: 40px;
@@ -121,7 +123,7 @@ export default {
   z-index: 3;
   top: 0;
   right: 0;
-  width: 100vw;
+  width: 200px;
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -130,7 +132,7 @@ export default {
   background: rgba(5, 5, 5, 0.7);
 }
 .menu{
-  transform: translateX(100vw);
+  transform: translateX(200px);
   transition: all .3s linear;
 }
 /* アニメーション後のメニューの状態 */
@@ -145,12 +147,13 @@ export default {
   height: auto;
   padding: .5em 1em;
   text-align: center;
-  font-size: 20px;
+  font-size: 15px;
   color: #d4b8b5;
   box-sizing: border-box;
 }
 .menu__item .japanesetxt{
-  font-size: 25px;
+  font-size: 20px;
+  font-weight: bold;
 }
 @media screen and (min-width: 850px) {
   .header .contents {
@@ -158,17 +161,17 @@ export default {
     padding-right: 30px;
   }
   .header .contents .link {
-    height: 70px;
+    height: 30px;
     display: flex;
-    gap: 6px 5px;
+    gap: 5px 5px;
   }
   .header .contents .linkbox {
-    min-width: 100px;
     text-decoration: none;
-    padding: 18px 5px;
-    background: #c4a8a5;
+    padding: 3px 5px;
+    color: #c4a8a5;
     text-align: center;
     font-size: 10px;
+    font-weight: bold;
   }
   .linkbox .japanesetxt {
     font-size: 15px;
