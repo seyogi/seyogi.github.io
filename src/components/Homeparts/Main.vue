@@ -21,6 +21,7 @@
               <font-awesome-icon class="icons" icon="fa-brands fa-youtube" size="2x" color="#422" />
             </a>
           </div>
+          
         </div>
         <div class="right">
           <div class="Desktop_text">
@@ -34,7 +35,7 @@
             <br />
             <h4>- Qualifications</h4>
             <pre>&#009;基本情報技術者</pre>
-            <pre>&#009;応用情報技術者</pre><br />
+            <pre>&#009;応用情報技術者</pre><br /><br /><br /><br />
           </div>
           <div class="Phone_text">
             <div class="name">SEYOGI</div><br />
@@ -55,7 +56,6 @@
         </div>
         <br />
       </div>
-      <br /><br /><br />
     </div>
   </div>
 </template>
