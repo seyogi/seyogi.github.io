@@ -1,5 +1,7 @@
 <template>
-  <div><iidxradar class="center_container"></iidxradar></div>
+  <div>
+    <iidxradar class="center_container"></iidxradar>
+  </div>
 </template>
 
 <script>
@@ -12,11 +14,3 @@ export default {
 };
 </script>
 
-<style scoped>
-.center_container {
-  background-color: #fffae6;
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 940px;
-}
-</style>

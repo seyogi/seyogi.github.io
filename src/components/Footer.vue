@@ -16,12 +16,10 @@ ul.footer-list li {
 
 .footer {
     margin: 0 auto;
-    line-height: 35px;
+    line-height: 30px;
     color:#ffffff; 
     background: #332621;
     text-align: center;
-    padding : 10px ;
-    height: 80px;
 }
 
 a:link {color:#4444ff;}

@@ -1,11 +1,11 @@
-<template>
-  <Header></Header>
-  <router-view v-slot="{ Component }">
+<template >
+  <Header class="header"></Header>
+  <router-view v-slot="{ Component }" class="body">
     <transition name="fade" mode="out-in">
       <component :is="Component" :key="$route.path" />
     </transition> 
   </router-view>
-  <Footer></Footer>
+  <Footer class="footer"></Footer>
 </template>
 
 <script>
@@ -24,6 +24,7 @@ export default {
 </script>
 
 <style>
+
 .fade-leave-active {
   transition: opacity 0.5s;
   opacity: 1;
@@ -38,6 +39,18 @@ export default {
 .fade-enter-to {
   opacity: 1;
 }
-#app {
+.header {
+  height: 40px;
+}
+.body{
+  min-height: calc(100vh - 132px);
+  max-width: 940px;
+  background-color: #fffae6;
+  margin-left: auto;
+  margin-right: auto;
+}
+.footer {
+  height: 60px;
+  padding : 10px ;
 }
 </style>

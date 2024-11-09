@@ -69,9 +69,9 @@ export default {
 
 .header {
   padding-top: 10px;
-  background: #534641;
   border-top: 1px dashed #746a69;
   border-bottom: 1px dashed #746a69;
+  background: #534641;
 }
 .header .inner {
   width: 940px;

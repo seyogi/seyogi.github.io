@@ -46,7 +46,7 @@
     Top10_Av : {{ this.avRadarScore }}
     <br /><br />
     <List :ShowData="ShowData"/>
-    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+    <br /><br /><br />
   </div>
 </template>
 
