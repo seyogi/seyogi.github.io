@@ -5,7 +5,7 @@
       情報系大学生による雑記ページです。<br />
       <br />
       <br />
-      <h2>About Me</h2>
+      <h2>About Me</h2><br />
       <div class="introduction_box">
         <div class="left">
           <img class="img_icon" src="/img/me.png" />
@@ -54,16 +54,20 @@
           </div>
         </div>
         <br />
-      </div>
+      </div><br><br>
+      <h2>Activity</h2>
+      <Activity class="Activity_box"></Activity>
       <br /><br /><br />
     </div>
   </div>
 </template>
 
 <script>
+import Activity from "./Activity";
 
 export default {
   components: {
+    Activity,
   },
 };
 </script>
@@ -73,6 +77,10 @@ export default {
   margin-left: 4%;
   margin-right: 4%;
   width: 92%;
+}
+
+.Activity_box {
+  margin: 30px;
 }
 
 @media screen and (max-width: 700px) {

@@ -1,0 +1,52 @@
+[
+      {
+            "date_y": "2018年",
+            "main_text": "Hack Day 2018",
+            "product": "Sound Hand",
+            "team_name": "TOBIC",
+            "imgurl":"/img/product/hack/soundhand.png"
+      },
+      {
+            "date_y": "2019年",
+            "main_text": "弟燕祭（文化祭） 音ゲー展示",
+            "product": "Lawine",
+            "imgurl":"/img/product/others/TeiennsaiPlay2.png"
+      },
+      {
+            "date_y": "2020年",
+            "main_text": "高校生パフォーマンスロボット競技大会",
+            "achievements_text": "3位入賞",
+            "product": "カブトキング",
+            "imgurl": "/img/product/others/KBTKING.png",
+            "team_name": "MCC"
+      },
+      {
+            "date_y": "2021年",
+            "main_text": "Digital Hack Day 2021",
+            "product": "A.I. Post",
+            "imgurl": "/img/product/hack/magicpost.png",
+            "team_name": "ご注文は豆腐職人ですか？"
+      },
+      {
+            "date_y": "2022年",
+            "main_text": "JPHACKS 2022",
+            "product": "Qusahaiel",
+            "imgurl": "/img/product/hack/Qsahaiel2.png",
+            "team_name": "ご注文は豆腐職人ですか？"
+      },
+      {
+            "date_y": "2023年",
+            "main_text": "JPHACKS 2023",
+            "product": "スマートホームメイド",
+            "imgurl": "/img/product/hack/smarthome.png",
+            "team_name": "高輪ﾊﾞｯﾄﾞｹﾞｰﾄｳｪｲ前ﾊｰﾄﾞｳｪｱ幼稚園",
+            "achievements_text": "スポンサー賞 受賞 / Award Day 進出"
+      },
+      {
+            "date_y": "2024年",
+            "main_text": "Open Hack U 2024",
+            "product": "AONAVI（アオナビ）",
+            "imgurl": "/img/product/hack/Ao_navi.png",
+            "team_name": "ご注文は豆腐職人ですか？"
+      }
+]

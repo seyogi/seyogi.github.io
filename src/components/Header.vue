@@ -13,10 +13,6 @@
             <div class="japanesetxt">Top</div>
             
           </router-link>
-          <router-link to="/Product" class="linkbox">
-            <div class="japanesetxt">ProductLog</div>
-            
-          </router-link>
           <router-link to="/Rhythm" class="linkbox">
             <div class="japanesetxt">GameRecords</div>
             
@@ -39,10 +35,6 @@
           <router-link to="/" class="menu__item" v-on:click="this.open = !this.open">
             <div class="japanesetxt">トップページ</div>
             Top
-          </router-link>
-          <router-link to="/Product" class="menu__item" v-on:click="this.open = !this.open">
-            <div class="japanesetxt">製作ログ</div>
-            ProductLog
           </router-link>
           <router-link to="/Rhythm" class="menu__item" v-on:click="this.open = !this.open">
             <div class="japanesetxt">音ゲーリザ他</div>
