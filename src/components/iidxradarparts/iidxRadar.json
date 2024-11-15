@@ -791,7 +791,7 @@
             "NOTES_NUM": 2401.0,
             "CHORD": 187.48,
             "PEAK": 198.2,
-            "NOTES": 199.99,
+            "NOTES": 200,
             "CHARGE": 17.82
         }
     },
@@ -33256,6 +33256,17 @@
             "PEAK": 146.05,
             "NOTES": 174.57,
             "CHARGE": 0
+        }
+    },
+    "NOIXIA": {
+        "ANOTHER": {
+            "SCRATCH": 0.0,
+            "SOF-LAN": 0.0,
+            "NOTES_NUM": 2027.0,
+            "CHORD": 0.0,
+            "PEAK": 0.0,
+            "NOTES": 0.0,
+            "CHARGE": 190.73
         }
     }
 }

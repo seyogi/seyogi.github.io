@@ -12,9 +12,20 @@
               class="maintxt"
               :style="colorDataScore(Data.RadarScore)"
             >
-              {{ Math.floor(Data.RadarScore * Math.pow(10, 2)) / Math.pow(10, 2) }}
-              <a class="subtxt"
-                >({{ Math.floor((Data.RadarScore - Data.MAXRadarScore) * Math.pow(10, 2)) / Math.pow(10, 2) }})
+              <a @click="changeShowData2()" v-if="vis2">
+                {{ Math.floor(Data.RadarScore * Math.pow(10, 2)) / Math.pow(10, 2) }}
+              </a>
+              <a @click="changeShowData2()" v-if="!vis2">
+                {{ Data.MAXRadarScore }}
+              </a>
+              <a class="subtxt">
+                <a @click="changeShowData2()" v-if="vis2">
+                  ({{ Math.floor((Data.RadarScore - Data.MAXRadarScore) * Math.pow(10, 2)) / Math.pow(10, 2) }})
+                </a>
+                <a @click="changeShowData2()" v-if="!vis2">
+                  (MAX)
+                </a>
+                
               </a>
             </div>
             <div class="maintxt">
@@ -49,12 +60,16 @@
     data(){
       return{
         vis: true,
+        vis2: true,
         numInput: "10",
       }
     },
     methods: {
       changeShowData(){
         this.vis = !this.vis
+      },
+      changeShowData2(){
+        this.vis2 = !this.vis2
       },
       calcMAXFrom(score,per){
         var MAX = Math.floor((score/per) * Math.pow(10, 0)) 
