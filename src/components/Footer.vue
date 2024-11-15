@@ -5,7 +5,7 @@
       <li><a href="https://seyogi.hatenablog.com/" target="_blank">Blog</a > | </li>
       <li>Contact</li>
     </ul>
-    ©2020-2024 Seyogi All Rights Reserved.
+    ©2020-2024 Seyogi
   </div>
 </template>
 
