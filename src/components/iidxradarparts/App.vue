@@ -2,6 +2,11 @@
 <template>
   <div class="main_box"> 
     <div class="set_box">
+      <br>
+      <h3>~使い方~</h3><br>
+      ① <a href="https://p.eagate.573.jp/game/2dx/32/djdata/score_download.html" target="_blank" rel="noopener noreferrer">公式サイト</a>
+      からcsvテキストをコピー or ダウンロード<br>
+      ② 以下のテキストボックスに貼り付け or ファイルを選択<br>
       <br />
       ※同一曲について複数譜面タイプ（B/N/H/A/L）をプレーしている場合、それらの中の最大値のみが対象として適用されます
       <br />
@@ -21,7 +26,7 @@
       />
       <br /><br />{{ this.errmsg }}
       <br />
-      <input type="button" id="sendButton" value="Go" @click="click()" />
+      <input type="button" id="sendButton" value="Calc" @click="click()" />
       <br /><br /><br />
     </div>
     <br />
