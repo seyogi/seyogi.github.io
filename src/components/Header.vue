@@ -14,7 +14,7 @@
             
           </router-link>
           <router-link to="/Rhythm" class="linkbox">
-            <div class="japanesetxt">GameRecords</div>
+            <div class="japanesetxt">Records</div>
             
           </router-link>
           <router-link to="/iidx_radar" class="linkbox">
@@ -37,8 +37,8 @@
             Top
           </router-link>
           <router-link to="/Rhythm" class="menu__item" v-on:click="this.open = !this.open">
-            <div class="japanesetxt">音ゲーリザ他</div>
-            GameRecords
+            <div class="japanesetxt">音ゲーログ</div>
+            Records
           </router-link>
           <router-link to="/iidx_radar" class="menu__item" v-on:click="this.open = !this.open">
             <div class="japanesetxt">ノーツレーダー</div>
@@ -147,7 +147,7 @@ export default {
   font-size: 20px;
   font-weight: bold;
 }
-@media screen and (min-width: 850px) {
+@media screen and (min-width: 620px) {
   .header .contents {
     display: flex;
     padding-right: 30px;
@@ -169,7 +169,7 @@ export default {
     font-size: 15px;
   }
 }
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 620px) {
   .header .contents .link {
     height: 45px;
     display: none;

@@ -3,7 +3,7 @@
     <div class="main_box">
       <br />
       <br />
-      完全自己満ページです。不定期更新中。<br /><br />
+      リザルト記録兼、自己満ページです。<br /><br />
       <h3>配布中</h3>
       ・いろいろ計算する<a
         href="https://drive.google.com/file/d/1eEWmv2dzkAwZakEuNscZqwOq3Tjr2QXL/view?usp=drive_link"
