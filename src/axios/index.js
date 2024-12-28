@@ -1,10 +1,11 @@
 export let axios;
+var id = "AKfycbwiWOq68d5digDAOCgVI9bDzpukiiX3_-dhcVqrQGafWvNw2YxLHLQ6LuBEnGzoyQeg"
+var url = 'https://script.google.com/macros/s/' + id + '/exec'
 
 export default {
     install(app) {
         // base url
-        app.config.globalProperties.$http.defaults.baseURL = "https://iidx_radar_api-1-n0620677.deta.app"
-        //'https://iidx_radar_api-1-n0620677.deta.app'
+        app.config.globalProperties.$http.defaults.baseURL = url
 
         // request interceptor
         app.config.globalProperties.$http.interceptors.request.use(config => {
