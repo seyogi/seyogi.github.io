@@ -14,17 +14,15 @@
         </carousel>
       </div>
       <div class="text_box">
-        段位認定 : SP極皆伝(RESIDENT)<br />
-        アリーナ : 最高A3<br />
-        IIDX ID : 7228-1124<br />
+        段位認定 : SP皆伝 <br />
+        アリーナ : A2(スコア) / A1(ミスカン) <br />
+        IIDX ID : 7228-1124 ( 
+        <a href="https://sp12.iidx.app/users/7228-1124" target="_blank">☆12参考表</a> / 
+        <a href="https://cpi.makecir.com/users/view/5825" target="_blank">CPI</a> ) 
         <br />
-        ☆12参考表:<a href="https://sp12.iidx.app/users/7228-1124" target="_blank">URL</a
-        ><br />
-        CPI:<a href="https://cpi.makecir.com/users/view/5825" target="_blank">URL</a
-        ><br />
         <br />
-        BISTROVERから本格的に始めました。<br />
-        2024/3/18 未難1(黒🦑)<br />
+        BISTROVERから本格的に始めました。ライバル募集中！<br />
+        <a href="https://x.com/syg_74/status/1873960278578389487" target="_blank">2024/12/31</a> 全白達成<br />
         <br />
         <hr style="width: 80%" />
         <Timeline :timeline_contents="timeline_contents"></Timeline>
@@ -45,10 +43,10 @@ export default {
     return {
       contents: [
         {
-          imgurl: "/img/Rhythm/Result/Beatmania01.jpg",
+          imgurl: "/img/Rhythm/Result/Beatmania02.jpg",
         },
         {
-          imgurl: "/img/Rhythm/Result/Beatmania02.jpg",
+          imgurl: "/img/Rhythm/Result/Beatmania01.jpg",
         },
         {
           imgurl: "/img/Rhythm/Result/Beatmania03.jpg",

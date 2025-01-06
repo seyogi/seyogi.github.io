@@ -1,57 +1,64 @@
 [
-    {
-          "circle": true,
-          "model": "iidx",
-          "date_y": "2021年",
-          "date_m": " 4月",
-          "text": "X-record 第一弾",
-          "sub_text": "これを機に弐寺を触り始める"
-    },
-    {
-          "date_y": "",
-          "date_m": "11月",
-          "text": "段位認定 SP七段 合格",
-          "sub_text": "そこまで拗らせなかった"
-    },
-    {
-          "date_y": "2022年",
-          "date_m": " 1月",
-          "text": "段位認定 SP九段 合格"
-    },
-    {
-          "date_y": "",
-          "date_m": "6月",
-          "text": "LEVEL12 初ハード",
-          "sub_text": "12初めての白ランプは赤いイカでした"
-    },
-    {
-          "date_y": "",
-          "date_m": " 7月",
-          "text": "段位認定 SP十段 合格"
-    },
-    {
-          "date_y": "",
-          "text": "段位認定 SP中伝 合格",
-          "sub_text": "requiem..."
-    },
-    {
-          "circle": true,
-          "bold": true,
-          "date_y": "2023年",
-          "date_m": " 2月",
-          "text": "段位認定 SP皆伝 合格",
-          "sub_text": "小学生の頃に初めてAC音ゲーに触れた日からおよそ10年...遂に！！"
-    },
-    {
-          "date_y": "",
-          "date_m": " 9月",
-          "text": "SP極皆伝 合格",
-          "sub_text": "26→裏30→CS14でした。初皆伝タイトルで極まで行けるとは思ってなかった"
-    },
-    {
-          "date_y": "2024年",
-          "date_m": " 3月",
-          "text": "クリアアリーナA1到達",
-          "sub_text": "唐突に来たミスカンアリーナでA1へ。スコアも精進します。"
-    }
+      {
+            "circle": true,
+            "model": "iidx",
+            "date_y": "2021年",
+            "date_m": " 4月",
+            "text": "X-record 第一弾",
+            "sub_text": "これを機に弐寺を触り始める"
+      },
+      {
+            "date_y": "",
+            "date_m": "11月",
+            "text": "段位認定 SP七段 合格",
+            "sub_text": "そこまで拗らせなかった"
+      },
+      {
+            "date_y": "2022年",
+            "date_m": " 1月",
+            "text": "段位認定 SP九段 合格"
+      },
+      {
+            "date_y": "",
+            "date_m": "6月",
+            "text": "LEVEL12 初ハード",
+            "sub_text": "12初めての白ランプは赤いイカでした"
+      },
+      {
+            "date_y": "",
+            "date_m": " 7月",
+            "text": "段位認定 SP十段 合格"
+      },
+      {
+            "date_y": "",
+            "text": "段位認定 SP中伝 合格",
+            "sub_text": "requiem..."
+      },
+      {
+            "circle": true,
+            "bold": true,
+            "date_y": "2023年",
+            "date_m": " 2月",
+            "text": "段位認定 SP皆伝 合格",
+            "sub_text": "憧れの段位。ようやく手が届きました"
+      },
+      {
+            "date_y": "",
+            "date_m": " 9月",
+            "text": "段位認定 SP極皆伝 合格"
+      },
+      {
+            "date_y": "2024年",
+            "date_m": " 3月",
+            "text": "ミスカンアリーナA1到達",
+            "sub_text": "唐突に来たミスカンアリーナでA1へ"
+      },
+      {
+            "circle": true,
+            "bold": true,
+            "date_y": "",
+            "date_m": "12月",
+            "text": "LEVEL12 全白",
+            "sub_text": "12最後の白ランプは黒いイカでした"
+      }
 ]

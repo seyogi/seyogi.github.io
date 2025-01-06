@@ -9,12 +9,7 @@
         href="https://drive.google.com/file/d/1eEWmv2dzkAwZakEuNscZqwOq3Tjr2QXL/view?usp=drive_link"
         target="_blank"
         >Excelシート</a
-      ><br />
-      ・☆12参考表をスクレイピングしてCPI用のCSVを出力する<a
-        href="https://drive.google.com/file/d/1LSJVokNDoaeSxwpW7tN-fJhqVUoRJl-h/view?usp=drive_link"
-        target="_blank"
-        >デスクトップアプリ</a
-      ><br />
+      >
       <br />
       <br />
       <div class="sub_box">
