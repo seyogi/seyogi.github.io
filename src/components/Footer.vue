@@ -3,9 +3,13 @@
     <ul class="footer-list">
       <li><a href="https://seyogi.github.io/">Home</a> | </li>
       <li><a href="https://seyogi.hatenablog.com/" target="_blank">Blog</a > | </li>
-      <li>Contact</li>
+      <li>
+          <router-link to="/Contact">
+            Contact
+          </router-link>
+      </li>
     </ul>
-    ©2020-2024 Seyogi
+    ©2020-2025 Seyogi
   </div>
 </template>
 

@@ -1,39 +1,41 @@
 <template>
   <div class="main_box">
     <div class="container">
+      <br>
+      管理人のgmailにメッセージを送信します
+      <br>
+      <br>
       Subject:<br>
       <textarea
         id="subjectArea"
         rows="1"
-        cols="33"
-      /><br>
+      /><br><br>
       Name:<br>
       <textarea
         id="nameArea"
         rows="1"
-        cols="33"
-      /><br>
+      /><br><br>
       Text:<br>
       <textarea
         id="textArea"
-        rows="10"
-        cols="33"
+        rows="15"
       />
       <br>
-      <input type="button" id="sendButton" value="Send" @click="click()" />
+      <br>
+      <input type="button" id="sendButton" value="送信" @click="click()" />
     </div>
   </div>
 </template>
 
 <script>
-import test from './test.js';
+import GASio from './GASio.js';
 
 export default {
   data(){
     return {
-      subject:"test title",
+      subject:"",
       name:"",
-      text:"temp",
+      text:"",
     }
   },
   methods: {
@@ -41,7 +43,12 @@ export default {
       this.subject = document.getElementById("subjectArea").value;
       this.name = document.getElementById("nameArea").value;
       this.text = document.getElementById("textArea").value;
-      test.testfunc(this.subject,this.name,this.text);
+      if (this.subject != "" & this.name != "" & this.text != ""){
+        GASio.sendemail(this.subject,this.name,this.text);
+      }
+      else{
+        alert("空欄のテキストボックスがあります");
+      }
     }
   }
 };
@@ -49,8 +56,10 @@ export default {
 
 <style scoped>
 .main_box {
-  text-align: center;
   margin: auto;
-  width: 98%;
+  width: 90%;
+}
+textarea {
+  width: 100%;
 }
 </style>

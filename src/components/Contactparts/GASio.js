@@ -1,5 +1,5 @@
 
-import { axios } from "../axios/index";
+import { axios } from "../../axios/index";
 
 const options ={
     headers: {
@@ -8,7 +8,7 @@ const options ={
 }
 
 export default {
-    testfunc: function (subject,name,text) {
+    sendemail: function (subject,name,text) {
         const contents = {
             subject: subject,
             name: name,
