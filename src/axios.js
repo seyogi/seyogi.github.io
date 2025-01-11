@@ -1,11 +1,9 @@
 export let axios;
-var id = "AKfycbwiWOq68d5digDAOCgVI9bDzpukiiX3_-dhcVqrQGafWvNw2YxLHLQ6LuBEnGzoyQeg"
-var url = 'https://script.google.com/macros/s/' + id + '/exec'
 
 export default {
     install(app) {
         // base url
-        app.config.globalProperties.$http.defaults.baseURL = url
+        app.config.globalProperties.$http.defaults.baseURL = ""
 
         // request interceptor
         app.config.globalProperties.$http.interceptors.request.use(config => {
@@ -15,7 +13,6 @@ export default {
 
         // response interceptor
         app.config.globalProperties.$http.interceptors.response.use(response => {
-
             return response;
         }, function (error) {
 

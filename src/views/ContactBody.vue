@@ -1,15 +1,15 @@
 <template>
   <div>
-    <RhythmMain class="center_container"></RhythmMain>
+    <Contactmain class="center_container"></Contactmain>
   </div>
 </template>
 
 <script>
-import RhythmMain from "../components/Contactparts/Contactmain";
+import Contactmain from "../components/Contactparts/Contactmain";
 
 export default {
   components: {
-    RhythmMain,
+    Contactmain,
   },
 };
 </script>

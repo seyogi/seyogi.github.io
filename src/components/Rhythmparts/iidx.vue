@@ -33,7 +33,7 @@
 
 <script>
 import TimelineContents from "../../assets/iidxTimelineContents.json";
-import Timeline from "../Timeline";
+import Timeline from "./Timeline";
 
 export default {
   components: {
