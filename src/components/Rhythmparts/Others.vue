@@ -9,7 +9,7 @@
         <div class="side_box">
           Max Rating : 17.01<br />
           <br />
-          無印から細々やってます。<br />
+          無印稼働日から毎作細々とやってます<br />
           <a href="https://twitter.com/syg_74/status/1652928889893842946" target="_blank"
             >(2023/5/1)</a
           >RATING MASTER
@@ -23,7 +23,8 @@
         <div class="side_box">
           Max Rating : 15033<br />
           <br />
-          つい先日虹レになりました。ようやく三機種虹！<br />
+          BUDDiESで虹レになりました。<br>
+          リーチかかってから三機種虹まで長かった～！<br />
           <br />
         </div>
       </div>
@@ -34,8 +35,8 @@
         <div class="side_box">
           段位 : 十段(2023)<br />
           <br />
-          一番最初に触れた音ゲーです。<br />
-          最近やっと十段取れました。<br />
+          一番最初に触れた音ゲーです。(モモイロでした)<br />
+          ニジイロ2023でやっと十段取れました<br />
           <br />
         </div>
       </div>
@@ -44,8 +45,8 @@
       <div class="sub_box">
         <img src="/img/Rhythm/Result/jubeat1.jpg" class="img" />
         <div class="side_box">
-          愛無双エクセしてるんで(ry<br />
-          Qubell辺りからたまーにやってました<br />
+          これとビーストからBEMANIの世界に入りました<br />
+          <br />
           <br />
         </div>
       </div>
@@ -57,7 +58,7 @@
           ポックラ : 94.?<br />
           最高 : 49<br />
           <br />
-          安定47？48のクリアがちらほらついてきました。<br />
+          安定48？クリアがちらほらついてきました。<br />
           <br />
         </div>
       </div>

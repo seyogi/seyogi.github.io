@@ -16,9 +16,7 @@
       <div class="text_box">
         段位認定 : SP皆伝 <br />
         アリーナ : A2(スコア) / A1(ミスカン) <br />
-        IIDX ID : 7228-1124 ( 
-        <a href="https://sp12.iidx.app/users/7228-1124" target="_blank">☆12参考表</a> / 
-        <a href="https://cpi.makecir.com/users/view/5825" target="_blank">CPI</a> ) 
+        IIDX ID : 7228-1124 (<a href="https://sp12.iidx.app/users/7228-1124" target="_blank">☆12参考表</a>) 
         <br />
         <br />
         BISTROVERから本格的に始めました。ライバル募集中！<br />

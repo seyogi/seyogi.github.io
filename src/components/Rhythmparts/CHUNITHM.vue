@@ -14,9 +14,12 @@
         </carousel>
       </div>
       <div class="text_box">
-        Max Rating : 17.35<br />
-        CLASS EMBLEM : INFINITY -ALL CLEAR- (NEW+)<br />
+        Max Rating : 17.17(VERSE)<br />
+        CLASS EMBLEM : INFINITY -ALL CLEAR-<br />
         フレンドコード : 4069095717545<br />
+        <br />
+        伸びしろがないよ～～～～～～～～②<br />
+        VERSE開始時点で一応15+全鳥です。これだけは維持したい<br />
         <br />
         <hr style="width: 80%" />
         <Timeline :timeline_contents="timeline_contents"></Timeline>

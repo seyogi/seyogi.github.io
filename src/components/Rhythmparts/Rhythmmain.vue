@@ -3,14 +3,8 @@
     <div class="main_box">
       <br />
       <br />
-      リザルト記録兼、自己満ページです。<br /><br />
-      <h3>配布中</h3>
-      ・いろいろ計算する<a
-        href="https://drive.google.com/file/d/1eEWmv2dzkAwZakEuNscZqwOq3Tjr2QXL/view?usp=drive_link"
-        target="_blank"
-        >Excelシート</a
-      >
-      <br />
+      リザルトログです<br />
+      最近ポップンがアツいので個別ページを制作予定...<br /><br />
       <br />
       <div class="sub_box">
         <div class="selector_box"><Selector @changeMethod="updatetitle"></Selector></div>

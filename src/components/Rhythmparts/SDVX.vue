@@ -18,6 +18,7 @@
         SKILL ANALYZER : 後光暴龍天 / 金枠神暴龍天<br />
         SDVX ID:SV-3690-6541<br />
         <br />
+        伸びしろがないよ～～～～～～～～①<br />
         Vaddict:<a
           href="https://vaddict.b35.jp/user.php?player_id=SV-3690-6541"
           target="_blank"

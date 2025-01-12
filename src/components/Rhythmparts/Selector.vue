@@ -35,25 +35,25 @@ export default {
           index: 0,
           title: "iidx",
           image: `url(/img/Rhythm/logo/iidx_logo.png)`,
-          color: "#ffaf4d",
+          color: "#ff69b4",
         },
         {
           index: 1,
           title: "SDVX",
           image: `url(/img/Rhythm/logo/sdvx_logo.png)`,
-          color: "#3d3d99",
+          color: "#3e3e3e",
         },
         {
           index: 2,
           title: "DDR",
           image: `url(/img/Rhythm/logo/DDR_logo.png)`,
-          color: "#E6E6E6",
+          color: "#00fa9a",
         },
         {
           index: 3,
           title: "CHUNITHM",
           image: `url(/img/Rhythm/logo/chunithm_logo.png)`,
-          color: "#FF6",
+          color: "#cfb1fb",
         },
         {
           index: 4,
@@ -107,6 +107,8 @@ export default {
           left: Math.sqrt(3) * num * data.index + "px",
           "background-image": data.image,
           "background-color": data.color,
+          "background-repeat":"no-repeat",
+          "background-size": "80%",
         };
         return a;
       };
