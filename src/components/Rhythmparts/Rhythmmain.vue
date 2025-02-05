@@ -3,7 +3,10 @@
     <div class="main_box">
       <br />
       <br />
-      リザルトログです<br />
+      音楽ゲームのリザルトログです<br />
+      <br>
+      <h3>雑記</h3>
+      BBDという音ゲーサークルに所属しています<br>
       最近ポップンがアツいので個別ページを制作予定...<br /><br />
       <br />
       <div class="sub_box">
@@ -29,12 +32,14 @@ import CHUNITHM from "./CHUNITHM";
 import SDVX from "./SDVX";
 import iidx from "./iidx";
 import DDR from "./DDR";
+import ongeki from "./ongeki";
 import Others from "./Others";
 
 export default {
   components: {
     Selector,
     CHUNITHM,
+    ongeki,
     SDVX,
     iidx,
     Others,
@@ -44,6 +49,7 @@ export default {
     return {
       title: "iidx",
       names: {
+        ongeki: "オンゲキ",
         CHUNITHM: "CHUNITHM",
         DDR: "Dance Dance Revolution",
         SDVX: "SOUND VOLTEX",

@@ -1,14 +1,19 @@
 [
     {
-        "circle": true,
         "date_y": "2017年",
         "date_m": " 7月",
         "text": "Angel Beats! コラボ",
         "sub_text": "今でも大好きな作品とのコラボ！ これを機にCHUNITHMを触り始めました"
     },
     {
-        "circle": true,
         "date_y": "2018年",
+        "date_m": " 1月",
+        "text": "My Soul,Your Beats! AJ",
+        "sub_text": "CHUNITHM初AJ 11+にしては交差が厄介だった印象"
+    },
+    {
+        "circle": true,
+        "date_y": "",
         "date_m": " 7月",
         "text": "RATING 15.00",
         "sub_text": "俺が虹レだ！ 虹レになった曲はみんな大好きLike the Wind"
@@ -23,7 +28,7 @@
         "date_y": "2022年",
         "date_m": " 1月",
         "text": "蠍火 AJ",
-        "sub_text": "記念すべき15初AJ！"
+        "sub_text": "15初AJ！"
     },
     {
         "date_y": "",

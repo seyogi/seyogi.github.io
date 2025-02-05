@@ -14,12 +14,11 @@
         </carousel>
       </div>
       <div class="text_box">
-        Max Rating : 17.25(VERSE)<br />
-        CLASS EMBLEM : INFINITY -ALL CLEAR-<br />
-        フレンドコード : 4069095717545<br />
+        Max Rating : 17.01 (Act.3)<br />
         <br />
-        伸びしろがないよ～～～～～～～～②<br />
-        VERSE開始時点で一応15+全鳥です。これだけは維持したい<br />
+        オンゲキでお元気！！！！<br /><br />
+        最近は全然触れていませんが、たまに版権を遊んだりしてます<br>
+        昔から版権のセンスが抜群にいい (オタクに刺さる)<br>
         <br />
         <hr style="width: 80%" />
         <Timeline :timeline_contents="timeline_contents"></Timeline>
@@ -29,7 +28,7 @@
 </template>
 
 <script>
-import TimelineContents from "../../assets/CHINITHMTimelineContents.json";
+import TimelineContents from "../../assets/ongekiTimelineContents.json";
 import Timeline from "./Timeline";
 
 export default {
@@ -40,13 +39,10 @@ export default {
     return {
       contents: [
         {
-          imgurl: "/img/Rhythm/Result/UNI02.jpg",
+          imgurl: "/img/Rhythm/Result/GEKI01.jpg",
         },
         {
-          imgurl: "/img/Rhythm/Result/UNI01.jpg",
-        },
-        {
-          imgurl: "/img/Rhythm/Result/UNI03.jpg",
+          imgurl: "/img/Rhythm/Result/GEKI02.jpg",
         },
       ],
       timeline_contents: TimelineContents,
@@ -73,7 +69,7 @@ export default {
   }
   .carousel__slide img {
     max-width: 100%;
-    max-height: 350px;
+    max-height: 450px;
   }
 }
 /* for Desktop */
@@ -90,7 +86,7 @@ export default {
     align-items: center;
   }
   .carousel__slide img {
-    max-height: 350px;
+    max-height: 450px;
     max-width: 100%;
   }
 }

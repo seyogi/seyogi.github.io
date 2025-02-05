@@ -57,6 +57,12 @@ export default {
         },
         {
           index: 4,
+          title: "ongeki",
+          image: `url(/img/Rhythm/logo/ongeki_logo.png)`,
+          color: "#f0f8ff",
+        },
+        {
+          index: 5,
           title: "Others",
           image: `url(/img/Rhythm/logo/others.png)`,
           color: "#1f1e33",
