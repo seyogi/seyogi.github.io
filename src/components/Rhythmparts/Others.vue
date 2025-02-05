@@ -2,20 +2,6 @@
   <div>
     <div class="main_box">
       <br />
-      <h3>オンゲキ</h3>
-      <br />
-      <div class="sub_box">
-        <img src="/img/Rhythm/Result/GEKI01.jpg" class="img" />
-        <div class="side_box">
-          Max Rating : 17.01<br />
-          <br />
-          無印稼働日から毎作細々とやってます<br />
-          <a href="https://twitter.com/syg_74/status/1652928889893842946" target="_blank"
-            >(2023/5/1)</a
-          >RATING MASTER
-          <br />
-        </div>
-      </div>
       <h3>maimai</h3>
       <br />
       <div class="sub_box">

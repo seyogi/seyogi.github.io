@@ -17,8 +17,8 @@
         Max Rating : 17.01 (Act.3)<br />
         <br />
         オンゲキでお元気！！！！<br /><br />
-        最近は全然触れていませんが、たまに版権を遊んだりしてます<br>
-        昔から版権のセンスが抜群にいい (オタクに刺さる)<br>
+        最近は全然触れていませんが、たまに版権を遊んだりしてます。昔から収録曲のセンスが抜群にいい<br>
+        <a href="https://twitter.com/syg_74/status/1652928889893842946" target="_blank">(2023/5/1)</a>RATING MASTER<br>
         <br />
         <hr style="width: 80%" />
         <Timeline :timeline_contents="timeline_contents"></Timeline>
