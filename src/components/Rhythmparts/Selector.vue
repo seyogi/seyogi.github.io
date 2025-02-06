@@ -47,13 +47,13 @@ export default {
         {
           index: 2,
           title: "DDR",
-          image: `url(/img/Rhythm/logo/DDR_2.png)`,
+          image: `url(/img/Rhythm/logo/ddr_2.png)`,
           color: "#00fa9a",
         },
         {
           index: 3,
           title: "CHUNITHM",
-          image: `url(/img/Rhythm/logo/CHUNITHM_logo.png)`,
+          image: `url(/img/Rhythm/logo/chunithm_logo.png)`,
           color: "#ffd500",
         },
         {
