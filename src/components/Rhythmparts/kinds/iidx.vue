@@ -14,11 +14,13 @@
         </carousel>
       </div>
       <div class="text_box">
-        Max Rating : 17.01 (Act.3)<br />
+        段位認定 : SP皆伝 <br />
+        アリーナ : A2(スコア) / A1(ミスカン) <br />
+        IIDX ID : 7228-1124 (<a href="https://sp12.iidx.app/users/7228-1124" target="_blank">☆12参考表</a>) 
         <br />
-        オンゲキでお元気！！！！<br /><br />
-        最近は全然触れていませんが、たまに版権を遊んだりしてます。昔から収録曲のセンスが抜群にいい<br>
-        <a href="https://twitter.com/syg_74/status/1652928889893842946" target="_blank">(2023/5/1)</a>RATING MASTER<br>
+        <br />
+        BISTROVERから本格的に始めました。ライバル募集中！<br />
+        <a href="https://x.com/syg_74/status/1873960278578389487" target="_blank">2024/12/31</a> 全白達成<br />
         <br />
         <hr style="width: 80%" />
         <Timeline :timeline_contents="timeline_contents"></Timeline>
@@ -28,8 +30,8 @@
 </template>
 
 <script>
-import TimelineContents from "../../assets/ongekiTimelineContents.json";
-import Timeline from "./Timeline";
+import TimelineContents from "../../../assets/iidxTimelineContents.json";
+import Timeline from "../Timeline";
 
 export default {
   components: {
@@ -39,10 +41,19 @@ export default {
     return {
       contents: [
         {
-          imgurl: "/img/Rhythm/Result/GEKI01.jpg",
+          imgurl: "/img/Rhythm/Result/Beatmania02.jpg",
         },
         {
-          imgurl: "/img/Rhythm/Result/GEKI02.jpg",
+          imgurl: "/img/Rhythm/Result/Beatmania01.jpg",
+        },
+        {
+          imgurl: "/img/Rhythm/Result/Beatmania03.jpg",
+        },
+        {
+          imgurl: "/img/Rhythm/Result/Beatmania04.jpg",
+        },
+        {
+          imgurl: "/img/Rhythm/Result/Beatmania05.jpg",
         },
       ],
       timeline_contents: TimelineContents,
@@ -69,7 +80,7 @@ export default {
   }
   .carousel__slide img {
     max-width: 100%;
-    max-height: 450px;
+    max-height: 350px;
   }
 }
 /* for Desktop */
@@ -86,7 +97,7 @@ export default {
     align-items: center;
   }
   .carousel__slide img {
-    max-height: 450px;
+    max-height: 350px;
     max-width: 100%;
   }
 }

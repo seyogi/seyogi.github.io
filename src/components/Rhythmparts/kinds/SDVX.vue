@@ -2,7 +2,7 @@
   <div>
     <div class="main_box">
       <br />
-      <div class="carousel_box">
+      <dir class="carousel_box">
         <carousel :items-to-show="1" :wrap-around="true">
           <slide v-for="content in contents" :key="content">
             <img class="img" :src="content.imgurl" />
@@ -12,14 +12,18 @@
             <pagination />
           </template>
         </carousel>
-      </div>
+      </dir>
       <div class="text_box">
-        Max Rating : 17.25(VERSE)<br />
-        CLASS EMBLEM : INFINITY -ALL CLEAR-<br />
-        フレンドコード : 4069095717545<br />
+        VOLFORCE : 21.087(IMPERIAL II)<br />
+        SKILL ANALYZER : 後光暴龍天 / 金枠神暴龍天<br />
+        SDVX ID:SV-3690-6541<br />
         <br />
-        伸びしろがないよ～～～～～～～～②<br />
-        VERSE開始時点で一応15+全鳥です。これだけは維持したい<br />
+        伸びしろがないよ～～～～～～～～①<br />
+        Vaddict:<a
+          href="https://vaddict.b35.jp/user.php?player_id=SV-3690-6541"
+          target="_blank"
+          >URL</a
+        ><br />
         <br />
         <hr style="width: 80%" />
         <Timeline :timeline_contents="timeline_contents"></Timeline>
@@ -29,8 +33,8 @@
 </template>
 
 <script>
-import TimelineContents from "../../assets/CHINITHMTimelineContents.json";
-import Timeline from "./Timeline";
+import TimelineContents from "../../../assets/SDVXTimelineContents.json";
+import Timeline from "../Timeline";
 
 export default {
   components: {
@@ -40,13 +44,10 @@ export default {
     return {
       contents: [
         {
-          imgurl: "/img/Rhythm/Result/UNI02.jpg",
+          imgurl: "/img/Rhythm/Result/SDVX01.jpg",
         },
         {
-          imgurl: "/img/Rhythm/Result/UNI01.jpg",
-        },
-        {
-          imgurl: "/img/Rhythm/Result/UNI03.jpg",
+          imgurl: "/img/Rhythm/Result/SDVX02.jpg",
         },
       ],
       timeline_contents: TimelineContents,
@@ -73,7 +74,7 @@ export default {
   }
   .carousel__slide img {
     max-width: 100%;
-    max-height: 350px;
+    max-height: 450px;
   }
 }
 /* for Desktop */
@@ -90,7 +91,7 @@ export default {
     align-items: center;
   }
   .carousel__slide img {
-    max-height: 350px;
+    max-height: 450px;
     max-width: 100%;
   }
 }

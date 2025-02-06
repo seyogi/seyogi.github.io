@@ -14,13 +14,12 @@
         </carousel>
       </div>
       <div class="text_box">
-        段位認定 : SP皆伝 <br />
-        アリーナ : A2(スコア) / A1(ミスカン) <br />
-        IIDX ID : 7228-1124 (<a href="https://sp12.iidx.app/users/7228-1124" target="_blank">☆12参考表</a>) 
+        Max Rating : 17.25(VERSE)<br />
+        CLASS EMBLEM : INFINITY -ALL CLEAR-<br />
+        フレンドコード : 4069095717545<br />
         <br />
-        <br />
-        BISTROVERから本格的に始めました。ライバル募集中！<br />
-        <a href="https://x.com/syg_74/status/1873960278578389487" target="_blank">2024/12/31</a> 全白達成<br />
+        伸びしろがないよ～～～～～～～～②<br />
+        VERSE開始時点で一応15+全鳥です。これだけは維持したい<br />
         <br />
         <hr style="width: 80%" />
         <Timeline :timeline_contents="timeline_contents"></Timeline>
@@ -30,8 +29,8 @@
 </template>
 
 <script>
-import TimelineContents from "../../assets/iidxTimelineContents.json";
-import Timeline from "./Timeline";
+import TimelineContents from "../../../assets/CHINITHMTimelineContents.json";
+import Timeline from "../Timeline";
 
 export default {
   components: {
@@ -41,19 +40,13 @@ export default {
     return {
       contents: [
         {
-          imgurl: "/img/Rhythm/Result/Beatmania02.jpg",
+          imgurl: "/img/Rhythm/Result/UNI02.jpg",
         },
         {
-          imgurl: "/img/Rhythm/Result/Beatmania01.jpg",
+          imgurl: "/img/Rhythm/Result/UNI01.jpg",
         },
         {
-          imgurl: "/img/Rhythm/Result/Beatmania03.jpg",
-        },
-        {
-          imgurl: "/img/Rhythm/Result/Beatmania04.jpg",
-        },
-        {
-          imgurl: "/img/Rhythm/Result/Beatmania05.jpg",
+          imgurl: "/img/Rhythm/Result/UNI03.jpg",
         },
       ],
       timeline_contents: TimelineContents,

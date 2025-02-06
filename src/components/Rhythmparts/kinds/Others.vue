@@ -36,18 +36,6 @@
           <br />
         </div>
       </div>
-      <h3>pop'n music</h3>
-      <br />
-      <div class="sub_box">
-        <img src="/img/Rhythm/Result/popn01.jpg" class="img" />
-        <div class="side_box">
-          ポックラ : 94.?<br />
-          最高 : 49<br />
-          <br />
-          安定48？クリアがちらほらついてきました。<br />
-          <br />
-        </div>
-      </div>
       <h3>Arcaea</h3>
       <br />
       <div class="sub_box">

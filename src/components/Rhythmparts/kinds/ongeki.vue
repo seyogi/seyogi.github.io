@@ -14,11 +14,11 @@
         </carousel>
       </div>
       <div class="text_box">
-        段位認定 : SP十段(A3)<br />
-        最高 : SP足19 / DP足18 <br />
-        DDR CODE : 61609228<br />
+        Max Rating : 17.01 (Act.3)<br />
         <br />
-        最近ちょっとアツい<br />
+        オンゲキでお元気！！！！<br /><br />
+        最近は全然触れていませんが、たまに版権を遊んだりしてます。昔から収録曲のセンスが抜群にいい<br>
+        <a href="https://twitter.com/syg_74/status/1652928889893842946" target="_blank">(2023/5/1)</a>RATING MASTER<br>
         <br />
         <hr style="width: 80%" />
         <Timeline :timeline_contents="timeline_contents"></Timeline>
@@ -28,8 +28,8 @@
 </template>
 
 <script>
-import TimelineContents from "../../assets/DDRTimelineContents.json";
-import Timeline from "./Timeline";
+import TimelineContents from "../../../assets/ongekiTimelineContents.json";
+import Timeline from "../Timeline";
 
 export default {
   components: {
@@ -39,16 +39,12 @@ export default {
     return {
       contents: [
         {
-          imgurl: "/img/Rhythm/Result/DDR01.jpg",
+          imgurl: "/img/Rhythm/Result/GEKI01.jpg",
         },
         {
-          imgurl: "/img/Rhythm/Result/DDR02.jpg",
-        },
-        {
-          imgurl: "/img/Rhythm/Result/DDR03.jpg",
+          imgurl: "/img/Rhythm/Result/GEKI02.jpg",
         },
       ],
-
       timeline_contents: TimelineContents,
     };
   },
@@ -73,7 +69,7 @@ export default {
   }
   .carousel__slide img {
     max-width: 100%;
-    max-height: 350px;
+    max-height: 450px;
   }
 }
 /* for Desktop */
@@ -90,7 +86,7 @@ export default {
     align-items: center;
   }
   .carousel__slide img {
-    max-height: 350px;
+    max-height: 450px;
     max-width: 100%;
   }
 }

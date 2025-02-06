@@ -28,12 +28,13 @@
 
 <script>
 import Selector from "./Selector";
-import CHUNITHM from "./CHUNITHM";
-import SDVX from "./SDVX";
-import iidx from "./iidx";
-import DDR from "./DDR";
-import ongeki from "./ongeki";
-import Others from "./Others";
+import CHUNITHM from "./kinds/CHUNITHM";
+import SDVX from "./kinds/SDVX";
+import iidx from "./kinds/iidx";
+import DDR from "./kinds/DDR";
+import ongeki from "./kinds/ongeki";
+import popn from "./kinds/popn";
+import Others from "./kinds/Others";
 
 export default {
   components: {
@@ -44,6 +45,7 @@ export default {
     iidx,
     Others,
     DDR,
+    popn,
   },
   data() {
     return {
@@ -55,6 +57,7 @@ export default {
         SDVX: "SOUND VOLTEX",
         Others: "OTHERS",
         iidx: "beatmania IIDX",
+        popn: "pop'n music",
       },
     };
   },

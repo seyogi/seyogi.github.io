@@ -2,7 +2,7 @@
   <div>
     <div class="main_box">
       <br />
-      <dir class="carousel_box">
+      <div class="carousel_box">
         <carousel :items-to-show="1" :wrap-around="true">
           <slide v-for="content in contents" :key="content">
             <img class="img" :src="content.imgurl" />
@@ -12,18 +12,13 @@
             <pagination />
           </template>
         </carousel>
-      </dir>
+      </div>
       <div class="text_box">
-        VOLFORCE : 21.087(IMPERIAL II)<br />
-        SKILL ANALYZER : 後光暴龍天 / 金枠神暴龍天<br />
-        SDVX ID:SV-3690-6541<br />
+        段位認定 : SP十段(A3)<br />
+        最高 : SP足19 / DP足18 <br />
+        DDR CODE : 61609228<br />
         <br />
-        伸びしろがないよ～～～～～～～～①<br />
-        Vaddict:<a
-          href="https://vaddict.b35.jp/user.php?player_id=SV-3690-6541"
-          target="_blank"
-          >URL</a
-        ><br />
+        最近ちょっとアツい<br />
         <br />
         <hr style="width: 80%" />
         <Timeline :timeline_contents="timeline_contents"></Timeline>
@@ -33,8 +28,8 @@
 </template>
 
 <script>
-import TimelineContents from "../../assets/SDVXTimelineContents.json";
-import Timeline from "./Timeline";
+import TimelineContents from "../../../assets/DDRTimelineContents.json";
+import Timeline from "../Timeline";
 
 export default {
   components: {
@@ -44,12 +39,16 @@ export default {
     return {
       contents: [
         {
-          imgurl: "/img/Rhythm/Result/SDVX01.jpg",
+          imgurl: "/img/Rhythm/Result/DDR01.jpg",
         },
         {
-          imgurl: "/img/Rhythm/Result/SDVX02.jpg",
+          imgurl: "/img/Rhythm/Result/DDR02.jpg",
+        },
+        {
+          imgurl: "/img/Rhythm/Result/DDR03.jpg",
         },
       ],
+
       timeline_contents: TimelineContents,
     };
   },
@@ -74,7 +73,7 @@ export default {
   }
   .carousel__slide img {
     max-width: 100%;
-    max-height: 450px;
+    max-height: 350px;
   }
 }
 /* for Desktop */
@@ -91,7 +90,7 @@ export default {
     align-items: center;
   }
   .carousel__slide img {
-    max-height: 450px;
+    max-height: 350px;
     max-width: 100%;
   }
 }

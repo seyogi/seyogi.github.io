@@ -6,7 +6,8 @@
           @click="incrementByEmit(game.title)"
           class="detail_hexagon"
           :style="position(game)"
-        ></div>
+        >
+      </div>
       </div>
     </div>
   </div>
@@ -34,35 +35,41 @@ export default {
         {
           index: 0,
           title: "iidx",
-          image: `url(/img/Rhythm/logo/iidx_logo.png)`,
+          image: `url(/img/Rhythm/logo/iidx_2.png)`,
           color: "#ff69b4",
         },
         {
           index: 1,
           title: "SDVX",
-          image: `url(/img/Rhythm/logo/sdvx_logo.png)`,
+          image: `url(/img/Rhythm/logo/sdvx_1.png)`,
           color: "#3e3e3e",
         },
         {
           index: 2,
           title: "DDR",
-          image: `url(/img/Rhythm/logo/DDR_logo.png)`,
+          image: `url(/img/Rhythm/logo/DDR_2.png)`,
           color: "#00fa9a",
         },
         {
           index: 3,
           title: "CHUNITHM",
-          image: `url(/img/Rhythm/logo/chunithm_logo.png)`,
-          color: "#cfb1fb",
+          image: `url(/img/Rhythm/logo/CHUNITHM_logo.png)`,
+          color: "#ffd500",
         },
         {
           index: 4,
           title: "ongeki",
-          image: `url(/img/Rhythm/logo/ongeki_logo.png)`,
+          image: `url(/img/Rhythm/logo/ongeki_logo2.png)`,
           color: "#f0f8ff",
         },
         {
           index: 5,
+          title: "popn",
+          image: `url(/img/Rhythm/logo/popn_logo.png)`,
+          color: "#99ccff",
+        },
+        {
+          index: 6,
           title: "Others",
           image: `url(/img/Rhythm/logo/others.png)`,
           color: "#1f1e33",
