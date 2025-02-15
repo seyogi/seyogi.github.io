@@ -7,7 +7,7 @@
       <br>
       <h3>雑記</h3>
       BBDという音ゲーサークルに所属しています<br>
-      最近ポップンがアツいので個別ページを制作予定...<br /><br />
+      最近のメイン：IIDX,DDR,pop'n<br /><br />
       <br />
       <div class="sub_box">
         <div class="selector_box"><Selector @changeMethod="updatetitle"></Selector></div>

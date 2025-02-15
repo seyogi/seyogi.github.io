@@ -3959,6 +3959,15 @@
         }
     },
     "\u70fd\u706b\u9023\u5929\u306e\u5203": {
+        "LEGGENDARIA":{
+            "SCRATCH": 58.26,
+            "SOF-LAN": 0.0,
+            "NOTES_NUM": 2279.0,
+            "CHORD": 185.98,
+            "PEAK": 153.57,
+            "NOTES": 179.90,
+            "CHARGE": 193.77
+        },
         "ANOTHER": {
             "SCRATCH": 57.69,
             "SOF-LAN": 0.0,
@@ -12347,6 +12356,15 @@
         }
     },
     "\u86c7\u795e": {
+        "LEGGENDARIA":{
+            "SCRATCH": 34.49,
+            "SOF-LAN": 0.0,
+            "NOTES_NUM": 1904.0,
+            "CHORD": 139.92,
+            "PEAK": 155.34,
+            "NOTES": 150.24,
+            "CHARGE": 200
+        },
         "ANOTHER": {
             "SCRATCH": 27.57,
             "SOF-LAN": 0.0,
@@ -19210,6 +19228,15 @@
         }
     },
     "\u65b0\u5b9d\u5cf6": {
+        "LEGGENDARIA":{
+            "SCRATCH": 0,
+            "SOF-LAN": 0.0,
+            "NOTES_NUM": 1790.0,
+            "CHORD": 0,
+            "PEAK": 0.0,
+            "NOTES": 0,
+            "CHARGE": 186.38
+        },
         "ANOTHER": {
             "SCRATCH": 19.01,
             "SOF-LAN": 0.0,
@@ -33271,13 +33298,13 @@
     },
     "A MINSTREL ～ ver. short-scape ～":{
         "LEGGENDARIA": {
-            "SCRATCH":0.0,
+            "SCRATCH":22.61,
             "SOF-LAN": 0.0,
             "NOTES_NUM": 1954.0,
             "CHORD": 200.0,
-            "PEAK": 0.0,
-            "NOTES": 0.0,
-            "CHARGE": 0.0
+            "PEAK": 140.78,
+            "NOTES": 155.44,
+            "CHARGE": 48.39
         }
     }
 }
