@@ -13,6 +13,7 @@
     },
     {
         "circle": true,
+        "bold": true,
         "date_y": "",
         "date_m": " 7月",
         "text": "RATING 15.00",
@@ -22,13 +23,17 @@
         "date_y": "2019年",
         "date_m": " 10月",
         "text": "LEVEL13+(旧基準) 全鳥",
-        "sub_text": "最後の3つは大鳥居/エンダス/パッソでした。当時は鍵盤力がなくて本当につらかった..."
+        "sub_text": "当時は鍵盤力がなくてエンダスが本当に苦しかった"
+    },
+    {
+        "date_y": "",
+        "text": "～"
     },
     {
         "date_y": "2022年",
         "date_m": " 1月",
         "text": "蠍火 AJ",
-        "sub_text": "15初AJ！"
+        "sub_text": "15初AJ"
     },
     {
         "date_y": "",
@@ -47,13 +52,13 @@
         "date_y": "",
         "date_m": " 5月",
         "text": "World Vanquisher AJ",
-        "sub_text": "まさかこの曲をAJ出来る日が来るとは思いもしませんでした"
+        "sub_text": "STARの頃はこの曲をAJ出来る日が来るとは思いもしませんでした"
     },
     {
         "date_y": "",
         "date_m": "10月",
         "text": "風唄 AJ",
-        "sub_text": "弐寺で鍛えた鍵盤力で押し切りました"
+        "sub_text": "Beatmania Earth Power"
     },
     {
         "date_y": "2023年",
