@@ -77,10 +77,10 @@ export default {
     display: none;
   }
   .timeline-content {
-    width: 85%;
+    width: 95%;
     float: left;
     position: relative;
-    padding-left: 30px;
+    padding-left: 20px;
   }
   .timeline-date {
     width: 80px;
@@ -94,7 +94,7 @@ export default {
     display: none;
   }
   .timeline-txt{
-    font-size: 18px;
+    font-size: 17px;
     margin-bottom: 15px;
   }
   .timeline-txt .sub-txt {
@@ -144,7 +144,7 @@ export default {
     justify-content: space-between;
   }
   .timeline-txt {
-    font-size: 22px;
+    font-size: 20px;
     margin-top: 10px;
     margin-bottom: 10px;
     min-width: 350px;

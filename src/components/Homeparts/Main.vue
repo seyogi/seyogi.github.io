@@ -71,18 +71,26 @@ export default {
 </script>
 
 <style scoped>
-.main_box {
-  margin-left: 4%;
-  margin-right: 4%;
-  width: 92%;
-}
 
-.Activity_box {
-  margin: 30px;
-}
 
 @media screen and (max-width: 700px) {
 
+  .main_box {
+    width: 96%;
+    margin-left: 2%;
+    margin-right: 2%;
+  }
+  .Activity_box {
+    margin: 30px 10px;
+  }
+  h2 {
+    width: 80%;
+    padding: 0.5rem 2rem;
+    color: #fff;
+    background: #866;
+    -webkit-box-shadow: 5px 5px 0 #644;
+    box-shadow: 5px 5px 0 #644;
+  }
   .introduction_box .right{
     margin-top: 0px;
   }
@@ -119,6 +127,15 @@ export default {
 
 /* for Desktop */
 @media screen and (min-width: 700px) {
+  
+.main_box {
+  margin-left: 4%;
+  margin-right: 4%;
+  width: 92%;
+}
+  .Activity_box {
+    margin: 30px;
+  }
   .introduction_box {
     display: flex;
     justify-content: center;
@@ -195,17 +212,6 @@ export default {
 
   100% {
     transform: rotate(360deg);
-  }
-}
-
-@media screen and (max-width: 700px) {
-  h2 {
-    width: 80%;
-    padding: 0.5rem 2rem;
-    color: #fff;
-    background: #866;
-    -webkit-box-shadow: 5px 5px 0 #644;
-    box-shadow: 5px 5px 0 #644;
   }
 }
 
