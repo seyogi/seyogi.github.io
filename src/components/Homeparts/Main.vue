@@ -2,16 +2,13 @@
   <div>
     <div class="main_box">
       <br />
-      情報系大学生による雑記ページです。<br />
-      <br />
-      <br />
       <h2>About Me</h2><br />
       <div class="introduction_box">
         <div class="left">
           <img class="img_icon" src="/img/me.png" />
           <div class="links">
             <a href="https://twitter.com/syg_74" target="_blank" rel="noopener noreferrer" class="box">
-              <font-awesome-icon class="icons" icon="fa-brands fa-twitter" size="2x" color="#422" />
+              <font-awesome-icon class="icons" icon="fa-brands fa-x-twitter" size="2x" color="#422" />
             </a>
             <a href="https://github.com/seyogi" target="_blank" rel="noopener noreferrer" class="box">
               <font-awesome-icon class="icons" icon="fa-brands fa-github" size="2x" color="#422" />
@@ -34,8 +31,8 @@
             <pre class="eng">&#009;Brain Computer Interface</pre>
             <br />
             <h4>- Qualifications</h4>
-            <pre>&#009;基本情報技術者</pre>
-            <pre>&#009;応用情報技術者</pre><br /><br /><br /><br />
+            <pre>&#009;基本情報技術者 (2023.6)</pre>
+            <pre>&#009;応用情報技術者 (2023.12)</pre><br /><br /><br /><br />
           </div>
           <div class="Phone_text">
             <div class="name">SEYOGI</div><br />
@@ -55,7 +52,7 @@
           </div>
         </div>
         <br />
-      </div><br><br>
+      </div><br>
       <h2>Activity</h2>
       <Activity class="Activity_box"></Activity>
       <br /><br /><br />

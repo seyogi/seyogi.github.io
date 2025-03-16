@@ -2,12 +2,12 @@
   <div>
     <div class="main_box">
       <br />
-      <br />
-      音楽ゲームのリザルトログです<br />
-      <br>
       <h3>雑記</h3>
-      BBDという音ゲーサークルに所属しています<br>
-      最近のメイン：IIDX,DDR,pop'n<br /><br />
+      <div class="txt_box">
+        趣味で遊んでいるアーケードゲーム(音楽ゲーム)のログです<br />
+        <a href="https://x.com/BBD_w"  target="_blank">BBD</a>という音ゲーサークルに所属しています(2022.10 ~)<br>
+        最近のメイン機種：pop'n,IIDX,DDR<br /><br />
+      </div>
       <br />
       <div class="sub_box">
         <div class="selector_box"><Selector @changeMethod="updatetitle"></Selector></div>
@@ -71,11 +71,12 @@ export default {
 
 <style scoped>
 .main_box {
-  margin-left: 2%;
-  margin-right: 2%;
-  width: 96%;
+  margin-left: 3%;
+  margin-right: 3%;
+  width: 94%;
 }
-.sub_box {
+.txt_box {
+  margin-left: 2%;
 }
 .sub_box .selector_box {
   position: relative;

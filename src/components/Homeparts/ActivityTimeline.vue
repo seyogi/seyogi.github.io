@@ -9,6 +9,11 @@
       <div class="timeline-content">
         <div class="timeline-circle" v-if="content.circle == true" />
         <div class="timeline-txt">
+          <div v-if="content.circle == true">
+            <a :href="content.url" target="_blank">
+              <font-awesome-icon class="icons" icon="fa-solid fa-school fa-xl" color="#422"/>
+            </a>
+          </div>
           <div v-if="content.bold == true">
             <h3>{{ content.main_text }}</h3>
           </div>
@@ -50,7 +55,10 @@ export default {
 .timeline {
   list-style: none;
 }
-
+.icons:hover {
+  opacity: 0.5;
+  transition: 300ms;
+}
 @media screen and (max-width: 800px) {
   .timeline > li {
     overflow: hidden;
@@ -104,9 +112,9 @@ export default {
     margin: 0;
   }
   .timeline-date {
-    width: 70px;
+    width: 65px;
     float: left;
-    margin-top: 12px;
+    margin-top: 15px;
     margin-right: 10px;
     text-align: right;
   }
@@ -124,8 +132,8 @@ export default {
     height: 12px;
     background: #833;
     position: absolute;
-    left: 106px;
-    top: 16px;
+    left: 76px;
+    top: 20px;
     border-radius: 100%;
   }
   .timeline-content {
@@ -136,13 +144,13 @@ export default {
     justify-content: space-between;
   }
   .timeline-txt {
-    font-size: 18px;
+    font-size: 22px;
     margin-top: 10px;
     margin-bottom: 10px;
     min-width: 350px;
   }
   .timeline-txt .sub-txt {
-    font-size: 12px;
+    font-size: 13px;
   }
   .timeline-content img {
     max-width: 100%;
