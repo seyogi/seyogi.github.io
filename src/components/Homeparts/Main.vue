@@ -61,7 +61,7 @@
 </template>
 
 <script>
-import Activity from "./Activity";
+import Activity from "./Activity.vue";
 
 export default {
   components: {

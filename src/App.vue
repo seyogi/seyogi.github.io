@@ -1,4 +1,4 @@
-<template >
+<template>
   <Header class="header"></Header>
   <router-view v-slot="{ Component }" class="body">
     <transition name="fade" mode="out-in">
@@ -9,8 +9,8 @@
 </template>
 
 <script>
-import Header from "./components/Header";
-import Footer from "./components/Footer"; 
+import Header from "./components/Header.vue";
+import Footer from "./components/Footer.vue"; 
 
 export default {
   name: "App",
@@ -24,7 +24,9 @@ export default {
 </script>
 
 <style>
-
+.test{
+  background-color: red;
+}
 .fade-leave-active {
   transition: opacity 0.5s;
   opacity: 1;

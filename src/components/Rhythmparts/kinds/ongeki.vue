@@ -29,7 +29,7 @@
 
 <script>
 import TimelineContents from "../../../assets/ongekiTimelineContents.json";
-import Timeline from "../Timeline";
+import Timeline from "../Timeline.vue";
 
 export default {
   components: {

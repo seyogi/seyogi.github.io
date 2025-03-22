@@ -30,7 +30,7 @@
 
 <script>
 import TimelineContents from "../../../assets/CHINITHMTimelineContents.json";
-import Timeline from "../Timeline";
+import Timeline from "../Timeline.vue";
 
 export default {
   components: {

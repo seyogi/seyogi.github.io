@@ -5,7 +5,7 @@
 </template>
 
 <script>
-import RhythmMain from "../components/Rhythmparts/Rhythmmain";
+import RhythmMain from "../components/Rhythmparts/Rhythmmain.vue";
 
 export default {
   components: {

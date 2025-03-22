@@ -5,7 +5,7 @@
 </template>
 
 <script>
-import Contactmain from "../components/Contactparts/Contactmain";
+import Contactmain from "../components/Contactparts/Contactmain.vue";
 
 export default {
   components: {

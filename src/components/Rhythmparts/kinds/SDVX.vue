@@ -34,7 +34,7 @@
 
 <script>
 import TimelineContents from "../../../assets/SDVXTimelineContents.json";
-import Timeline from "../Timeline";
+import Timeline from "../Timeline.vue";
 
 export default {
   components: {

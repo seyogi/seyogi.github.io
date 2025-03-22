@@ -27,14 +27,14 @@
 </template>
 
 <script>
-import Selector from "./Selector";
-import CHUNITHM from "./kinds/CHUNITHM";
-import SDVX from "./kinds/SDVX";
-import iidx from "./kinds/iidx";
-import DDR from "./kinds/DDR";
-import ongeki from "./kinds/ongeki";
-import popn from "./kinds/popn";
-import Others from "./kinds/Others";
+import Selector from "./Selector.vue";
+import CHUNITHM from "./kinds/CHUNITHM.vue";
+import SDVX from "./kinds/SDVX.vue";
+import iidx from "./kinds/iidx.vue";
+import DDR from "./kinds/DDR.vue";
+import ongeki from "./kinds/ongeki.vue";
+import popn from "./kinds/popn.vue";
+import Others from "./kinds/Others.vue";
 
 export default {
   components: {

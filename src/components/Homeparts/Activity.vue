@@ -8,7 +8,7 @@
 
 <script>
 import TimelineContents from '../../assets/ActivityContents.json';
-import Timeline from "./ActivityTimeline";
+import Timeline from "./ActivityTimeline.vue";
 const elements = document.getElementsByClassName("sub-li");
 
 export default {

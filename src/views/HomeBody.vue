@@ -8,8 +8,8 @@
 </template>
 
 <script>
-import Main from "../components/Homeparts/Main";
-import Banner from "../components/Homeparts/Banner";
+import Main from "../components/Homeparts/Main.vue";
+import Banner from "../components/Homeparts/Banner.vue";
 
 export default {
   components: {
