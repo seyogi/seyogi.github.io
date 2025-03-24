@@ -16,7 +16,7 @@
       {
       
             "date_y": "",
-            "main_text": "弟燕祭（文化祭） 音ゲー展示",
+            "main_text": "弟燕祭 音楽ゲーム 展示",
             "product": "Lawine",
             "imgurl":"/img/product/others/TeiennsaiPlay2.png"
       },
@@ -55,7 +55,7 @@
             "product": "スマートホームメイド",
             "imgurl": "/img/product/hack/smarthome.png",
             "team_name": "高輪ﾊﾞｯﾄﾞｹﾞｰﾄｳｪｲ前ﾊｰﾄﾞｳｪｱ幼稚園",
-            "achievements_text": "スポンサー賞 受賞 / Award Day 進出"
+            "achievements_text": "Jストリーム賞 受賞 / Award Day 進出"
       },
       {
             "date_y": "",
@@ -66,8 +66,10 @@
       },
       {
             "date_y": "",
-            "main_text": "Progateハッカソン 2025.3",
+            "main_text": "Progateハッカソン powered by AWS 2025.03",
             "product": "AWSフレンズ",
-            "team_name": "ご注文は豆腐職人ですか？"
+            "imgurl": "/img/product/hack/AWSFriends.png",
+            "team_name": "ご注文は豆腐職人ですか？",
+            "achievements_text": "M3賞 受賞 / 最優秀賞 受賞"
       }
 ]

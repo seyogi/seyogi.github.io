@@ -14,10 +14,7 @@
               <font-awesome-icon class="icons" icon="fa-solid fa-school fa-xl" color="#422"/>
             </a>
           </div>
-          <div v-if="content.bold == true">
-            <h3>{{ content.main_text }}</h3>
-          </div>
-          <div v-if="content.bold != true">
+          <div class="main-txt">
             {{ content.main_text }}
           </div>
           <div class="sub-txt" v-if="'product' in content">
@@ -94,8 +91,11 @@ export default {
     display: none;
   }
   .timeline-txt{
-    font-size: 17px;
+    font-size: 15px;
     margin-bottom: 15px;
+  }
+  .timeline-txt .main-txt{
+    font-weight: bold;
   }
   .timeline-txt .sub-txt {
     font-size: 12px;
@@ -137,17 +137,19 @@ export default {
     border-radius: 100%;
   }
   .timeline-content {
-    width: 80%;
-    float: left;
-    padding-left: 30px;
+    width: uv(100%-100px);
+    margin-left: 100px;
     display:flex;
     justify-content: space-between;
   }
   .timeline-txt {
-    font-size: 20px;
+    font-size: 17px;
     margin-top: 10px;
     margin-bottom: 10px;
-    min-width: 350px;
+    max-width: 450px;
+  }
+  .timeline-txt .main-txt{
+    font-weight: 600;
   }
   .timeline-txt .sub-txt {
     font-size: 13px;
