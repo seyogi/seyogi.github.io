@@ -71,5 +71,12 @@
             "imgurl": "/img/product/hack/AWSFriends.png",
             "team_name": "ご注文は豆腐職人ですか？",
             "achievements_text": "M3賞 受賞 / 最優秀賞 受賞"
+      },
+      {
+            "circle": true,
+            "date_y": "2025年",
+            "main_text": "東京都市大学 大学院総合理工学研究科",
+            "product": "情報専攻 システム情報工学領域",
+            "url":"https://www.tcu.ac.jp/"
       }
 ]

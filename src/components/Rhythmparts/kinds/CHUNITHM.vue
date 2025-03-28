@@ -14,7 +14,7 @@
         </carousel>
       </div>
       <div class="text_box">
-        Max Rating : 17.25(VERSE)<br />
+        Max Rating : 17.34(VERSE)<br />
         CLASS EMBLEM : INFINITY -ALL CLEAR-<br />
         フレンドコード : 4069095717545<br />
         <br />

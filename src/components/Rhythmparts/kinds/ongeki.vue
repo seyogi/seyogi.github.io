@@ -14,10 +14,10 @@
         </carousel>
       </div>
       <div class="text_box">
-        Max Rating : 17.01 (Act.3)<br />
+        Max Rating : 17.04 (Act.3) / 21.035 (Re:Fresh)<br />
         <br />
         オンゲキでお元気！！！！<br /><br />
-        最近は全然触れていませんが、たまに版権を遊んだりしてます。昔から収録曲のセンスが抜群にいい<br>
+        Re:Freshでモチベ復帰しました。目指せ22<br>
         <a href="https://twitter.com/syg_74/status/1652928889893842946" target="_blank">(2023/5/1)</a>RATING MASTER<br>
         <br />
         <hr style="width: 80%" />
