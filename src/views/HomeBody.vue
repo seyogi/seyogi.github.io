@@ -2,7 +2,7 @@
   <div>
     <Banner></Banner>
     <div class="container">
-      <Main class="center_container"></Main>
+      <Main></Main>
     </div>
   </div>
 </template>

@@ -9,17 +9,14 @@
           </router-link>
         </div>
         <div class="link">
-          <router-link to="/" class="linkbox">
-            <div class="japanesetxt">Top</div>
-            
+          <router-link to="/AboutMe" class="linkbox">
+            <div class="japanesetxt">AboutMe</div>
           </router-link>
           <router-link to="/Rhythm" class="linkbox">
             <div class="japanesetxt">Records</div>
-            
           </router-link>
           <router-link to="/iidx_radar" class="linkbox">
             <div class="japanesetxt">NotesRadar</div>
-            
           </router-link>
         </div>
         <button ype="button" class="menu-btn" v-on:click="this.open = !this.open">
@@ -35,6 +32,10 @@
           <router-link to="/" class="menu__item" v-on:click="this.open = !this.open">
             <div class="japanesetxt">トップページ</div>
             Top
+          </router-link>
+          <router-link to="/AboutMe" class="menu__item" v-on:click="this.open = !this.open">
+            <div class="japanesetxt">管理人紹介</div>
+            AboutMe
           </router-link>
           <router-link to="/Rhythm" class="menu__item" v-on:click="this.open = !this.open">
             <div class="japanesetxt">音ゲーログ</div>
@@ -97,6 +98,9 @@ export default {
   vertical-align: top;
   font-family: Arcaea;
 }
+.header .contents .logobox :hover{
+  color: #fdd6d6;
+}
 .menu-btn {
   position: fixed;
   top: 5px;
@@ -143,11 +147,14 @@ export default {
   color: #d4b8b5;
   box-sizing: border-box;
 }
+.menu__item :hover{
+  color: #fdd6d6;
+}
 .menu__item .japanesetxt{
   font-size: 20px;
   font-weight: bold;
 }
-@media screen and (min-width: 620px) {
+@media screen and (min-width: 720px) {
   .header .contents {
     display: flex;
     padding-right: 30px;
@@ -165,11 +172,14 @@ export default {
     font-size: 10px;
     font-weight: bold;
   }
+  .header .contents .linkbox :hover{
+    color: #fdd6d6;
+  }
   .linkbox .japanesetxt {
     font-size: 15px;
   }
 }
-@media screen and (max-width: 620px) {
+@media screen and (max-width: 720px) {
   .header .contents .link {
     height: 45px;
     display: none;
