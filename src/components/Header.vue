@@ -35,7 +35,7 @@
           </router-link>
           <router-link to="/About" class="menu__item" v-on:click="this.open = !this.open">
             <div class="japanesetxt">管理人紹介</div>
-            AboutMe
+            About
           </router-link>
           <router-link to="/Rhythm" class="menu__item" v-on:click="this.open = !this.open">
             <div class="japanesetxt">音ゲーログ</div>
