@@ -1,6 +1,6 @@
 import { createRouter, createWebHashHistory } from 'vue-router'
 import HomeBody from './views/HomeBody.vue'
-import AboutMeBody from './views/AboutMeBody.vue'
+import AboutBody from './views/AboutBody.vue'
 import RhythmBody from './views/RhythmBody.vue'
 import iidxRadarBody from './views/iidxRadarBody.vue'
 import ContactBody from './views/ContactBody.vue'
@@ -12,9 +12,9 @@ const routes = [
     component: HomeBody
   },
   {
-    path: '/AboutMe',
-    name: 'AboutMe',
-    component: AboutMeBody
+    path: '/About',
+    name: 'About',
+    component: AboutBody
   },
   {
     path: '/Rhythm',

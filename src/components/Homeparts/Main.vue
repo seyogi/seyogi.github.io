@@ -2,10 +2,9 @@
   <div>
     <div class="main_box">
       <br />
-      <h2>About Here</h2><br />
+      <h2>Top</h2><br />
       <div class="intro_box">
-        情報系大学院生の雑記ページです<br /><br />
-        AboutMeを分離したらトップページが寂しくなってしまいました；；<br />
+        Aboutを分離したらトップページが寂しくなってしまいました；；<br />
         何かいいアイデアを思いついたら更新します<br />
       </div>
     </div>
@@ -14,7 +13,7 @@
 
 <style scoped>
 
-  .intro_box{
+.intro_box{
     margin-left: 20px;
   } 
 

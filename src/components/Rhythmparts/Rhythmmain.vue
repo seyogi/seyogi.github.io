@@ -2,7 +2,7 @@
   <div>
     <div class="main_box">
       <br />
-      <h2>音ゲーログ</h2>
+      <h2>RhythmGame Log</h2>
       <br />
       <div class="txt_box">
           趣味で遊んでいるアーケードゲーム(音楽ゲーム)のログです<br />

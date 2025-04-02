@@ -5,12 +5,12 @@
         <div class="logo">
           <router-link to="/" class="logobox">
             <img src="/img/icon.png" class="logoimg" />
-            <div class="logotxt">SEYOGI's Lab</div>
+            <div class="logotxt">SEYOGI.DEV</div>
           </router-link>
         </div>
         <div class="link">
-          <router-link to="/AboutMe" class="linkbox">
-            <div class="japanesetxt">AboutMe</div>
+          <router-link to="/About" class="linkbox">
+            <div class="japanesetxt">About</div>
           </router-link>
           <router-link to="/Rhythm" class="linkbox">
             <div class="japanesetxt">Records</div>
@@ -33,7 +33,7 @@
             <div class="japanesetxt">トップページ</div>
             Top
           </router-link>
-          <router-link to="/AboutMe" class="menu__item" v-on:click="this.open = !this.open">
+          <router-link to="/About" class="menu__item" v-on:click="this.open = !this.open">
             <div class="japanesetxt">管理人紹介</div>
             AboutMe
           </router-link>

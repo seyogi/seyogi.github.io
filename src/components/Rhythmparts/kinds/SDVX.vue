@@ -2,7 +2,7 @@
   <div>
     <div class="main_box">
       <br />
-      <dir class="carousel_box">
+      <div class="carousel_box">
         <carousel :items-to-show="1" :wrap-around="true">
           <slide v-for="content in contents" :key="content">
             <img class="img" :src="content.imgurl" />
@@ -12,7 +12,7 @@
             <pagination />
           </template>
         </carousel>
-      </dir>
+      </div>
       <div class="text_box">
         VOLFORCE : 21.087(IMPERIAL II)<br />
         SKILL ANALYZER : 後光暴龍天 / 金枠神暴龍天<br />
@@ -57,8 +57,7 @@ export default {
 </script>
 
 <style scoped>
-.main_box {
-}
+
 .main_box .text_box {
   padding: 20px;
 }

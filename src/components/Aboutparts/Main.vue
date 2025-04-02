@@ -2,6 +2,21 @@
   <div>
     <div class="main_box">
       <br />
+      <h2>About Here</h2><br />
+      <div class="intro_box">
+        情報系大学院生の雑記ページです<br />
+        <br />
+        当サイトは主に<br />
+        
+        <ul>
+          <li>趣味(音楽ゲーム)の話</li>
+          <li>個人/チームでの製作活動の話</li>
+        </ul>
+        などの要素で構成されています
+        <br />
+        <br />
+      </div>
+      <br />
       <h2>About Me</h2><br />
       <div class="introduction_box">
         <div class="left">
@@ -23,7 +38,7 @@
         <div class="right">
           <div class="Desktop_text">
             <div class="name">SEYOGI</div>
-            TCU Science and Engineering<br />
+            TCU Graduate School<br />
             Informatics M1<br /><br />
             <h4>- Interests</h4>
             <pre class="eng">&#009;Artificial Neural Networks</pre>
@@ -36,7 +51,7 @@
           </div>
           <div class="Phone_text">
             <div class="name">SEYOGI</div><br />
-            TCU Science and Engineering M1<br /><br />
+            TCU Graduate School Informatics M1<br /><br />
             <h3>- Interests - </h3>
             <p>Neuroscience</p>
             <p>Artificial Neural Networks</p>
@@ -72,7 +87,14 @@ export default {
 
 <style scoped>
 
+.intro_box{
+    margin-left: 20px;
+  } 
 
+  li{
+    margin: 2px 0px 2px 40px;
+    list-style-type: square;
+  }
 @media screen and (max-width: 700px) {
 
   .main_box {
