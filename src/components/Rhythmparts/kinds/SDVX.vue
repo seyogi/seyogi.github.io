@@ -14,11 +14,10 @@
         </carousel>
       </div>
       <div class="text_box">
-        VOLFORCE : 21.087(IMPERIAL II)<br />
+        VOLFORCE : 21.135(IMPERIAL II)<br />
         SKILL ANALYZER : 後光暴龍天 / 金枠神暴龍天<br />
         SDVX ID:SV-3690-6541<br />
         <br />
-        伸びしろがないよ～～～～～～～～①<br />
         Vaddict:<a
           href="https://vaddict.b35.jp/user.php?player_id=SV-3690-6541"
           target="_blank"
@@ -44,10 +43,10 @@ export default {
     return {
       contents: [
         {
-          imgurl: "/img/Rhythm/Result/SDVX01.jpg",
+          imgurl: "/img/Rhythm/Result/SDVX02.jpg",
         },
         {
-          imgurl: "/img/Rhythm/Result/SDVX02.jpg",
+          imgurl: "/img/Rhythm/Result/SDVX01.jpg",
         },
       ],
       timeline_contents: TimelineContents,

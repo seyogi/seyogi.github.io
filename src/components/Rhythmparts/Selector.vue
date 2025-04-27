@@ -52,21 +52,21 @@ export default {
         },
         {
           index: 3,
+          title: "popn",
+          image: `url(/img/Rhythm/logo/popn_logo.png)`,
+          color: "#99ccff",
+        },
+        {
+          index: 4,
           title: "CHUNITHM",
           image: `url(/img/Rhythm/logo/chunithm_logo.png)`,
           color: "#ffd500",
         },
         {
-          index: 4,
+          index: 5,
           title: "ongeki",
           image: `url(/img/Rhythm/logo/ongeki_logo2.png)`,
           color: "#f0f8ff",
-        },
-        {
-          index: 5,
-          title: "popn",
-          image: `url(/img/Rhythm/logo/popn_logo.png)`,
-          color: "#99ccff",
         },
         {
           index: 6,

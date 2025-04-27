@@ -26,10 +26,6 @@
         "sub_text": "当時は鍵盤力がなくてエンダスが本当に苦しかった"
     },
     {
-        "date_y": "",
-        "text": "～"
-    },
-    {
         "date_y": "2022年",
         "date_m": " 1月",
         "text": "蠍火 AJ",
@@ -38,7 +34,8 @@
     {
         "date_y": "",
         "date_m": " 2月",
-        "text": "LEVEL15 全鳥"
+        "text": "LEVEL15 全鳥",
+        "sub_text": "SOUND VOLTEX Earth Power"
     },
     {
         "circle": true,

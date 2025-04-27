@@ -15,17 +15,10 @@
       </div>
       <div class="text_box">
         <br />
-        ポックラ：97.34
+        ポックラ：97.34<br />
+        最高クリア：ノマゲ49/イージー50<br />
         <br />
-        最高クリア：ノマゲ49/イージー50
-        <br />
-        <br />
-        ポプともID：3089-8010-8948
-        <br />
-        <br />
-        49下位～中位がノマゲで埋まってきたくらいです。最近は伸び悩み中...<br>
-        目指せ最高50
-        <br />
+        ポプともID：3089-8010-8948<br />
         <br />
         <hr style="width: 80%" />
         <Timeline :timeline_contents="timeline_contents"></Timeline>
