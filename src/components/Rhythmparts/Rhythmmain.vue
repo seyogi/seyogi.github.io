@@ -1,5 +1,6 @@
 <template>
   <div>
+    <Banner></Banner>
     <div class="main_box">
       <br />
       <h2>RhythmGame Log</h2>
@@ -31,6 +32,8 @@
 </template>
 
 <script>
+import Banner from "./Banner.vue";
+
 import Selector from "./Selector.vue";
 import CHUNITHM from "./kinds/CHUNITHM.vue";
 import SDVX from "./kinds/SDVX.vue";
@@ -39,9 +42,11 @@ import DDR from "./kinds/DDR.vue";
 import ongeki from "./kinds/ongeki.vue";
 import popn from "./kinds/popn.vue";
 import Others from "./kinds/Others.vue";
+import Gallery from "./kinds/Gallery.vue";
 
 export default {
   components: {
+    Banner,
     Selector,
     CHUNITHM,
     ongeki,
@@ -50,6 +55,7 @@ export default {
     Others,
     DDR,
     popn,
+    Gallery,
   },
   data() {
     return {
@@ -62,6 +68,7 @@ export default {
         Others: "OTHERS",
         iidx: "beatmania IIDX",
         popn: "pop'n music",
+        Gallery: "Gallery",
       },
     };
   },

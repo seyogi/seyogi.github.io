@@ -74,6 +74,12 @@ export default {
           image: `url(/img/Rhythm/logo/others.png)`,
           color: "#1f1e33",
         },
+        {
+          index: 7,
+          title: "Gallery",
+          image: `url(/img/Rhythm/logo/others.png)`,
+          color: "#1f1e33",
+        }
       ],
       title: "none",
       hexagon_size: 50,
