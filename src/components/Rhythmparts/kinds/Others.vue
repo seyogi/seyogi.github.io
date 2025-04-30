@@ -54,10 +54,6 @@
 </template>
 
 <style scoped>
-.img {
-  width: 45%;
-  max-width: 350px;
-}
 h3 {
   width: 60%;
   font-size: 100%;
@@ -71,18 +67,28 @@ h3 {
 @media screen and (min-width: 640px) {
   .sub_box {
     display: flex;
-    width: 90%;
+    width: 95%;
     padding-left: 20px;
     padding-bottom: 70px;
+  }
+  .img {
+    width: 50%;
+    max-width: 350px;
+  }
+  .side_box {
+    padding-left: 20px;
+    width: 50%;
   }
 }
 @media screen and (max-width: 639px) {
   img {
+    width: 100%;
+    max-width: 350px;
     padding-left: 20px;
   }
-}
-.side_box {
-  padding-left: 20px;
-  width: 45%;
+  .side_box {
+    padding-left: 20px;
+    padding-bottom: 20px;
+  }
 }
 </style>
