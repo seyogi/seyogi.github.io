@@ -19,7 +19,7 @@
         IIDX ID : 7228-1124 (<a href="https://sp12.iidx.app/users/7228-1124" target="_blank">☆12参考表</a>) 
         <br />
         <br />
-        <a href="https://x.com/syg_74/status/1873960278578389487" target="_blank">2024/12/31</a> 全白達成<br />
+        <a href="https://x.com/syg_74/status/1873960278578389487" target="_blank">(2024/12/31)</a> 全白達成<br />
         <br />
         <hr style="width: 80%" />
         <Timeline :timeline_contents="timeline_contents"></Timeline>

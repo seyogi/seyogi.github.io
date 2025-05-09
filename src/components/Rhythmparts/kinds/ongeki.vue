@@ -14,10 +14,11 @@
         </carousel>
       </div>
       <div class="text_box">
-        Max Rating : 17.04 (Act.3) / 21.637 (Re:Fresh)<br />
+        Max Rating : 17.04 (Act.3) / 22.001 (Re:Fresh)<br />
         フレンドコード : 4067035919555<br />
         <br />
-        <a href="https://twitter.com/syg_74/status/1652928889893842946" target="_blank">(2023/5/1)</a>RATING MASTER<br>
+        <a href="https://x.com/syg_74/status/1652928889893842946" target="_blank">(2023/5/1)</a> RATING MASTER<br>
+        <a href="https://x.com/syg_74/status/1920390414982406617" target="_blank">(2025/5/8)</a> ULTIMATE RATING MASTER<br>
         <br />
         <hr style="width: 80%" />
         <Timeline :timeline_contents="timeline_contents"></Timeline>
