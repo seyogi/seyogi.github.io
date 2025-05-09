@@ -1,0 +1,30 @@
+/* collapse（ラッパー）: 高さを確保 */
+.collapse-enter-active,
+.collapse-leave-active {
+  transition: max-height 0.5s ease, opacity 0.5s ease;
+  overflow: hidden;
+}
+.collapse-enter-from,
+.collapse-leave-to {
+  max-height: 0;
+}
+.collapse-enter-to,
+.collapse-leave-from {
+  max-height: 500px; /* 画像より少し大きめに */
+}
+
+/* fade（画像）: 高さが確保された後にフェードイン */
+.fade-enter-active {
+  transition: opacity 0.5s ease 0.5s; /* 0.5秒ディレイ後に0.5秒かけて表示 */
+}
+.fade-leave-active {
+  transition: opacity 0.3s ease;
+}
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
+}
+.fade-enter-to,
+.fade-leave-from {
+  opacity: 1;
+}
