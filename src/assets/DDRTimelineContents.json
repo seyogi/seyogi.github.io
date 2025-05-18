@@ -52,6 +52,8 @@
           "sub_text": "対戦ありがとうございました"
     },
     {
+        "circle": true,
+        "bold": true,
           "date_y": "2025年",
           "date_m": " 2月",
           "text": "ENDYMION CSP クリア",
