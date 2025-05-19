@@ -17,7 +17,7 @@
       </div>
   
       <div class="notify-settings">
-        <h3>通知タイミング設定</h3>
+        <h3>通知タイミング設定 (PCのみ音が鳴ります)</h3>
         <div class="input-group">
           <label>分</label>
           <input type="number" min="0" v-model.number="notifyMin" />
@@ -139,13 +139,13 @@ onBeforeUnmount(() => {
   
   <style scoped>
   .stopwatch {
-    min-width: 500px;
+    max-width: 1000px;
     margin: 0 auto;
     text-align: center;
     font-family: sans-serif;
   }
   .time-display {
-    font-size: 100px;
+    font-size: clamp(40px, 20vw, 100px);
     font-weight: bold;
     margin-bottom: 20px;
   }
@@ -159,7 +159,8 @@ onBeforeUnmount(() => {
     text-align: left;
   }
   .notify-settings {
-    padding-left: 100px;
+    max-width: 500px;
+    padding-left: 20px;
     margin-top: 30px;
     text-align: left;
   }
