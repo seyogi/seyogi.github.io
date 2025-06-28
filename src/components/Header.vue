@@ -12,7 +12,7 @@
           <router-link to="/About" class="linkbox">
             <div class="japanesetxt">About</div>
           </router-link>
-          <router-link to="/Rhythm" class="linkbox">
+          <router-link to="/MusicGameRecord" class="linkbox">
             <div class="japanesetxt">Records</div>
           </router-link>
           <router-link to="/iidx_radar" class="linkbox">
@@ -37,7 +37,7 @@
             <div class="japanesetxt">管理人紹介</div>
             About
           </router-link>
-          <router-link to="/Rhythm" class="menu__item" v-on:click="this.open = !this.open">
+          <router-link to="/MusicGameRecord" class="menu__item" v-on:click="this.open = !this.open">
             <div class="japanesetxt">音ゲーログ</div>
             Records
           </router-link>

@@ -23,8 +23,8 @@ const routes = [
     component: AboutBody
   },
   {
-    path: '/Rhythm',
-    name: 'Rhythm',
+    path: '/MusicGameRecord',
+    name: 'MusicGameRecord',
     component: RhythmBody
   },
   {

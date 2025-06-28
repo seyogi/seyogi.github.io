@@ -61,7 +61,7 @@
             基本情報技術者<br />
             応用情報技術者<br /><br />
             <h3>- Hobby -</h3>
-            RhythmGame<br />
+            MusicGame<br />
             Walking<br />
             Climbing<br />
           </div>
