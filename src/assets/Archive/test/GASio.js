@@ -31,3 +31,21 @@ export default {
             });
     }
 }
+
+
+/*
+methods: {
+    click: async function () {
+      this.IIDX_ID = document.getElementById("IIDX_ID_Area").value;
+      
+      const body_exp = /^\d{4}-\d{4}$/;
+      if (body_exp.test(this.IIDX_ID)){
+        const tmp = await GASio.getCSV(this.IIDX_ID);
+         document.getElementById("show_csv_Area").value = tmp;
+      }
+      else{
+        alert("0000-0000の形式で入力してください");
+      }
+    }
+  }
+*/
