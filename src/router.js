@@ -4,6 +4,7 @@ import AboutBody from './views/AboutBody.vue'
 import RhythmBody from './views/RhythmBody.vue'
 import iidxRadarBody from './views/iidxRadarBody.vue'
 import ContactBody from './views/ContactBody.vue'
+import Stopwatch from './components/Stopwatch.vue'
 
 const routes = [
   {
@@ -12,13 +13,18 @@ const routes = [
     component: HomeBody
   },
   {
+    path: '/Stopwatch',
+    name: 'Stopwatch',
+    component: Stopwatch
+  },
+  {
     path: '/About',
     name: 'About',
     component: AboutBody
   },
   {
-    path: '/Rhythm',
-    name: 'Rhythm',
+    path: '/MusicGameRecord',
+    name: 'MusicGameRecord',
     component: RhythmBody
   },
   {

@@ -14,7 +14,7 @@
         </carousel>
       </div>
       <div class="text_box">
-        Max Rating : 17.04 (Act.3) / 22.001 (Re:Fresh)<br />
+        Max Rating : 17.04 (Act.3) / 22.053 (Re:Fresh)<br />
         フレンドコード : 4067035919555<br />
         <br />
         <a href="https://x.com/syg_74/status/1652928889893842946" target="_blank">(2023/5/1)</a> RATING MASTER<br>
@@ -38,6 +38,9 @@ export default {
   data() {
     return {
       contents: [
+        {
+          imgurl: "/img/Rhythm/Result/GEKI03.jpg",
+        },
         {
           imgurl: "/img/Rhythm/Result/GEKI01.jpg",
         },
