@@ -15,12 +15,14 @@
         </ul>
         などの要素で構成されています
         <br />
-        <br />        
+        <br />    
         <h3>latest</h3>
         <hr style="width: 90%" /><br>
         <Blog />
         <br />
         <br />
+            
+        <!---->
       </div>
     </div>
   </div>

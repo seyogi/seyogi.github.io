@@ -27,8 +27,14 @@ const md = new MarkdownIt({
 
 onMounted(async () => {
   const slug = route.params.slug
-  const res = await fetch(`/posts/${slug}.md`)
-  const text = await res.text()
+  const modules = import.meta.glob('../../assets/posts/*.md', { query: '?raw',import: 'default' });
+  const path = `../../assets/posts/${slug}.md`;
+  
+  if (!modules[path]) {
+    console.error(`Markdown file not found: ${path}`);
+    return null;
+  }
+      const text = await modules[path]();
 
   const parsed = fm(text)
 

@@ -3,20 +3,29 @@ import { ref, onMounted } from "vue"
 import { useRoute } from "vue-router"
 import MarkdownIt from "markdown-it"
 import fm from "front-matter"
+import postlist from "../../assets/posts/posts.json";
 
 const posts = ref([])
 const md = new MarkdownIt({ html: true, breaks: true })
 
 onMounted(async () => {
   // 記事リスト JSON を取得
-  const res = await fetch('/posts/posts.json')
-  let data = await res.json()
+  
+  let data = postlist
 
   // 各記事の Markdown を取得して preview を追加
   const postsWithPreview = await Promise.all(
     data.map(async (post) => {
-      const r = await fetch(`/posts/${post.slug}.md`)
-      const text = await r.text()
+      const modules = import.meta.glob('../../assets/posts/*.md', { query: '?raw',import: 'default' });
+      const path = `../../assets/posts/${post.slug}.md`;
+      
+      if (!modules[path]) {
+        console.error(`Markdown file not found: ${path}`);
+        return null;
+      }
+
+      // ファイルの中身を文字列として取得
+      const text = await modules[path]();
       const parsed = fm(text)
       const rawText = parsed.body
         .replace(/\*\*/g, '') // 画像 Markdown を削除
