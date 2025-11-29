@@ -4,7 +4,8 @@ import AboutBody from './views/AboutBody.vue'
 import RhythmBody from './views/RhythmBody.vue'
 import iidxRadarBody from './views/iidxRadarBody.vue'
 import ContactBody from './views/ContactBody.vue'
-import Stopwatch from './components/Stopwatch.vue'
+import Stopwatch from './components/Otherparts/Stopwatch.vue'
+import BlogPost from './components/Blogparts/BlogPost.vue'
 
 const routes = [
   {
@@ -16,6 +17,11 @@ const routes = [
     path: '/Stopwatch',
     name: 'Stopwatch',
     component: Stopwatch
+  },
+  {
+    path: '/blog/:slug',
+    name: 'BlogPost',
+    component: BlogPost
   },
   {
     path: '/About',

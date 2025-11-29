@@ -2,9 +2,11 @@
   <div class="header">
     <div class="inner">
       <div class="contents">
-        <div class="logo">
-          <router-link to="/" class="logobox">
+        <div class="logobox"> 
+          <router-link to="/StopWatch" >
             <img src="/img/icon.png" class="logoimg" />
+          </router-link>
+          <router-link to="/" class="logo">
             <div class="logotxt">SEYOGI.DEV</div>
           </router-link>
         </div>
@@ -80,10 +82,10 @@ export default {
   max-width: 100%;
 }
 .header .contents .logo {
-  padding-right: 50px;
+  text-decoration: none;
 }
 .header .contents .logobox {
-  text-decoration: none;
+  padding-right: 50px;
   display: flex;
 }
 .header .contents .logoimg {

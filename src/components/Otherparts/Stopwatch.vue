@@ -139,7 +139,6 @@ onBeforeUnmount(() => {
   
   <style scoped>
   .stopwatch {
-    max-width: 1000px;
     margin: 0 auto;
     text-align: center;
     font-family: sans-serif;

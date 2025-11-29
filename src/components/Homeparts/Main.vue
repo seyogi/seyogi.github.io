@@ -5,9 +5,6 @@
       <br />
       <h2>Top</h2><br />
       <div class="intro_box">
-        Aboutを分離したらトップページが寂しくなってしまったので、以下仮置き<br /><br />
-        <h3>About Here</h3>
-        <hr style="width: 90%" /><br>
         情報系大学院生の雑記ページです<br />
         <br />
         当サイトは主に<br />
@@ -18,7 +15,10 @@
         </ul>
         などの要素で構成されています
         <br />
-        <br />
+        <br />        
+        <h3>latest</h3>
+        <hr style="width: 90%" /><br>
+        <Blog />
         <br />
         <br />
       </div>
@@ -29,10 +29,12 @@
 
 <script>
 import Banner from "./Banner.vue";
+import Blog from "./Blog.vue";
 
 export default {
   components: {
     Banner,
+    Blog
   },
 };
 </script>

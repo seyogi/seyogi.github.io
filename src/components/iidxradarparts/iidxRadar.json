@@ -8529,6 +8529,15 @@
             "PEAK": 79.99,
             "NOTES": 86.84,
             "CHARGE": 0.0
+        },
+        "LEGGENDARIA": {
+            "SCRATCH": 97.67,
+            "SOF-LAN": 0.0,
+            "NOTES_NUM": 2333.0,
+            "CHORD": 200,
+            "PEAK": 191.07,
+            "NOTES": 188.80,
+            "CHARGE": 149.4
         }
     },
     "MAXIVCORD": {
@@ -19229,12 +19238,12 @@
     },
     "\u65b0\u5b9d\u5cf6": {
         "LEGGENDARIA":{
-            "SCRATCH": 0,
+            "SCRATCH": 28.84,
             "SOF-LAN": 0.0,
             "NOTES_NUM": 1790.0,
-            "CHORD": 0,
-            "PEAK": 0.0,
-            "NOTES": 0,
+            "CHORD": 140.71,
+            "PEAK": 127.63,
+            "NOTES": 150.79,
             "CHARGE": 186.38
         },
         "ANOTHER": {
@@ -33126,12 +33135,12 @@
     },
     "Deep Sea Mystery": {
         "ANOTHER": {
-            "SCRATCH": 0,
+            "SCRATCH": 12.93,
             "SOF-LAN": 0,
             "NOTES_NUM": 997.0,
-            "CHORD": 0,
-            "PEAK": 0,
-            "NOTES": 0,
+            "CHORD": 46.57,
+            "PEAK": 92.85,
+            "NOTES": 76.97,
             "CHARGE": 176.76
         }
     },
@@ -33305,6 +33314,28 @@
             "PEAK": 140.78,
             "NOTES": 155.44,
             "CHARGE": 48.39
+        }
+    },
+    "Skratch Education Lv-1":{
+         "ANOTHER": {
+            "SCRATCH":190.50,
+            "SOF-LAN": 0.0,
+            "NOTES_NUM": 1572,
+            "CHORD": 0.0,
+            "PEAK": 0.0,
+            "NOTES": 0.0,
+            "CHARGE": 0.0
+        }
+    },
+    "Makin' It":{
+        "HYPER": {
+            "SCRATCH": 181.57,
+            "SOF-LAN": 0,
+            "NOTES_NUM": 847.0,
+            "CHORD": 18.97,
+            "PEAK": 60,
+            "NOTES": 69.40,
+            "CHARGE": 0
         }
     }
 }

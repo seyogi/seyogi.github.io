@@ -2,22 +2,7 @@
   <div>
     <div class="main_box">
       <br />
-      <h2>About Here</h2><br />
-      <div class="intro_box">
-        情報系大学院生の雑記ページです<br />
-        <br />
-        当サイトは主に<br />
-        
-        <ul>
-          <li>趣味(音楽ゲーム)の話</li>
-          <li>個人/チームでの製作活動の話</li>
-        </ul>
-        などの要素で構成されています
-        <br />
-        <br />
-      </div>
-      <br />
-      <h2>About Me</h2><br />
+      <h2>Profile</h2><br />
       <div class="introduction_box">
         <div class="left">
           <img class="img_icon" src="/img/me.png" />
