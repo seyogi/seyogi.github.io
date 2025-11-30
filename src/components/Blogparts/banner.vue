@@ -1,6 +1,6 @@
 <template>
   <div class="Banner">
-      <img class="mainImg" src="/img/takara.jpg" />
+      <img class="mainImg" src="/img/ogisima.jpg" />
   </div>
 </template>
 
@@ -11,9 +11,10 @@
   margin: auto;
 }
 .mainImg {
-    width: 100%;
-    max-width: 940px;
-    object-fit: cover;
-    aspect-ratio: 3/1;
+  width: 100%;
+  max-width: 940px;
+  margin: auto;
+  display: block;
+  aspect-ratio: 3/1;
 }
 </style>

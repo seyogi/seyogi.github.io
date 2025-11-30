@@ -59,7 +59,7 @@
 
 <script>
 import MkShowDict from './mkShowDict.js'
-import List from './List.vue'
+import List from './list.vue'
 import mkShowDict from './mkShowDict.js';
 
 export default {

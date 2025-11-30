@@ -5,7 +5,7 @@
 </template>
 
 <script>
-import iidxradar from "../components/iidxradarparts/App.vue";
+import iidxradar from "../components/iidxradarparts/main.vue";
 
 export default {
   components: {

@@ -32,9 +32,9 @@
 </template>
 
 <script>
-import Banner from "./Banner.vue";
+import Banner from "./banner.vue";
 
-import Selector from "./Selector.vue";
+import Selector from "./selector.vue";
 import CHUNITHM from "./kinds/CHUNITHM.vue";
 import SDVX from "./kinds/SDVX.vue";
 import iidx from "./kinds/iidx.vue";

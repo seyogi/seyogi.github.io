@@ -4,8 +4,9 @@ import AboutBody from './views/AboutBody.vue'
 import RhythmBody from './views/RhythmBody.vue'
 import iidxRadarBody from './views/iidxRadarBody.vue'
 import ContactBody from './views/ContactBody.vue'
+import BlogBody from './views/BlogBody.vue'
+import BlogPost from './components/Blogparts/blog_post.vue'
 import Stopwatch from './components/Otherparts/Stopwatch.vue'
-import BlogPost from './components/Blogparts/BlogPost.vue'
 
 const routes = [
   {
@@ -14,13 +15,18 @@ const routes = [
     component: HomeBody
   },
   {
-    path: '/Stopwatch',
-    name: 'Stopwatch',
+    path: '/stopwatch',
+    name: 'stopwatch',
     component: Stopwatch
   },
   {
+    path: '/blog',
+    name: 'blog',
+    component: BlogBody
+  },
+  {
     path: '/blog/:slug',
-    name: 'BlogPost',
+    name: 'blogpost',
     component: BlogPost
   },
   {
@@ -29,8 +35,8 @@ const routes = [
     component: AboutBody
   },
   {
-    path: '/MusicGameRecord',
-    name: 'MusicGameRecord',
+    path: '/MGRecord',
+    name: 'MGRecord',
     component: RhythmBody
   },
   {

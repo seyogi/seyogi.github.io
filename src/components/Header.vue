@@ -11,10 +11,13 @@
           </router-link>
         </div>
         <div class="link">
-          <router-link to="/About" class="linkbox">
+          <router-link to="/about" class="linkbox">
             <div class="japanesetxt">About</div>
           </router-link>
-          <router-link to="/MusicGameRecord" class="linkbox">
+          <router-link to="/blog" class="linkbox">
+            <div class="japanesetxt">Blog</div>
+          </router-link>
+          <router-link to="/MGRecord" class="linkbox">
             <div class="japanesetxt">Records</div>
           </router-link>
           <router-link to="/iidx_radar" class="linkbox">
@@ -35,11 +38,15 @@
             <div class="japanesetxt">トップページ</div>
             Top
           </router-link>
-          <router-link to="/About" class="menu__item" v-on:click="this.open = !this.open">
+          <router-link to="/about" class="menu__item" v-on:click="this.open = !this.open">
             <div class="japanesetxt">管理人紹介</div>
             About
           </router-link>
-          <router-link to="/MusicGameRecord" class="menu__item" v-on:click="this.open = !this.open">
+          <router-link to="/blog" class="menu__item" v-on:click="this.open = !this.open">
+            <div class="japanesetxt">雑記</div>
+            Blog
+          </router-link>
+          <router-link to="/MGRecord" class="menu__item" v-on:click="this.open = !this.open">
             <div class="japanesetxt">音ゲーログ</div>
             Records
           </router-link>

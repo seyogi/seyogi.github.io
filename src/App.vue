@@ -15,18 +15,11 @@ import Footer from "./components/Footer.vue";
 export default {
   name: "App",
   components: { Header, Footer },
-  data() {
-    return {
-      isActive: true,
-    };
-  },
 };
+
 </script>
 
 <style>
-.test{
-  background-color: red;
-}
 .fade-leave-active {
   transition: opacity 0.5s;
   opacity: 1;
@@ -43,6 +36,7 @@ export default {
 }
 .header {
   height: 40px;
+  width: calc(100%);
 }
 .body{
   min-height: calc(100vh - 132px);

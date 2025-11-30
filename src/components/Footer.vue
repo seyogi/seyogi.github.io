@@ -2,7 +2,6 @@
   <div class="footer">
     <ul class="footer-list">
       <li><a href="https://seyogi.github.io/" class="linktxt">Home</a> / </li>
-      <li><a href="https://seyogi.hatenablog.com/" target="_blank" class="linktxt">Blog</a > / </li>
       <li>
           <router-link to="/Contact" class="linktxt">
             Contact

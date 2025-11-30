@@ -30,8 +30,8 @@
 
 
 <script>
-import Banner from "./Banner.vue";
-import Blog from "./Blog.vue";
+import Banner from "./banner.vue";
+import Blog from "./blog_preview.vue";
 
 export default {
   components: {

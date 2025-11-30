@@ -7,7 +7,7 @@
 </template>
 
 <script>
-import Main from "../components/Homeparts/Main.vue";
+import Main from "../components/Homeparts/main.vue";
 
 export default {
   components: {

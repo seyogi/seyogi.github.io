@@ -13,6 +13,10 @@
   max-height: 500px; /* 画像より少し大きめに */
 }
 
+html {
+  scrollbar-gutter: stable;
+}
+
 /* fade（画像）: 高さが確保された後にフェードイン */
 .fade-enter-active {
   transition: opacity 0.5s ease 0.5s; /* 0.5秒ディレイ後に0.5秒かけて表示 */
