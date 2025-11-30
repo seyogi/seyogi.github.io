@@ -4,8 +4,8 @@ date: 2025-11-30\r
 tags: ["tips", "vue", "オンゲキ"]\r
 ---\r
 \r
-私最近オンゲキ頑張ってまして、15以上の未ABがリコレ/μ3/アンリバの3曲になりました。  \r
-直近には **Selenadia** を無事討伐。なかなかの曲者でした。\r
+最近オンゲキにお熱で、15以上の未ABがリコレ/μ3/アンリバの3曲になりました。  \r
+直近には **Selenadia** を討伐。曲者でした。\r
 \r
 <img style="max-width:100%; width:500px;" src="/posts/img/SelenadiaABFB.jpg" alt="Selenadia ABFB" />\r
 \r
