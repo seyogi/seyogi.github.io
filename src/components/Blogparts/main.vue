@@ -10,6 +10,8 @@
         <br>
         <hr>
         <blog_preview></blog_preview>
+        <br />
+        <br />
     </div>
   </div>
 </template>

@@ -36,7 +36,7 @@ export default {
           index: 0,
           title: "iidx",
           image: `url(/img/Rhythm/logo/iidx_2.png)`,
-          color: "#ff69b4",
+          color: "#81fa00",
         },
         {
           index: 1,
@@ -82,7 +82,7 @@ export default {
         }
       ],
       title: "none",
-      hexagon_size: 50,
+      hexagon_size: 36,
     };
   },
   mounted: function () {
@@ -148,8 +148,8 @@ window.addEventListener("resize", resizeWindow);
 .detail_hexagon {
   padding: 5px;
   cursor: pointer;
-  width: 100px;
-  height: calc(100px * (1.732 / 2));
+  width: 70px;
+  height: calc(70px * (1.732 / 2));
   clip-path: polygon(25% 0, 75% 0, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
   -webkit-clip-path: polygon(25% 0, 75% 0, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
   position: absolute;
