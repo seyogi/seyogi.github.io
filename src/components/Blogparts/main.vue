@@ -4,7 +4,7 @@
     <div class="main_box">
         <br>
         整備中です<br>
-        旧ブログ(外部)は
+        外部ブログは
         <a href="https://seyogi.hatenablog.com/" target="_blank" class="linktxt">こちら</a >
         <br>
         <br>

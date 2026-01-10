@@ -20,7 +20,7 @@ const html = ref("")
 const meta = ref({})
 const md = new MarkdownIt({
   html: true,    // HTML タグを許可
-  breaks: false, // 改行を <br> に変換しない
+  breaks: true, // 改行を <br> に変換しない
   linkify: true,
   typographer: true
 })
