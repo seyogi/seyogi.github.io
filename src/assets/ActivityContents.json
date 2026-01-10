@@ -87,5 +87,20 @@
             "main_text": "東京都市大学 大学院総合理工学研究科",
             "product": "情報専攻 システム情報工学領域",
             "url":"https://www.tcu.ac.jp/academics/graduate/scienceandengineering/informatics/"
+      },
+      {
+            "date_y": "",
+            "main_text": "HCI International 2025",
+            "product": "オーラル発表"
+      },
+      {
+            "date_y": "",
+            "main_text": "第48回日本神経科学大会",
+            "product": "ポスター発表"
+      },
+      {
+            "date_y": "",
+            "main_text": "ASCONE 2025",
+            "product":"Autumn School for Computational Neuroscience"
       }
 ]
