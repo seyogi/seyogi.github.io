@@ -8511,7 +8511,7 @@
             "CHARGE": 0.0
         }
     },
-    "\u2261\uff0b\u2261": {
+    "≡+≡": {
         "ANOTHER": {
             "SCRATCH": 33.73,
             "SOF-LAN": 0.0,
@@ -12431,6 +12431,15 @@
             "PEAK": 67.14,
             "NOTES": 69.72,
             "CHARGE": 112.86
+        },
+        "LEGGENDARIA": {
+            "SCRATCH": 0,
+            "SOF-LAN": 0.0,
+            "NOTES_NUM": 1582.0,
+            "CHORD": 0.0,
+            "PEAK": 0,
+            "NOTES": 0,
+            "CHARGE": 193.53
         }
     },
     "PHASE SHIFT MANEUVER": {
@@ -19892,6 +19901,15 @@
             "PEAK": 74.27,
             "NOTES": 87.24,
             "CHARGE": 0.0
+        },
+        "LEGGENDARIA": {
+            "SCRATCH": 61.90,
+            "SOF-LAN": 0.0,
+            "NOTES_NUM": 1957.0,
+            "CHORD": 197.34,
+            "PEAK": 178.57,
+            "NOTES": 159.69,
+            "CHARGE": 0
         }
     },
     "N.O.": {
@@ -32282,6 +32300,15 @@
             "PEAK": 47.13,
             "NOTES": 35.34,
             "CHARGE": 0.0
+        },
+        "LEGGENDARIA": {
+            "SCRATCH": 0.0,
+            "SOF-LAN": 0.0,
+            "NOTES_NUM": 1371.0,
+            "CHORD": 0.0,
+            "PEAK": 0.0,
+            "NOTES": 0.0,
+            "CHARGE": 180.37
         }
     },
     "GRADIUSIC CYBER": {
@@ -33336,6 +33363,48 @@
             "PEAK": 60,
             "NOTES": 69.40,
             "CHARGE": 0
+        },
+        "ANOTHER": {
+            "SCRATCH": 197.82,
+            "SOF-LAN": 0,
+            "NOTES_NUM": 1471.0,
+            "CHORD": 0,
+            "PEAK": 0,
+            "NOTES": 0,
+            "CHARGE": 0
+        }
+    },
+    "Lisa-RICCIA":{
+        "LEGGENDARIA": {
+            "SCRATCH": 0,
+            "SOF-LAN": 0.0,
+            "NOTES_NUM": 2394.0,
+            "CHORD": 200.0,
+            "PEAK": 0,
+            "NOTES": 0,
+            "CHARGE": 0
+        }
+    },
+    "Bling-Bang-Bang-Born":{
+        "LEGGENDARIA": {
+            "SCRATCH": 182.72,
+            "SOF-LAN": 0.0,
+            "NOTES_NUM": 1105.0,
+            "CHORD": 0.0,
+            "PEAK": 0,
+            "NOTES": 0,
+            "CHARGE": 0
+        }
+    },
+    "FiZZλ_POT!0N":{
+        "ANOTHER": {
+            "SCRATCH": 0,
+            "SOF-LAN": 0.0,
+            "NOTES_NUM": 1800.0,
+            "CHORD": 0.0,
+            "PEAK": 0,
+            "NOTES": 0,
+            "CHARGE": 192.96
         }
     }
 }
