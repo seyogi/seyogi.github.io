@@ -1,72 +1,77 @@
 [
-      {
-            "date_y": "2018年",
-            "date_m": " 7月",
-            "text": "オンゲキ稼働",
-            "sub_text": "稼働当日、同級生と高校を抜け出して秋葉原にいった思い出"
-      },
-      {
-            "circle": true,
-            "date_y": "2019年",
-            "date_m": " 1月",
-            "text": "RATING 15.00",
-            "sub_text": "俺が虹レだ！ 当時はHalcyon(13.7)が超稼ぎでした"
-      },
-      {
-            "date_y": "2022年",
-            "date_m": " 4月",
-            "text": "Opfer ABFB",
-            "sub_text": "15初ABFB 無印では散々苦しめられた"
-      },
-      {
-            "date_y": "2023年",
-            "date_m": " 4月",
-            "text": "My Soul,Your Beats! ACB",
-            "sub_text": "オンゲキ初理論値 この曲で決められてよかった"
-      },
-      {
-            "circle": true,
-            "bold": true,
-            "date_y": "",
-            "date_m": " 5月",
-            "text": "RATING MASTER",
-            "sub_text": "セガゲー初の虹称号でした"
-      },
-      {
-            "date_y": "2025年",
-            "date_m": " 4月",
-            "text": "Apollo ABFB",
-            "sub_text": "アルレマス狙いでいろいろ埋めてたら出ました"
-      },
-      {
-            "circle": true,
-            "bold": true,
-            "date_y": "",
-            "date_m": " 5月",
-            "text": "ULTIMATE RATING MASTER",
-            "sub_text": "Pスコア枠に苦しめられながらもなんとか到達。また一歩強くなりました"
-      },
-      {
-            "date_y": "",
-            "date_m": " 9月",
-            "text": "LAMIA ABFB",
-            "sub_text": "実質皇撃でありがとう"
-      },
-      {
-            "date_y": "",
-            "date_m": "10月",
-            "text": "第14回 音ゲー早慶戦オンゲキ部門 KBM副将",
-            "sub_text": "vsスクラビ 純粋地力勝負で勝てたの初めてかも"
-      },
-      {
-            "date_y": "",
-            "date_m": "12月",
-            "text": "KBD Major for オンゲキ ベスト4",
-            "sub_text": "Major自己べ更新！"
-      },
-      {
-            "date_y": "",
-            "text": "μ3 ABFB",
-            "sub_text": "大ボス討伐。あとはリコレのみ..."
-      }
+  {
+    "date_y": 2018,
+    "date_m": 7,
+    "text": "オンゲキ稼働",
+    "sub_text": "稼働当日、同級生と高校を抜け出して秋葉原にいった思い出"
+  },
+  {
+    "circle": true,
+    "date_y": 2019,
+    "date_m": 1,
+    "text": "RATING 15.00",
+    "sub_text": "俺が虹レだ！ 当時はHalcyon(13.7)が超稼ぎでした"
+  },
+  {
+    "date_y": 2022,
+    "date_m": 4,
+    "text": "Opfer ABFB",
+    "sub_text": "15初ABFB 無印では散々苦しめられた"
+  },
+  {
+    "date_y": 2023,
+    "date_m": 4,
+    "text": "My Soul,Your Beats! ACB",
+    "sub_text": "オンゲキ初理論値 この曲で決められてよかった",
+    "imgurl":"/img/Rhythm/Result/GEKI02.jpg"
+  },
+  {
+    "circle": true,
+    "bold": true,
+    "date_y": 2023,
+    "date_m": 5,
+    "text": "RATING MASTER",
+    "sub_text": "セガゲー初の虹称号でした"
+  },
+  {
+    "date_y": 2025,
+    "date_m": 4,
+    "text": "Apollo ABFB",
+    "sub_text": "アルレマス狙いでいろいろ埋めてたら出ました",
+    "imgurl":"/img/Rhythm/Result/GEKI01.jpg"
+  },
+  {
+    "circle": true,
+    "bold": true,
+    "date_y": 2025,
+    "date_m": 5,
+    "text": "ULTIMATE RATING MASTER",
+    "sub_text": "Pスコア枠に苦しめられながらもなんとか到達。また一歩強くなりました"
+  },
+  {
+    "date_y": 2025,
+    "date_m": 9,
+    "text": "LAMIA ABFB",
+    "sub_text": "実質皇撃でありがとう",
+    "imgurl":"/img/Rhythm/Result/GEKI03.jpg"
+  },
+  {
+    "date_y": 2025,
+    "date_m": 10,
+    "text": "第14回 音ゲー早慶戦オンゲキ部門 KBM副将",
+    "sub_text": "vsスクラビ 純粋地力勝負で勝てたの初めてかも"
+  },
+  {
+    "date_y": 2025,
+    "date_m": 12,
+    "text": "KBD Major for オンゲキ ベスト4",
+    "sub_text": "Major自己べ更新！"
+  },
+  {
+    "date_y": 2025,
+    "date_m": 12,
+    "text": "μ3 ABFB",
+    "sub_text": "大ボス討伐。あとはリコレのみ...",
+    "imgurl":"/img/Rhythm/Result/GEKI04.jpg"
+  }
 ]

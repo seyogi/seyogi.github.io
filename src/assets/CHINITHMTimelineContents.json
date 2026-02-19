@@ -1,72 +1,77 @@
 [
-    {
-        "date_y": "2017年",
-        "date_m": " 7月",
-        "text": "Angel Beats! コラボ",
-        "sub_text": "今でも大好きな作品とのコラボ！ これを機にCHUNITHMを触り始めました"
-    },
-    {
-        "date_y": "2018年",
-        "date_m": " 1月",
-        "text": "My Soul,Your Beats! AJ",
-        "sub_text": "CHUNITHM初AJ 11+にしては交差が厄介だった印象"
-    },
-    {
-        "circle": true,
-        "bold": true,
-        "date_y": "",
-        "date_m": " 7月",
-        "text": "RATING 15.00",
-        "sub_text": "俺が虹レだ！ 虹レになった曲はみんな大好きLike the Wind"
-    },
-    {
-        "date_y": "2019年",
-        "date_m": " 10月",
-        "text": "LEVEL13+(旧基準) 全鳥",
-        "sub_text": "当時は鍵盤力がなくてエンダスが本当に苦しかった"
-    },
-    {
-        "date_y": "2022年",
-        "date_m": " 1月",
-        "text": "蠍火 AJ",
-        "sub_text": "15初AJ"
-    },
-    {
-        "date_y": "",
-        "date_m": " 2月",
-        "text": "LEVEL15 全鳥",
-        "sub_text": "SOUND VOLTEX Earth Power"
-    },
-    {
-        "circle": true,
-        "bold": true,
-        "date_y": "",
-        "date_m": " 4月",
-        "text": "クラス認定 INFINITY 全合格(無限帯)",
-        "sub_text": "俺が無限帯だ！"
-    },
-    {
-        "date_y": "",
-        "date_m": " 5月",
-        "text": "World Vanquisher AJ",
-        "sub_text": "STARの頃はこの曲をAJ出来る日が来るとは思いもしませんでした"
-    },
-    {
-        "date_y": "",
-        "date_m": "10月",
-        "text": "風唄 AJ",
-        "sub_text": "Beatmania Earth Power"
-    },
-    {
-        "date_y": "2023年",
-        "date_m": " 9月",
-        "text": "天下統一",
-        "sub_text": "実は高校の同期とやってました"
-    },
-    {
-        "date_y": "2024年",
-        "date_m": " 6月",
-        "text": "KBD Major for CHUNITHM ベスト6",
-        "sub_text": "最近やってなかったけど体が色々覚えてました"
-    }
+  {
+    "date_y": 2017,
+    "date_m": 7,
+    "text": "Angel Beats! コラボ",
+    "sub_text": "今でも大好きな作品とのコラボ！ これを機にCHUNITHMを触り始めました"
+  },
+  {
+    "date_y": 2018,
+    "date_m": 1,
+    "text": "My Soul,Your Beats! AJ",
+    "sub_text": "CHUNITHM初AJ 11+にしては交差が厄介だった印象",
+    "imgurl":"/img/Rhythm/Result/UNI06.jpg"
+  },
+  {
+    "circle": true,
+    "bold": true,
+    "date_y": 2018,
+    "date_m": 7,
+    "text": "RATING 15.00",
+    "sub_text": "俺が虹レだ！ 虹レになった曲はみんな大好きLike the Wind"
+  },
+  {
+    "date_y": 2019,
+    "date_m": 10,
+    "text": "LEVEL13+(旧基準) 全鳥",
+    "sub_text": "当時は鍵盤力がなくてエンダスが本当に苦しかった",
+    "imgurl":"/img/Rhythm/Result/UNI04.jpg"
+  },
+  {
+    "date_y": 2022,
+    "date_m": 1,
+    "text": "蠍火 AJ",
+    "sub_text": "15初AJ！"
+  },
+  {
+    "date_y": 2022,
+    "date_m": 2,
+    "text": "LEVEL15 全鳥",
+    "sub_text": "SOUND VOLTEX Earth Power"
+  },
+  {
+    "circle": true,
+    "bold": true,
+    "date_y": 2022,
+    "date_m": 4,
+    "text": "クラス認定 INFINITY 全合格(無限帯)",
+    "sub_text": "俺が無限帯だ！",
+    "imgurl":"/img/Rhythm/Result/UNI05.jpg"
+  },
+  {
+    "date_y": 2022,
+    "date_m": 5,
+    "text": "World Vanquisher AJ",
+    "sub_text": "STARの頃はこの曲をAJ出来る日が来るとは思いもしませんでした",
+    "imgurl":"/img/Rhythm/Result/UNI02.jpg"
+  },
+  {
+    "date_y": 2022,
+    "date_m": 10,
+    "text": "風唄 AJ",
+    "sub_text": "Beatmania Earth Power"
+  },
+  {
+    "date_y": 2023,
+    "date_m": 9,
+    "text": "天下統一",
+    "sub_text": "実は高校の同期とやってました",
+    "imgurl":"/img/Rhythm/Result/UNI03.jpg"
+  },
+  {
+    "date_y": 2024,
+    "date_m": 6,
+    "text": "KBD Major for CHUNITHM ベスト6",
+    "sub_text": "最近やってなかったけど体が色々覚えてました"
+  }
 ]

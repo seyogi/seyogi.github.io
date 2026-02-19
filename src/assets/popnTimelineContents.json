@@ -1,39 +1,41 @@
 [
-    {
-        "date_y": "2022年",
-        "date_m": " 8月",
-        "text": "最高46",
-        "sub_text": "TOXIC VIBRATION ：これほぼCHUNITHMだ"
-    },
-    {
-        "date_y": "",
-        "date_m": " 9月",
-        "text": "最高47",
-        "sub_text": "プログレッシブ / V ：これほぼCHUNITHMだ②"
-    },
-    {
-        "date_y": "",
-        "text": "最高48",
-        "sub_text": "DDR / DDR MEGAMIX ：TATSUさんの動画に影響受けました"
-    },
-    {
-        "date_y": "2023年",
-        "date_m": " 3月",
-        "text": "最高49",
-        "sub_text": "オイパンク / 悲しいね ：なんかクリア出来ちゃった！すぎる"
-    },
-    {
-        "circle": true,
-        "bold": true,
-        "date_y": "2025年",
-        "date_m": " 5月",
-        "text": "ニエンテEXクリア",
-        "sub_text": "ブランクを挟みつつも念願のニエンテクリア！ありがとうpop'n music"
-    },
-    {
-        "date_y": "",
-        "date_m": " 6月",
-        "text": "ポックラ98",
-        "sub_text": "49ノマゲ70曲,50イージー3曲(サイダーエン)でした"
-    }
+  {
+    "date_y": 2022,
+    "date_m": 8,
+    "text": "最高46",
+    "sub_text": "TOXIC VIBRATION ：これほぼCHUNITHMだ"
+  },
+  {
+    "date_y": 2022,
+    "date_m": 9,
+    "text": "最高47",
+    "sub_text": "プログレッシブ / V ：これほぼCHUNITHMだ②"
+  },
+  {
+    "date_y": 2022,
+    "text": "最高48",
+    "sub_text": "DDR / DDR MEGAMIX ：TATSUさんの動画に影響受けました",
+    "date_m": 9
+  },
+  {
+    "date_y": 2023,
+    "date_m": 3,
+    "text": "最高49",
+    "sub_text": "オイパンク / 悲しいね ：なんかクリア出来ちゃった！すぎる"
+  },
+  {
+    "circle": true,
+    "bold": true,
+    "date_y": 2025,
+    "date_m": 5,
+    "text": "ニエンテEXクリア",
+    "sub_text": "ブランクを挟みつつも念願のニエンテクリア！ありがとうpop'n music",
+    "imgurl":"/img/Rhythm/Result/popn01.jpg"
+  },
+  {
+    "date_y": 2025,
+    "date_m": 6,
+    "text": "ポックラ98",
+    "sub_text": "49ノマゲ70曲,50イージー3曲(サイダーエン)でした"
+  }
 ]

@@ -1,59 +1,63 @@
 [
-    {
-        "date_y": "2020年",
-        "date_m": " 7月",
-        "text": "SKILL ANALYZER 剛力羅 合格"
-    },
-    {
-        "date_y": "",
-        "date_m": " 8月",
-        "text": "SKILL ANALYZER 或帝滅斗 合格"
-    },
-    {
-        "circle": true,
-        "bold": true,
-        "date_y": "2021年",
-        "date_m": " 3月",
-        "text": "SKILL ANALYZER 暴龍天 合格",
-        "sub_text": "Vのイルネス回をずっと粘着してたらバージョンが変わってサクッと合格できました"
-    },
-    {
-        "circle": true,
-        "bold": true,
-        "date_y": "",
-        "date_m": "11月",
-        "text": "VOLFORCE IMPERIAL 到達",
-        "sub_text": "累計約1500クレ ちょうど暴龍天が折り返しでした"
-    },
-    {
-        "circle": true,
-        "bold": true,
-        "date_y": "2023年",
-        "date_m": " 9月",
-        "text": "VOLFORCE IMPERIAL II 到達",
-        "sub_text": "しばらく弐寺に浮気してたけど6月頃から本腰入れて頑張りました"
-    },
-    {
-        "date_y": "2024年",
-        "date_m": " 1月",
-        "text": "LEVEL 19 全S",
-        "sub_text": "蠍火二度とやりたくない"
-    },
-    {
-        "date_y": "",
-        "date_m": " 2月",
-        "text": "SKILL ANALYZER 神暴龍天 金枠",
-        "sub_text": "残り1(クロカプ)になってから半年かかりました...20苦手"
-    },
-    {
-        "date_y": "",
-        "text": "KBD ボルテ交流戦 2024",
-        "sub_text": "つまみ戦隊平塚レンジャー"
-    },
-    {
-        "date_y": "",
-        "date_m": "12月",
-        "text": "KBD Major for SDVX 6位",
-        "sub_text": "VALLIS-NERIA投げたかった..."
-    }
+  {
+    "date_y": 2020,
+    "date_m": 7,
+    "text": "SKILL ANALYZER 剛力羅 合格"
+  },
+  {
+    "date_y": 2020,
+    "date_m": 8,
+    "text": "SKILL ANALYZER 或帝滅斗 合格"
+  },
+  {
+    "circle": true,
+    "bold": true,
+    "date_y": 2021,
+    "date_m": 3,
+    "text": "SKILL ANALYZER 暴龍天 合格",
+    "sub_text": "Vのイルネス回をずっと粘着してたらバージョンが変わってサクッと合格できました",
+    "imgurl":"/img/Rhythm/Result/SDVX03.jpg"
+  },
+  {
+    "circle": true,
+    "bold": true,
+    "date_y": 2021,
+    "date_m": 11,
+    "text": "VOLFORCE IMPERIAL 到達",
+    "sub_text": "累計約1500クレ ちょうど暴龍天が折り返しでした",
+    "imgurl":"/img/Rhythm/Result/SDVX01.jpg"
+  },
+  {
+    "circle": true,
+    "bold": true,
+    "date_y": 2023,
+    "date_m": 9,
+    "text": "VOLFORCE IMPERIAL II 到達",
+    "sub_text": "しばらく弐寺に浮気してたけど6月頃から本腰入れて頑張りました",
+    "imgurl":"/img/Rhythm/Result/SDVX02.jpg"
+  },
+  {
+    "date_y": 2024,
+    "date_m": 1,
+    "text": "LEVEL 19 全S",
+    "sub_text": "蠍火二度とやりたくない"
+  },
+  {
+    "date_y": 2024,
+    "date_m": 2,
+    "text": "SKILL ANALYZER 神暴龍天 金枠",
+    "sub_text": "残り1(クロカプ)になってから半年かかりました...20苦手"
+  },
+  {
+    "date_y": 2024,
+    "text": "KBD ボルテ交流戦 2024",
+    "sub_text": "つまみ戦隊平塚レンジャー",
+    "date_m": 2
+  },
+  {
+    "date_y": 2024,
+    "date_m": 12,
+    "text": "KBD Major for SDVX 6位",
+    "sub_text": "VALLIS-NERIA投げたかった..."
+  }
 ]

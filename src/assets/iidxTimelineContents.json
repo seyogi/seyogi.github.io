@@ -1,75 +1,85 @@
 [
-      {
-            "model": "iidx",
-            "date_y": "2021年",
-            "date_m": " 4月",
-            "text": "X-record 第一弾",
-            "sub_text": "これを機に弐寺を触り始める"
-      },
-      {
-            "date_y": "",
-            "date_m": "11月",
-            "text": "段位認定 SP七段 合格",
-            "sub_text": "そこまで拗らせなかった"
-      },
-      {
-            "date_y": "2022年",
-            "date_m": " 1月",
-            "text": "段位認定 SP九段 合格"
-      },
-      {
-            "date_y": "",
-            "date_m": "6月",
-            "text": "LEVEL12 初ハード",
-            "sub_text": "12初めての白ランプは赤いイカでした"
-      },
-      {
-            "date_y": "",
-            "date_m": " 7月",
-            "text": "段位認定 SP十段 合格"
-      },
-      {
-            "date_y": "",
-            "text": "段位認定 SP中伝 合格",
-            "sub_text": "requiem..."
-      },
-      {
-            "circle": true,
-            "bold": true,
-            "date_y": "2023年",
-            "date_m": " 2月",
-            "text": "段位認定 SP皆伝 合格",
-            "sub_text": "憧れの段位。ようやく手が届きました"
-      },
-      {
-            "date_y": "",
-            "date_m": " 9月",
-            "text": "段位認定 SP極皆伝 合格"
-      },
-      {
-            "date_y": "2024年",
-            "date_m": " 3月",
-            "text": "ミスカンアリーナA1到達",
-            "sub_text": "唐突に来たミスカンアリーナでA1へ"
-      },
-      {
-            "date_y": "",
-            "date_m": "10月",
-            "text": "第13回 音ゲー早慶戦IIDX部門 紅白戦",
-            "sub_text": "vsシノノノ 罪過の聖堂←本当に申し訳ありませんでした"
-      },
-      {
-            "circle": true,
-            "bold": true,
-            "date_y": "",
-            "date_m": "12月",
-            "text": "LEVEL12 全白",
-            "sub_text": "12最後の白ランプは黒いイカでした"
-      },
-      {
-            "date_y": "2025年",
-            "date_m": " 2月",
-            "text": "KBDBPLバトルトーナメント",
-            "sub_text": "1巡目指名を頂いて無事ボコボコ；；頼もしい仲間のおかげでかなり健闘しました"
-      }
+  {
+    "model": "iidx",
+    "date_y": 2021,
+    "date_m": 4,
+    "text": "X-record 第一弾",
+    "sub_text": "これを機に弐寺を触り始める"
+  },
+  {
+    "date_y": 2021,
+    "date_m": 11,
+    "text": "段位認定 SP七段 合格",
+    "sub_text": "そこまで拗らせなかった"
+  },
+  {
+    "date_y": 2022,
+    "date_m": 1,
+    "text": "段位認定 SP九段 合格"
+  },
+  {
+    "date_y": 2022,
+    "date_m": 6,
+    "text": "LEVEL12 初ハード",
+    "sub_text": "12初めての白ランプは赤いイカでした"
+  },
+  {
+    "date_y": 2022,
+    "date_m": 7,
+    "text": "段位認定 SP十段 合格"
+  },
+  {
+    "date_y": 2022,
+    "text": "段位認定 SP中伝 合格",
+    "sub_text": "requiem...",
+    "date_m": 7
+  },
+  {
+    "circle": true,
+    "bold": true,
+    "date_y": 2023,
+    "date_m": 2,
+    "text": "段位認定 SP皆伝 合格",
+    "sub_text": "憧れの段位。ようやく手が届きました",
+    "imgurl":"/img/Rhythm/Result/Beatmania01.jpg"
+  },
+  {
+    "date_y": 2023,
+    "date_m": 9,
+    "text": "段位認定 SP極皆伝 合格"
+  },
+  {
+    "date_y": 2024,
+    "date_m": 3,
+    "text": "ミスカンアリーナA1到達",
+    "sub_text": "唐突に来たミスカンアリーナでA1へ"
+  },
+  {
+    "date_y": 2024,
+    "date_m": 8,
+    "text": "Fascination MAXX FULL COMBO",
+    "sub_text": "頑張りました",
+    "imgurl":"/img/Rhythm/Result/Beatmania03.jpg"
+  },
+  {
+    "date_y": 2024,
+    "date_m": 10,
+    "text": "第13回 音ゲー早慶戦IIDX部門 紅白戦",
+    "sub_text": "vsシノノノ 罪過の聖堂←本当に申し訳ありませんでした"
+  },
+  {
+    "circle": true,
+    "bold": true,
+    "date_y": 2024,
+    "date_m": 12,
+    "text": "LEVEL12 全白",
+    "sub_text": "12最後の白ランプは黒いイカでした",
+    "imgurl":"/img/Rhythm/Result/Beatmania02.jpg"
+  },
+  {
+    "date_y": 2025,
+    "date_m": 2,
+    "text": "KBDBPLバトルトーナメント",
+    "sub_text": "1巡目指名を頂いて無事ボコボコ；；頼もしい仲間のおかげでかなり健闘しました"
+  }
 ]

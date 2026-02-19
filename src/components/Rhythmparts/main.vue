@@ -16,10 +16,9 @@
       <br />
       <div class="sub_box">
         <div class="selector_box"><Selector @changeMethod="updatetitle"></Selector></div>
-        <div class="text_box">
-          <h2>{{ names[title] }}</h2>
-          <component :is="title"></component>
-        </div>
+        <h3>Timeline</h3>
+        <hr style="width: 100%" />
+        <Timeline :timeline_contents="currentTimeline"></Timeline>
       </div>
       <br />
       <br />
@@ -34,13 +33,15 @@
 <script>
 import Banner from "./banner.vue";
 
-import Selector from "./selector.vue";
-import CHUNITHM from "./kinds/CHUNITHM.vue";
-import SDVX from "./kinds/SDVX.vue";
-import iidx from "./kinds/iidx.vue";
-import DDR from "./kinds/DDR.vue";
-import ongeki from "./kinds/ongeki.vue";
-import popn from "./kinds/popn.vue";
+import Selector from "./Selector.vue";
+import Timeline from "./timeline.vue";
+import CHUNITHMTimeline from "../../assets/CHINITHMTimelineContents.json";
+import ongekiTimeline from "../../assets/ongekiTimelineContents.json";
+import SDVXTimeline from "../../assets/SDVXTimelineContents.json";
+import iidxTimeline from "../../assets/iidxTimelineContents.json";
+import DDRTimeline from "../../assets/DDRTimelineContents.json";
+import popnTimeline from "../../assets/popnTimelineContents.json";
+
 import Others from "./kinds/Others.vue";
 import Gallery from "./kinds/Gallery.vue";
 
@@ -48,33 +49,44 @@ export default {
   components: {
     Banner,
     Selector,
-    CHUNITHM,
-    ongeki,
-    SDVX,
-    iidx,
-    Others,
-    DDR,
-    popn,
-    Gallery,
+    Timeline,
+    CHUNITHMTimeline,
+    ongekiTimeline,
+    SDVXTimeline,
+    iidxTimeline,
+    DDRTimeline,
+    popnTimeline,
   },
   data() {
     return {
       title: "iidx",
+      timeline_contents:{
+        ongeki: ongekiTimeline,
+        CHUNITHM: CHUNITHMTimeline,
+        DDR: DDRTimeline,
+        SDVX: SDVXTimeline,
+        iidx: iidxTimeline,
+        popn: popnTimeline,
+      },
       names: {
         ongeki: "オンゲキ",
         CHUNITHM: "CHUNITHM",
         DDR: "Dance Dance Revolution",
         SDVX: "SOUND VOLTEX",
-        Others: "OTHERS",
         iidx: "beatmania IIDX",
         popn: "pop'n music",
-        Gallery: "Gallery",
       },
     };
   },
   methods: {
     updatetitle(title) {
       this.title = title;
+    },
+  },
+  computed: {
+    // return the array corresponding to the current title; fallback to empty
+    currentTimeline() {
+      return this.timeline_contents[this.title] || [];
     },
   },
 };

@@ -1,66 +1,69 @@
 [
-    {
-          "date_y": "2020年",
-          "date_m": "11月",
-          "text": "POLICY BREAK 第46弾 (FLOOR INFECTION 第38弾)",
-          "sub_text": "ENDYMION移植回 これを機にDDRを触り始める"
-    },
-    {
-          "date_y": "2021年",
-          "date_m": " 1月",
-          "text": "SP最高15",
-          "sub_text": "Valkyrie dimension 踊"
-    },
-    {
-          "date_y": "2022年",
-          "date_m": " 3月",
-          "text": "SP最高18",
-          "sub_text": "Valkyrie dimension 激"
-    },
-    {
-          "date_y": "",
-          "date_m": "9月",
-          "text": "段位認定 SP九段 合格"
-    },
-    {
-          "date_y": "2023年",
-          "date_m": " 1月",
-          "text": "段位認定 SP十段 合格"
-    },
-    {
-          "circle": true,
-          "bold": true,
-          "date_y": "",
-          "date_m": "2月",
-          "text": "SP最高19",
-          "sub_text": "PARANOiA Revolution 鬼"
-    },
-    {
-          "date_y": "",
-          "text": "SP18全クリア"
-    },
-    {
-          "date_y": "",
-          "date_m": "7月",
-          "text": "DP最高18",
-          "sub_text": "MAX 360 激"
-    },
-    {
-          "date_y": "2024年",
-          "date_m": "10月",
-          "text": "第13回 音ゲー早慶戦DDR部門 BBD副将",
-          "sub_text": "vsもと 3タテで本当にありがとう"
-    },
-      {
-            "date_y": "",
-            "date_m": " 2月",
-            "text": "ENDYMION CSP クリア",
-            "sub_text": "コンボ補正めっちゃ濫用しました　このゲームは20コンボ以上繋いではいけません"
-      },
-      {
-            "date_y": "",
-            "date_m": "10月",
-            "text": "第14回 音ゲー早慶戦DDR部門 KBM副将",
-            "sub_text": "vs蓬丸 ベストバウト賞に選ばれるほどの熱い試合でした 負けたけど"
-      }
+  {
+    "date_y": 2020,
+    "date_m": 11,
+    "text": "POLICY BREAK 第46弾 (FLOOR INFECTION 第38弾)",
+    "sub_text": "ENDYMION移植回 これを機にDDRを触り始める"
+  },
+  {
+    "date_y": 2021,
+    "date_m": 1,
+    "text": "SP最高15",
+    "sub_text": "Valkyrie dimension 踊"
+  },
+  {
+    "date_y": 2022,
+    "date_m": 3,
+    "text": "SP最高18",
+    "sub_text": "Valkyrie dimension 激"
+  },
+  {
+    "date_y": 2022,
+    "date_m": 9,
+    "text": "段位認定 SP九段 合格"
+  },
+  {
+    "date_y": 2023,
+    "date_m": 1,
+    "text": "段位認定 SP十段 合格",
+    "imgurl":"/img/Rhythm/Result/DDR02.jpg"
+  },
+  {
+    "circle": true,
+    "bold": true,
+    "date_y": 2023,
+    "date_m": 2,
+    "text": "SP最高19",
+    "sub_text": "PARANOiA Revolution 鬼"
+  },
+  {
+    "date_y": 2023,
+    "text": "SP18全クリア",
+    "date_m": 2
+  },
+  {
+    "date_y": 2023,
+    "date_m": 7,
+    "text": "DP最高18",
+    "sub_text": "MAX 360 激"
+  },
+  {
+    "date_y": 2024,
+    "date_m": 10,
+    "text": "第13回 音ゲー早慶戦DDR部門 BBD副将",
+    "sub_text": "vsもと 3タテで本当にありがとう"
+  },
+  {
+    "date_y": 2024,
+    "date_m": 2,
+    "text": "ENDYMION CSP クリア",
+    "sub_text": "コンボ補正めっちゃ濫用しました　このゲームは20コンボ以上繋いではいけません",
+    "imgurl":"/img/Rhythm/Result/DDR03.jpg"
+  },
+  {
+    "date_y": 2024,
+    "date_m": 10,
+    "text": "第14回 音ゲー早慶戦DDR部門 KBM副将",
+    "sub_text": "vs蓬丸 ベストバウト賞に選ばれるほどの熱い試合でした"
+  }
 ]
