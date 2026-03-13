@@ -6,21 +6,28 @@
       <h2>RhythmGame Log</h2>
       <br />
       <div class="txt_box">
-          趣味で遊んでいるアーケードゲーム(音楽ゲーム)のログです<br />
-          <a href="https://x.com/BBD_w"  target="_blank">BBD</a>という音ゲーサークルに所属しています(2022.10 ~)<br><br>
-          レート等を計算するエクセルシートを配布しています：
-          <a href="https://drive.google.com/drive/folders/1bwJflh1wF74HxpksERLQPb5bE6mzm9cA?usp=sharing"  target="_blank">GoogleDriveのリンク</a><br>
-          シートにあるデータを置き換えてご自由に使ってください
-          <br /><br />
+        趣味で遊んでいるアーケードゲーム(音楽ゲーム)のログです<br />
+        <a href="https://x.com/BBD_w"  target="_blank">BBD</a>という音ゲーサークルに所属しています(2022.10 ~)<br><br>
+        レート等を計算するエクセルシートを配布しています：
+        <a href="https://drive.google.com/drive/folders/1bwJflh1wF74HxpksERLQPb5bE6mzm9cA?usp=sharing"  target="_blank">GoogleDriveのリンク</a><br>
+        シートにあるデータを置き換えてご自由に使ってください
+        <br /><br />
+        ---ライバル募集中---<br />
+        CHUNITHM : 4069095717545 (<a href="https://chunirec.net/users/seyogi" target="_blank">chunirec</a>)<br />
+        オンゲキ : 4067035919555 (<a href="https://ongeki-score.net/user/4925" target="_blank">OngekiScoreLog</a>)<br />
+        IIDX ID : 7228-1124 (<a href="https://sp12.iidx.app/users/7228-1124" target="_blank">☆12参考表</a>/<a href="https://cpi.makecir.com/users/view/5825" target="_blank">CPI</a>) <br />
+        SDVX ID : SV-3690-6541 (<a href="https://vaddict.b35.jp/user.php?player_id=SV-3690-6541" target="_blank">Vaddict</a>)<br />
+        ポプとも : 3089-8010-8948<br />
+        DDRCODE : 61609228<br />
       </div>
       <br />
       <div class="sub_box">
         <div class="selector_box"><Selector @changeMethod="updatetitle"></Selector></div>
+        <br />
         <h3>Timeline</h3>
         <hr style="width: 100%" />
         <Timeline :timeline_contents="currentTimeline"></Timeline>
       </div>
-      <br />
       <br />
       <br />
       <br />
@@ -31,19 +38,17 @@
 </template>
 
 <script>
-import Banner from "./banner.vue";
+import Banner from "./Banner.vue";
 
 import Selector from "./Selector.vue";
-import Timeline from "./timeline.vue";
-import CHUNITHMTimeline from "../../assets/CHINITHMTimelineContents.json";
-import ongekiTimeline from "../../assets/ongekiTimelineContents.json";
-import SDVXTimeline from "../../assets/SDVXTimelineContents.json";
-import iidxTimeline from "../../assets/iidxTimelineContents.json";
-import DDRTimeline from "../../assets/DDRTimelineContents.json";
-import popnTimeline from "../../assets/popnTimelineContents.json";
-
-import Others from "./kinds/Others.vue";
-import Gallery from "./kinds/Gallery.vue";
+import Timeline from "./Timeline.vue";
+import CHUNITHMTimeline from "../../assets/RhythmGameTLContents/CHINITHM.json";
+import ongekiTimeline from "../../assets/RhythmGameTLContents/ongeki.json";
+import SDVXTimeline from "../../assets/RhythmGameTLContents/SDVX.json";
+import iidxTimeline from "../../assets/RhythmGameTLContents/iidx.json";
+import DDRTimeline from "../../assets/RhythmGameTLContents/DDR.json";
+import popnTimeline from "../../assets/RhythmGameTLContents/popn.json";
+import OthersTimeline from "../../assets/RhythmGameTLContents/Others.json";
 
 export default {
   components: {
@@ -56,6 +61,7 @@ export default {
     iidxTimeline,
     DDRTimeline,
     popnTimeline,
+    OthersTimeline,
   },
   data() {
     return {
@@ -67,6 +73,7 @@ export default {
         SDVX: SDVXTimeline,
         iidx: iidxTimeline,
         popn: popnTimeline,
+        Others : OthersTimeline
       },
       names: {
         ongeki: "オンゲキ",
@@ -75,6 +82,7 @@ export default {
         SDVX: "SOUND VOLTEX",
         iidx: "beatmania IIDX",
         popn: "pop'n music",
+        Others: "Others"
       },
     };
   },

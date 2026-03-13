@@ -73,12 +73,6 @@ export default {
           title: "Others",
           image: `url(/img/Rhythm/logo/others.png)`,
           color: "#1f1e33",
-        },
-        {
-          index: 7,
-          title: "Gallery",
-          image: `url(/img/Rhythm/logo/Gallery.png)`,
-          color: "#DDDDDD",
         }
       ],
       title: "none",
@@ -142,7 +136,7 @@ window.addEventListener("resize", resizeWindow);
 
 <style scoped>
 .main_box {
-  height: calc(120px * (1.732 / 2) * 2);
+  height: calc(120px);
   display: relative;
 }
 .detail_hexagon {
