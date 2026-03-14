@@ -4,18 +4,24 @@
     "date_y": 2021,
     "date_m": 4,
     "text": "X-record 第一弾",
-    "sub_text": "これを機に弐寺を触り始める"
+    "sub_text": "これを機に弐寺を触り始めました"
   },
   {
     "date_y": 2021,
     "date_m": 11,
     "text": "段位認定 SP七段 合格",
-    "sub_text": "そこまで拗らせなかった"
+    "sub_text": "ﾃﾚﾃﾚﾃｯﾃ"
   },
   {
     "date_y": 2022,
     "date_m": 1,
     "text": "段位認定 SP九段 合格"
+  },
+  {
+    "date_y": 2022,
+    "date_m": 1,
+    "text": "Fascination MAXX NORMAL CLEAR",
+    "sub_text": "AAより先にノマゲついた"
   },
   {
     "date_y": 2022,
@@ -35,6 +41,18 @@
     "date_m": 7
   },
   {
+    "date_y": 2022,
+    "date_m": 9,
+    "text": "Fascination MAXX HARD CLEAR",
+    "sub_text": "AAより先にハードついた"
+  },
+  {
+    "date_y": 2023,
+    "date_m": 1,
+    "text": "Fascination MAXX EX-HARD CLEAR",
+    "sub_text": "AAより先にエクハついた"
+  },
+  {
     "circle": true,
     "bold": true,
     "date_y": 2023,
@@ -51,21 +69,20 @@
   {
     "date_y": 2024,
     "date_m": 3,
-    "text": "ミスカンアリーナA1到達",
-    "sub_text": "唐突に来たミスカンアリーナでA1へ"
+    "text": "ミスカウントARENA A1"
   },
   {
     "date_y": 2024,
     "date_m": 8,
     "text": "Fascination MAXX FULL COMBO",
-    "sub_text": "頑張りました",
+    "sub_text": "流石にAAのほうが先でした",
     "imgurl":"/img/Rhythm/Result/Beatmania03.jpg"
   },
   {
     "date_y": 2024,
     "date_m": 10,
     "text": "第13回 音ゲー早慶戦IIDX部門 紅白戦",
-    "sub_text": "vsシノノノ 罪過の聖堂←本当に申し訳ありませんでした"
+    "sub_text": "vsシノノノ"
   },
   {
     "circle": true,
@@ -80,6 +97,15 @@
     "date_y": 2025,
     "date_m": 2,
     "text": "KBDBPLバトルトーナメント",
-    "sub_text": "1巡目指名を頂いて無事ボコボコ；；頼もしい仲間のおかげでかなり健闘しました"
+    "sub_text": "1巡目指名を頂いて無事ボコボコに...頼もしい仲間のおかげでかなり健闘しました"
+  },
+  {
+    "circle": true,
+    "bold": true,
+    "date_y": 2026,
+    "date_m": 2,
+    "text": "CHORD RESIDENT",
+    "sub_text": "初RESIDENT勲章 稼ぎ譜面が増えたとはいえ上達を実感しました",
+    "imgurl": "/img/Rhythm/Result/Beatmania04.jpg"
   }
 ]
