@@ -24,7 +24,7 @@
             </a>
       </li>
     </ul>
-    ©2020-2025 Seyogi
+    ©2020-2026 Seyogi
   </div>
 </template>
 

@@ -51,6 +51,7 @@ onMounted(async () => {
 
 <template>
   <div>
+    <br>
     <ul>
       <div v-for="post in posts" :key="post.slug" class="mb-4 border-b pb-2">
         <router-link :to="`/blog/${post.slug}`" class="text-lg font-bold text-blue-600 hover:underline">
