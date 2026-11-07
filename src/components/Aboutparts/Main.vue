@@ -24,7 +24,7 @@
           <div class="Desktop_text">
             <div class="name">SEYOGI</div>
             TCU Graduate School<br />
-            Informatics M1<br /><br />
+            Informatics M2<br /><br />
             <h4>- Interests</h4>
             <pre class="eng">&#009;Artificial Neural Networks</pre>
             <pre class="eng">&#009;Neuroscience</pre>

@@ -3,10 +3,11 @@
   <div class="main_box"> 
     <div class="set_box">
       <br><br>
-      beatmania IIDX (AC) 公式サイトよりDLできるCSVファイルを利用してノーツレーダーの対象曲を算出するサイトです
+      beatmania IIDX (AC) 公式サイトよりDLできるCSVファイルを利用してノーツレーダーの対象曲を算出するサイトです<br>
+      (追記 2026/11/07) 公式ページで確認できるようになったから意味なくなっちゃった！<br>
       <br><br>
       <h3>~使い方~</h3><br>
-      ① <a href="https://p.eagate.573.jp/game/2dx/32/djdata/score_download.html" target="_blank" rel="noopener noreferrer">公式サイト</a>
+      ① <a href="https://p.eagate.573.jp/game/2dx/34/djdata/score_download.html" target="_blank" rel="noopener noreferrer">公式サイト</a>
       からcsvテキストをコピー or ダウンロード<br>
       ② 以下のテキストボックスに貼り付け or ファイルを選択<br>
       <br />
@@ -58,9 +59,9 @@
 </template>
 
 <script>
-import MkShowDict from './mkShowDict.js'
-import List from './list.vue'
+import MkShowDict from './mkShowDict.js';
 import mkShowDict from './mkShowDict.js';
+import List from './list.vue';
 
 export default {
   components: {

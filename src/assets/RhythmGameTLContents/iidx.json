@@ -19,12 +19,6 @@
   },
   {
     "date_y": 2022,
-    "date_m": 1,
-    "text": "Fascination MAXX NORMAL CLEAR",
-    "sub_text": "AAより先にノマゲついた"
-  },
-  {
-    "date_y": 2022,
     "date_m": 6,
     "text": "LEVEL12 初ハード",
     "sub_text": "12初めての白ランプは赤いイカでした"
@@ -39,18 +33,6 @@
     "text": "段位認定 SP中伝 合格",
     "sub_text": "requiem...",
     "date_m": 7
-  },
-  {
-    "date_y": 2022,
-    "date_m": 9,
-    "text": "Fascination MAXX HARD CLEAR",
-    "sub_text": "AAより先にハードついた"
-  },
-  {
-    "date_y": 2023,
-    "date_m": 1,
-    "text": "Fascination MAXX EX-HARD CLEAR",
-    "sub_text": "AAより先にエクハついた"
   },
   {
     "circle": true,
@@ -75,7 +57,7 @@
     "date_y": 2024,
     "date_m": 8,
     "text": "Fascination MAXX FULL COMBO",
-    "sub_text": "流石にAAのほうが先でした",
+    "sub_text": "好",
     "imgurl":"/img/Rhythm/Result/Beatmania03.jpg"
   },
   {
@@ -97,7 +79,7 @@
     "date_y": 2025,
     "date_m": 2,
     "text": "KBDBPLバトルトーナメント",
-    "sub_text": "1巡目指名を頂いて無事ボコボコに...頼もしい仲間のおかげでかなり健闘しました"
+    "sub_text": "1巡目指名を頂いて無事ボコボコに...チームとしてはかなり健闘しました"
   },
   {
     "circle": true,
@@ -105,7 +87,7 @@
     "date_y": 2026,
     "date_m": 2,
     "text": "CHORD RESIDENT",
-    "sub_text": "初RESIDENT勲章 稼ぎ譜面が増えたとはいえ上達を実感しました",
+    "sub_text": "初RESIDENT勲章 稼ぎ譜面が増えたとはいえ嬉しい！",
     "imgurl": "/img/Rhythm/Result/Beatmania04.jpg"
   },
   {
@@ -113,5 +95,14 @@
     "date_m": 2,
     "text": "KBD仏アリーナSeason2",
     "sub_text": "Team : GET ACCESS! / 9th Styleって最高だ"
+  },
+  {
+    "circle": true,
+    "bold": true,
+    "date_y": 2026,
+    "date_m": 10,
+    "text": "CHARGE RESIDENT",
+    "sub_text": "2個目のRESIDENT勲章 次はSOF-LANかな～(無理)",
+    "imgurl": "/img/Rhythm/Result/Beatmania05.jpg"
   }
 ]

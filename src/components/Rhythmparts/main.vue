@@ -65,7 +65,7 @@ export default {
   },
   data() {
     return {
-      title: "iidx",
+      title: "ongeki",
       timeline_contents:{
         ongeki: ongekiTimeline,
         CHUNITHM: CHUNITHMTimeline,

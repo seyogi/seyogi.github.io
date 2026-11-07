@@ -8,13 +8,14 @@
   {
     "date_y": 2021,
     "date_m": 1,
-    "text": "SP最高15 (Valkyrie dimension 踊)"
+    "text": "SP 最高15",
+    "sub_text": "Valkyrie dimension DSP"
   },
   {
     "date_y": 2022,
     "date_m": 3,
-    "text": "SP最高18 (Valkyrie dimension 激)",
-    "sub_text": "この後DDR初の足攣りを経験"
+    "text": "SP 最高18",
+    "sub_text": "Valkyrie dimension ESP この後初DDR足攣りを経験"
   },
   {
     "date_y": 2022,
@@ -32,30 +33,31 @@
     "bold": true,
     "date_y": 2023,
     "date_m": 2,
-    "text": "SP最高19 (PARANOiA Revolution 鬼)",
-    "sub_text": "LEFT"
+    "text": "SP 最高19",
+    "sub_text": "PARANOiA Revolution CSP (LEFT)"
   },
   {
     "date_y": 2023,
-    "text": "SP18全クリア",
+    "text": "SP 18全曲クリア",
     "date_m": 2
   },
   {
     "date_y": 2023,
     "date_m": 7,
-    "text": "DP最高18 (MAX 360 激)"
+    "text": "DP 最高18",
+    "sub_text": "MAX 360 EDP"
   },
   {
     "date_y": 2024,
     "date_m": 10,
     "text": "第13回 音ゲー早慶戦DDR部門 BBD副将",
-    "sub_text": "vsもと"
+    "sub_text": "vsもと LOSE"
   },
   {
     "date_y": 2024,
     "date_m": 12,
     "text": "KBDDR2024",
-    "sub_text": "vsでんたく まさかのHDV被り"
+    "sub_text": "vsでんたく LOSE まさかのHDV被り"
   },
   {
     "date_y": 2025,
@@ -68,12 +70,27 @@
     "date_y": 2025,
     "date_m": 10,
     "text": "第14回 音ゲー早慶戦DDR部門 KBM副将",
-    "sub_text": "vs蓬丸"
+    "sub_text": "vs蓬丸 LOSE"
   },
   {
     "date_y": 2026,
     "date_m": 6,
     "text": "KBDDR2026",
-    "sub_text": "vsいろいろ まだ18を踏み捌く力はない..."
+    "sub_text": "vsいろいろ"
+  },
+  {
+    "circle": true,
+    "bold": true,
+    "date_y": 2026,
+    "date_m": 8,
+    "text": "sp18 First AAA",
+    "sub_text": "BREAKING THE FUTURE 激",
+    "imgurl": "/img/Rhythm/Result/DDR04.jpg"
+  },
+  {
+    "date_y": 2026,
+    "date_m": 10,
+    "text": "第15回 音ゲー早慶戦DDR部門 KBM副将",
+    "sub_text": "vsなかちん WIN"
   }
 ]

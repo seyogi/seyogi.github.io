@@ -21,7 +21,7 @@
   {
     "date_y": 2023,
     "date_m": 4,
-    "text": "My Soul,Your Beats! ACB",
+    "text": "My Soul,Your Beats! 1010000",
     "sub_text": "オンゲキ初理論値 この曲で決められてよかった",
     "imgurl":"/img/Rhythm/Result/GEKI02.jpg"
   },
@@ -73,5 +73,25 @@
     "text": "μ3 ABFB",
     "sub_text": "大ボス討伐。あとはリコレのみ...",
     "imgurl":"/img/Rhythm/Result/GEKI04.jpg"
+  },
+  {
+    "circle": true,
+    "bold": true,
+    "date_y": 2026,
+    "date_m": 8,
+    "text": "Recollect Lines ABFB",
+    "sub_text": "オンゲキ全クリ",
+    "imgurl": "/img/Rhythm/Result/GEKI05.jpg"
+  },
+  {
+    "date_y": 2026,
+    "date_m": 8,
+    "text": "耀撃 取得"
+  },
+  {
+    "date_y": 2026,
+    "date_m": 10,
+    "text": "第15回 音ゲー早慶戦オンゲキ部門 KBM大将",
+    "sub_text": "vsろこもこ"
   }
 ]
