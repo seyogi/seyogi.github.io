@@ -43,6 +43,12 @@
   },
   {
     "date_y": 2023,
+    "date_m": 5,
+    "text": "SP LEVEL15 First AAA",
+    "sub_text": "Another Phase ESP"
+  },
+  {
+    "date_y": 2023,
     "date_m": 7,
     "text": "DP 最高18",
     "sub_text": "MAX 360 EDP"
@@ -58,6 +64,18 @@
     "date_m": 12,
     "text": "KBDDR2024",
     "sub_text": "vsでんたく LOSE まさかのHDV被り"
+  },
+  {
+    "date_y": 2025,
+    "date_m": 1,
+    "text": "SP LEVEL16 First AAA",
+    "sub_text": "鳳 DSP"
+  },  
+  {
+    "date_y": 2025,
+    "date_m": 2,
+    "text": "SP LEVEL17 First AAA",
+    "sub_text": "ΔMAX ESP"
   },
   {
     "date_y": 2025,
@@ -83,8 +101,8 @@
     "bold": true,
     "date_y": 2026,
     "date_m": 8,
-    "text": "sp18 First AAA",
-    "sub_text": "BREAKING THE FUTURE 激",
+    "text": "SP LEVEL18 First AAA",
+    "sub_text": "BREAKING THE FUTURE ESP",
     "imgurl": "/img/Rhythm/Result/DDR04.jpg"
   },
   {
