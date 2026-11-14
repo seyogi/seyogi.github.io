@@ -2,7 +2,7 @@
   <div class="main_box">
     <div class="container">
       <br>
-      管理人のgmailにメッセージを送信します
+      管理人のgmailにメッセージを送信します (故障中)
       <br>
       <br>
       Subject:<br>

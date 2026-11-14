@@ -5,7 +5,7 @@ var url = 'https://script.google.com/macros/s/' + id + '/exec'
 
 const options ={
     headers: {
-        "content-type": "multipart/form-data",
+        "content-type": "text/plain",
     }
 }
 
