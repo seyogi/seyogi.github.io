@@ -5,7 +5,7 @@
       <h2>Profile</h2><br />
       <div class="introduction_box">
         <div class="left">
-          <img class="img_icon" src="/img/me.png" />
+          <img class="img_icon" src="/img/tairitsu_icon.jpg" />
           <div class="links">
             <a href="https://twitter.com/syg_74" target="_blank" rel="noopener noreferrer" class="box">
               <font-awesome-icon class="icons" icon="fa-brands fa-x-twitter" size="2x" color="#422" />
@@ -26,8 +26,8 @@
             TCU Graduate School<br />
             Informatics M2<br /><br />
             <h4>- Interests</h4>
-            <pre class="eng">&#009;Artificial Neural Networks</pre>
             <pre class="eng">&#009;Neuroscience</pre>
+            <pre class="eng">&#009;Artificial Neural Networks</pre>
             <pre class="eng">&#009;Brain Computer Interface</pre>
             <br />
             <h4>- Qualifications</h4>
@@ -111,9 +111,9 @@ export default {
     margin: 20px;
     border-radius: 50%;
     /* 角丸半径を50%にする(=円形にする) */
-    width: 120px;
+    width: 200px;
     /* ※縦横を同値に */
-    height: 120px;
+    height: 200px;
     /* ※縦横を同値に */
   }
   .introduction_box .name {
@@ -154,12 +154,12 @@ export default {
   }
 
   .introduction_box .left .img_icon {
-    margin: 20px;
+    margin: 10px;
     border-radius: 50%;
     /* 角丸半径を50%にする(=円形にする) */
-    width: 120px;
+    width: 150px;
     /* ※縦横を同値に */
-    height: 120px;
+    height: 150px;
     /* ※縦横を同値に */
   }  
 
