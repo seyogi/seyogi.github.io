@@ -1,21 +1,33 @@
 <template>
   <div class="timeline" v-for="(content,index) in timeline_contents" :key="index">
     <li>
-      <div class="timeline-line" />
+      <div class="timeline-line" :class="{ 'timeline-line--gap': hasLongGap(index) }" />
+      <div class="timeline-gap" v-if="hasLongGap(index)" />
       <p class="timeline-date" v-if="shouldShowYear(index) || 'date_m' in content">
         <span v-if="shouldShowYear(index)" class="year">{{ content.date_y }}</span>
       </p>
 
       <div class="timeline-content">
-        <div class="timeline-circle" v-if="content.circle == true" />
         <div class="main-block">
           <!-- text block on left -->
           <div class="timeline-txt">
             <!-- main text -->
             <div v-if="content.bold == true">
-              <h3>{{ content.text }}</h3>
+              <h3 class="timeline-label">
+                <span
+                  class="timeline-circle"
+                  :class="{ 'timeline-circle--after-gap': hasLongGap(index) }"
+                  v-if="content.circle == true"
+                />
+                {{ content.text }}
+              </h3>
             </div>
-            <div v-if="content.bold != true">
+            <div v-if="content.bold != true" class="timeline-label">
+              <span
+                class="timeline-circle"
+                :class="{ 'timeline-circle--after-gap': hasLongGap(index) }"
+                v-if="content.circle == true"
+              />
               {{ content.text }}
             </div>
             <div class="sub-txt" v-if="'sub_text' in content">
@@ -54,6 +66,24 @@ export default {
       const prev = contents[idx - 1].date_y || '';
       return cur && cur !== prev;
     },
+    hasLongGap(idx) {
+      if (idx === 0) return false;
+
+      const current = this.timeline_contents[idx];
+      const previous = this.timeline_contents[idx - 1];
+      const currentYear = Number(current.date_y);
+      const previousYear = Number(previous.date_y);
+      const currentMonth = Number(current.date_m);
+      const previousMonth = Number(previous.date_m);
+      const hasValidMonths = [currentMonth, previousMonth].every(
+        (month) => Number.isInteger(month) && month >= 1 && month <= 12
+      );
+
+      if (!Number.isFinite(currentYear) || !Number.isFinite(previousYear)) return false;
+      if (!hasValidMonths) return currentYear - previousYear > 1;
+
+      return (currentYear - previousYear) * 12 + currentMonth - previousMonth >= 12;
+    },
   },
 };
 </script>
@@ -65,6 +95,34 @@ export default {
 .timeline {
   list-style: none;
 }
+.timeline-gap {
+  display: block;
+  height: 36px;
+  position: relative;
+}
+.timeline-gap::after {
+  content: "";
+  width: 3px;
+  height: 3px;
+  background: #888;
+  border-radius: 50%;
+  position: absolute;
+  left: 6px;
+  top: 50%;
+  transform: translateY(-50%);
+  box-shadow: 0 -6px #888, 0 6px #888;
+}
+.timeline-circle {
+  width: 12px;
+  height: 12px;
+  background: #833;
+  position: absolute;
+  top: 20px;
+  border-radius: 100%;
+}
+.timeline-circle--after-gap {
+  top: 56px;
+}
 
 @media screen and (max-width: 700px) {
   .side-img {
@@ -74,6 +132,24 @@ export default {
     overflow: hidden;
     position: relative;
     margin: 0;
+  }
+  .timeline-line {
+    width: 3px;
+    height: 100%;
+    background: #888;
+    position: absolute;
+    left: 6px;
+  }
+  .timeline-circle {
+    left: 1.5px;
+  }
+  .timeline-label {
+    position: relative;
+  }
+  .timeline-label .timeline-circle {
+    left: -18.5px;
+    top: 50%;
+    transform: translateY(-50%);
   }
   .timeline-content {
     width: 85%;
@@ -88,7 +164,7 @@ export default {
     text-align: center;
     background: #daa;
     border-radius: 10px; /* 角丸半径を50%にする(=円形にする) */
-    margin-left: 10px;
+    margin-left: 15px;
   }
   .timeline-date .month {
     display: block;
@@ -146,15 +222,11 @@ export default {
     position: absolute;
     left: 110px;
   }
+  .timeline-gap::after {
+    left: 110px;
+  }
   .timeline-circle {
-    content: "";
-    width: 12px;
-    height: 12px;
-    background: #833;
-    position: absolute;
     left: 106px;
-    top: 20px;
-    border-radius: 100%;
   }
   .timeline-content {
     width: 75%;
@@ -169,5 +241,13 @@ export default {
   .timeline-txt .sub-txt {
     font-size: 12px;
   }
+}
+.timeline-line.timeline-line--gap {
+  background: linear-gradient(
+    to bottom,
+    #888 0 8px,
+    transparent 8px 28px,
+    #888 28px
+  );
 }
 </style>

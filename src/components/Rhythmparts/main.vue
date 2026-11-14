@@ -8,10 +8,6 @@
       <div class="txt_box">
         趣味で遊んでいるアーケードゲーム(音楽ゲーム)のログです<br />
         <a href="https://x.com/BBD_w"  target="_blank">BBD</a>という音ゲーサークルに所属しています(2022.10 ~)<br><br>
-        レート等を計算するエクセルシートを配布しています：
-        <a href="https://drive.google.com/drive/folders/1bwJflh1wF74HxpksERLQPb5bE6mzm9cA?usp=sharing"  target="_blank">GoogleDriveのリンク</a><br>
-        シートにあるデータを置き換えてご自由に使ってください
-        <br /><br />
         ---ライバル募集中---<br />
         CHUNITHM : 4069095717545 (<a href="https://chunirec.net/users/seyogi" target="_blank">chunirec</a>)<br />
         オンゲキ : 4067035919555 (<a href="https://ongeki-score.net/user/4925" target="_blank">OngekiScoreLog</a>)<br />
